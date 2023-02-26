@@ -1,0 +1,13 @@
+sztab.png
+mutek.png
+nozownik.png
+sieciarz.png
+supermutant.png
+silacz.png
+zabojca.png
+oficer.png
+superoficer.png
+zwiadowca.png
+bitwa.png
+ruch.png
+granat.png
