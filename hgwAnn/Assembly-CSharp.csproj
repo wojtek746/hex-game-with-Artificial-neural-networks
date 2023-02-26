@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6C0D48C2-F019-2290-B9A5-34A98CD8DEC5}</ProjectGuid>
+    <ProjectGuid>{1EE5F820-962F-F8C1-C66D-E03FB704570D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,9 +59,9 @@
     <Compile Include="Assets\Scripts\BorgoCore.cs" />
     <Compile Include="Assets\Scripts\core.cs" />
     <Compile Include="Assets\Scripts\TestJson.cs" />
+    <Compile Include="Assets\Scripts\BorgoCreate.cs" />
     <Compile Include="Assets\Scripts\borgo.cs" />
     <Compile Include="Assets\Scripts\hegemonia.cs" />
-    <Compile Include="Assets\Scripts\BorgoCreate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\png\Borgo\Borgo.txt" />
