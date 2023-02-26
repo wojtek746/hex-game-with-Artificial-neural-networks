@@ -1,1 +1,1 @@
-C:\Users\Grzegorz\hex game
+C:\Users\Grzegorz\Documents\GitHub\hex-game-with-Artificial-neural-networks\hgwAnn
