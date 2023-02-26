@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638121350212463896
-    m_Hash: 1867689891
+      ticks: 638130046715287937
+    m_Hash: 1834553153
   m_LockFileStatus:
     m_FilePath: C:/Users/Grzegorz/Documents/GitHub/hex-game-with-Artificial-neural-networks/hgwAnn/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638121352005651074
-    m_Hash: 3416165869
+      ticks: 638130046715297884
+    m_Hash: 1056479887
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
