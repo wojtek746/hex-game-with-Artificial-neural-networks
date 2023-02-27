@@ -7,7 +7,7 @@ using System;
 
 public class HegemoniaCreate : MonoBehaviour
 {
-    public BorgoCore borgo;
+    public HegemoniaCore hegemonia;
 
     public GameObject HQ;
     public GameObject Brawler;
@@ -26,7 +26,7 @@ public class HegemoniaCreate : MonoBehaviour
 
     private void Start()
     {
-        borgo = FindObjectsOfType<BorgoCore>()[0];
+        hegemonia = FindObjectsOfType<HegemoniaCore>()[0];
     }
 
     public IEnumerator Create(string name, int idHex, int rotation)
@@ -37,7 +37,7 @@ public class HegemoniaCreate : MonoBehaviour
             while (true)
             {
                 //sprawdzanie, czy mo¿na stworzyæ w danym miejscu element
-                if (borgo.hex[idHex - 1].name == "")
+                if (hegemonia.hex[idHex - 1].name == "")
                 {
                     GameObject gameObject;
 
@@ -87,27 +87,27 @@ public class HegemoniaCreate : MonoBehaviour
                         break;
                     }
 
-                    borgo.hex[idHex - 1].setHealth(borgo.objects[borgo.GetId(name)].health);
-                    borgo.hex[idHex - 1].setWhereLook(rotation);
+                    hegemonia.hex[idHex - 1].setHealth(hegemonia.objects[hegemonia.GetId(name)].health);
+                    hegemonia.hex[idHex - 1].setWhereLook(rotation);
                     for (int i = 0; i < 4; i++)
                     {
-                        borgo.hex[idHex - 1].setInitiative(borgo.objects[borgo.GetId(name)].initiative[i], i);
+                        hegemonia.hex[idHex - 1].setInitiative(hegemonia.objects[hegemonia.GetId(name)].initiative[i], i);
                     }
                     for (int i = 0; i < 6; i++)
                     {
-                        borgo.hex[idHex - 1].setDistance(borgo.objects[borgo.GetId(name)].distance[i], i);
+                        hegemonia.hex[idHex - 1].setDistance(hegemonia.objects[hegemonia.GetId(name)].distance[i], i);
                     }
                     for (int i = 0; i < 6; i++)
                     {
-                        borgo.hex[idHex - 1].setStrength(borgo.objects[borgo.GetId(name)].strength[i], i);
+                        hegemonia.hex[idHex - 1].setStrength(hegemonia.objects[hegemonia.GetId(name)].strength[i], i);
                     }
                     for (int i = 0; i < 6; i++)
                     {
-                        borgo.hex[idHex - 1].setFunctions(borgo.objects[borgo.GetId(name)].functions[i], i);
+                        hegemonia.hex[idHex - 1].setFunctions(hegemonia.objects[hegemonia.GetId(name)].functions[i], i);
                     }
-                    borgo.hex[idHex - 1].setNet(borgo.objects[borgo.GetId(name)].net);
-                    borgo.hex[idHex - 1].setIsLife(borgo.objects[borgo.GetId(name)].isLife);
-                    borgo.hex[idHex - 1].setName(name);
+                    hegemonia.hex[idHex - 1].setNet(hegemonia.objects[hegemonia.GetId(name)].net);
+                    hegemonia.hex[idHex - 1].setIsLife(hegemonia.objects[hegemonia.GetId(name)].isLife);
+                    hegemonia.hex[idHex - 1].setName(name);
 
 
                     //tworzymy element na scenie
@@ -117,21 +117,21 @@ public class HegemoniaCreate : MonoBehaviour
                     newObject.transform.parent = hex.transform;
                     newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
                     newObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation * 60));
-                    UnityEngine.Debug.Log($"borgo Create(name: {name}, idHex: {idHex}({borgo.GetId(name)}), rotation: {rotation}): {borgo.id[2]} {borgo.id[3]} {borgo.id[4]} {borgo.id[5]} {borgo.id[6]} {borgo.id[7]} {borgo.id[8]} {borgo.id[9]} {borgo.id[10]} {borgo.id[11]} {borgo.id[12]} {borgo.id[13]} {borgo.id[14]} {borgo.id[15]} {borgo.id[16]} {borgo.id[17]} {borgo.id[18]} {borgo.id[19]} {borgo.id[20]} {borgo.id[21]} {borgo.id[22]} {borgo.id[23]} {borgo.id[24]} {borgo.id[25]} {borgo.id[26]} {borgo.id[27]} {borgo.id[28]} {borgo.id[29]} {borgo.id[30]} {borgo.id[31]} {borgo.id[32]} {borgo.id[33]} {borgo.id[34]} {borgo.id[35]} {borgo.id[36]} {borgo.id[37]} {borgo.id[38]} {borgo.id[39]}");
+                    UnityEngine.Debug.Log($"hegemonia Create(name: {name}, idHex: {idHex}({hegemonia.GetId(name)}), rotation: {rotation}): {hegemonia.id[2]} {hegemonia.id[3]} {hegemonia.id[4]} {hegemonia.id[5]} {hegemonia.id[6]} {hegemonia.id[7]} {hegemonia.id[8]} {hegemonia.id[9]} {hegemonia.id[10]} {hegemonia.id[11]} {hegemonia.id[12]} {hegemonia.id[13]} {hegemonia.id[14]} {hegemonia.id[15]} {hegemonia.id[16]} {hegemonia.id[17]} {hegemonia.id[18]} {hegemonia.id[19]} {hegemonia.id[20]} {hegemonia.id[21]} {hegemonia.id[22]} {hegemonia.id[23]} {hegemonia.id[24]} {hegemonia.id[25]} {hegemonia.id[26]} {hegemonia.id[27]} {hegemonia.id[28]} {hegemonia.id[29]} {hegemonia.id[30]} {hegemonia.id[31]} {hegemonia.id[32]} {hegemonia.id[33]} {hegemonia.id[34]} {hegemonia.id[35]} {hegemonia.id[36]} {hegemonia.id[37]} {hegemonia.id[38]} {hegemonia.id[39]}");
 
                     //sprawdzamy elementy funkcyjne
                     if (name == "HQ" || name == "Scout")
                     {
                         for (int i = 0; i < 6; i++)
                         {
-                            if (borgo.hex[idHex - 1].functions[i] > 0) 
+                            if (hegemonia.hex[idHex - 1].functions[i] > 0) 
                             {
-                                int a = borgo.Around(idHex, i, 0);
+                                int a = hegemonia.Around(idHex, i, 0);
                                 if (a != 0)
                                 {
-                                    if (borgo.hex[a - 1].isLife) 
+                                    if (hegemonia.hex[a - 1].isLife) 
                                     {
-                                        borgo.hex[a - 1].setInitiative(true, 1); 
+                                        hegemonia.hex[a - 1].setInitiative(true, 1); 
                                     }
                                 }
                             }
@@ -139,25 +139,25 @@ public class HegemoniaCreate : MonoBehaviour
                     }
                     else
                     {
-                        ArrayList n = borgo.isLooking(idHex, "HQ");
+                        ArrayList n = hegemonia.isLooking(idHex, "HQ");
                         if ((bool)n[0])
                         {
-                            if (borgo.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0) 
+                            if (hegemonia.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0) 
                             {
-                                if (borgo.hex[idHex - 1].isLife)
+                                if (hegemonia.hex[idHex - 1].isLife)
                                 {
-                                    borgo.hex[idHex - 1].setInitiative(true, 1);
+                                    hegemonia.hex[idHex - 1].setInitiative(true, 1);
                                 }
                             }
                         }
                         else
                         {
-                            n = borgo.isLooking(idHex, "Scout");
+                            n = hegemonia.isLooking(idHex, "Scout");
                             if ((bool)n[0])
                             {
-                                if (borgo.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
+                                if (hegemonia.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
                                 {
-                                    borgo.hex[idHex - 1].setInitiative(true, 1);
+                                    hegemonia.hex[idHex - 1].setInitiative(true, 1);
                                 }
                             }
                         }
@@ -166,14 +166,14 @@ public class HegemoniaCreate : MonoBehaviour
                     {
                         for (int i = 0; i < 6; i++)
                         {
-                            if (borgo.hex[idHex - 1].functions[i] > 0)
+                            if (hegemonia.hex[idHex - 1].functions[i] > 0)
                             {
-                                int a = borgo.Around(idHex, i, 0);
+                                int a = hegemonia.Around(idHex, i, 0);
                                 if (a != 0)
                                 {
-                                    if (borgo.hex[a - 1].isLife)
+                                    if (hegemonia.hex[a - 1].isLife)
                                     {
-                                        borgo.hex[a - 1].setStrength(borgo.hex[a - 1].strength[0] + 1, 0); 
+                                        hegemonia.hex[a - 1].setStrength(hegemonia.hex[a - 1].strength[0] + 1, 0); 
                                     }
                                 }
                             }
@@ -181,22 +181,22 @@ public class HegemoniaCreate : MonoBehaviour
                     }
                     else
                     {
-                        ArrayList n = borgo.isLooking(idHex, "Officer");
+                        ArrayList n = hegemonia.isLooking(idHex, "Officer");
                         if ((bool)n[0])
                         {
-                            if (borgo.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
+                            if (hegemonia.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
                             {
-                                borgo.hex[idHex - 1].setStrength(borgo.hex[idHex - 1].strength[0] + 1, 0);
+                                hegemonia.hex[idHex - 1].setStrength(hegemonia.hex[idHex - 1].strength[0] + 1, 0);
                             }
                         }
                         else
                         {
-                            n = borgo.isLooking(idHex, "Super_Officer");
+                            n = hegemonia.isLooking(idHex, "Super_Officer");
                             if ((bool)n[0])
                             {
-                                if (borgo.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
+                                if (hegemonia.hex[Int32.Parse(n[1].ToString()) - 1].functions[Int32.Parse(n[2].ToString())] > 0)
                                 {
-                                    borgo.hex[idHex - 1].setStrength(borgo.hex[idHex - 1].strength[0] + 1, 0);
+                                    hegemonia.hex[idHex - 1].setStrength(hegemonia.hex[idHex - 1].strength[0] + 1, 0);
                                 }
                             }
                         }

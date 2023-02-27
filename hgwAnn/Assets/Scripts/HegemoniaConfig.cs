@@ -7,9 +7,10 @@ using System;
 
 public class HegemoniaConfig : MonoBehaviour
 {
-    public BorgoCore Borgo;
-    public BorgoCreate Create;
-    public BorgoDelete Delete; 
+    public HegemoniaCore Hegemonia;
+    public HegemoniaCreate Create;
+    public HegemoniaDelete Delete;
+    public bool isLife; 
     public core Core;
 
     public List<int> shop = new List<int>{ 0, 0, 0, 0, 0 }; 
@@ -17,40 +18,40 @@ public class HegemoniaConfig : MonoBehaviour
     public void StartGame(int which, string oponent)
     {
         //standardowe na start
-        Borgo = FindObjectsOfType<BorgoCore>()[0];
-        Delete = FindObjectsOfType<BorgoDelete>()[0];
+        Hegemonia = FindObjectsOfType<HegemoniaCore>()[0];
+        Delete = FindObjectsOfType<HegemoniaDelete>()[0];
         Core = FindObjectsOfType<core>()[0];
-        GameObject borgo = GameObject.Find("borgo");
+        GameObject hegemonia = GameObject.Find("hegemonia");
         int pyth;
-        Borgo.which = which;
-        Borgo.oponent = oponent; 
+        Hegemonia.which = which;
+        Hegemonia.oponent = oponent; 
 
         //ustawianie sklepu w odpowiednim miejscu
         if (which == 1)
         {
-            borgo.transform.position = new Vector3(-4.9f, 0.45f, 0);
+            hegemonia.transform.position = new Vector3(-4.9f, 0.45f, 0);
         }
         else if (which != 2)
         {
-            borgo.SetActive(false);
+            hegemonia.SetActive(false);
             return;
         }
 
         GetId();
 
         //ustawienie w sklepie sztabu
-        GameObject hex = GameObject.Find("borgo 1");
+        GameObject hex = GameObject.Find("hegemonia 1");
         GameObject gameObject = Create.HQ;
         GameObject newObject = Instantiate(gameObject, hex.transform.position, hex.transform.rotation);
         newObject.transform.parent = hex.transform;
         newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
-        shop[1] = Borgo.GetId("HQ");
+        shop[1] = Hegemonia.GetId("HQ");
         ProcessStartInfo start = new ProcessStartInfo();
 
         //uruchomienie pythona
         start.FileName = "python.exe";
-        UnityEngine.Debug.Log($"borgo StartGame(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} hq");
-        start.Arguments = $"C:/wojtek746/borgo/{Borgo.oponent.ToLower()}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} hq";
+        UnityEngine.Debug.Log($"hegemonia StartGame(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq");
+        start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq";
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;
@@ -82,7 +83,7 @@ public class HegemoniaConfig : MonoBehaviour
         for (int i = 1; i < 4; i++)
         {
             int random = UnityEngine.Random.Range(2, 15);
-            GameObject hex = GameObject.Find("borgo " + i);
+            GameObject hex = GameObject.Find("hegemonia " + i);
             switch (random)
             {
                 case 2:
@@ -245,8 +246,8 @@ public class HegemoniaConfig : MonoBehaviour
             start.FileName = "python.exe";
             if (name != "grenade")
             {
-                UnityEngine.Debug.Log($"borgo Movement(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} {name}");
-                start.Arguments = $"C:/wojtek746/borgo/{Borgo.oponent.ToLower()}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} {name}";
+                UnityEngine.Debug.Log($"hegemonia Movement(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}");
+                start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}";
             }
             else
             {
@@ -254,14 +255,14 @@ public class HegemoniaConfig : MonoBehaviour
                 int whq = 0;
                 for (int j = 0; j < 19; j++)
                 {
-                    if (Borgo.GetId(Borgo.hex[j].name) == 1) 
+                    if (Hegemonia.GetId(Hegemonia.hex[j].name) == 1) 
                     {
                         whq = j;
                     }
                 }
                 whq++; 
-                UnityEngine.Debug.Log($"borgo Movement(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} grenade {whq}");
-                start.Arguments = $"C:/wojtek746/borgo/{Borgo.oponent.ToLower()}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} grenade {whq}";
+                UnityEngine.Debug.Log($"hegemonia Movement(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} grenade {whq}");
+                start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} grenade {whq}";
             }
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
@@ -282,7 +283,7 @@ public class HegemoniaConfig : MonoBehaviour
             //sprawdzanie, czy jest to element funkcyjny
             if (name == "grenade")
             {
-                Core.Grenade("Borgo", pyth);
+                Core.Grenade("Hegemonia", pyth);
             }
             else
             {
@@ -315,7 +316,7 @@ public class HegemoniaConfig : MonoBehaviour
 
         for (int i = 0; i < 19; i++)
         {
-            if (Borgo.hex[i].name == "HQ")
+            if (Hegemonia.hex[i].name == "HQ")
             {
                 return true;
             }
@@ -326,11 +327,11 @@ public class HegemoniaConfig : MonoBehaviour
     public void GetId()
     {
         //pobranie tablicy id z rdzenia (nie wa¿ne jak dzia³a, wa¿ne, ¿e dzia³a xd)
-        if (Borgo.which == 1)
+        if (Hegemonia.which == 1)
         {
             for (int i = 0; i < 40; i++)
             {
-                Borgo.id[i] = Int32.Parse(Core.id[i].ToString());
+                Hegemonia.id[i] = Int32.Parse(Core.id[i].ToString());
             }
         }
         else
@@ -339,21 +340,26 @@ public class HegemoniaConfig : MonoBehaviour
             {
                 if (i % 2 == 0)
                 {
-                    Borgo.id[i] = Int32.Parse(Core.id[i].ToString()) * -1;
+                    Hegemonia.id[i] = Int32.Parse(Core.id[i].ToString()) * -1;
                 }
                 else
                 {
-                    Borgo.id[i] = Int32.Parse(Core.id[i].ToString());
+                    Hegemonia.id[i] = Int32.Parse(Core.id[i].ToString());
                 }
             }
         }
+    }
+
+    public int GiveId(int i)
+    {
+        return Hegemonia.id[i]; 
     }
 
     public void GrenadeF(int idHex)
     {
         //rdzeñ wysy³a informacjê, ¿e przeciwnik wys³a³ na nasz¹ jednostkê granat
         GetId();
-        if (Borgo.GetId(Borgo.hex[idHex - 1].name) > 1) 
+        if (Hegemonia.GetId(Hegemonia.hex[idHex - 1].name) > 1) 
         {
             Delete.Delete(idHex);
         }
@@ -361,15 +367,15 @@ public class HegemoniaConfig : MonoBehaviour
 
     public void Pushing(int idHex)
     {
-        UnityEngine.Debug.Log($"borgo Pushing({idHex})");
+        UnityEngine.Debug.Log($"hegemonia Pushing({idHex})");
         //sprawdzanie, cze mo¿na przepchn¹æ
-        if (Borgo.hex[idHex - 1].name != "")
+        if (Hegemonia.hex[idHex - 1].name != "")
         {
             //uruchomienie pythona
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = "python.exe";
-            UnityEngine.Debug.Log($"borgo Pushing({idHex}): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]}");
-            start.Arguments = $"C:/wojtek746/borgo/{Borgo.oponent.ToLower()}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} pushing {idHex}";
+            UnityEngine.Debug.Log($"hegemonia Pushing({idHex}): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]}");
+            start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} pushing {idHex}";
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
@@ -388,7 +394,7 @@ public class HegemoniaConfig : MonoBehaviour
 
             //przesuniêcie odpowiedniego elementu do wybranego miejsca
             string name = "";
-            switch (Borgo.id[idHex * 2])
+            switch (Hegemonia.id[idHex * 2])
             {
                 case 2:
                     name = "Brawler";
@@ -424,9 +430,9 @@ public class HegemoniaConfig : MonoBehaviour
                     name = "";
                     break;
             }
-            UnityEngine.Debug.Log($"Create({name}, {pyth}, {Borgo.id[(idHex * 2) + 1]})");
+            UnityEngine.Debug.Log($"Create({name}, {pyth}, {Hegemonia.id[(idHex * 2) + 1]})");
             UnityEngine.Debug.Log($"Delete({idHex})");
-            StartCoroutine(Create.Create(name, pyth, Borgo.id[(idHex * 2) + 1]));
+            StartCoroutine(Create.Create(name, pyth, Hegemonia.id[(idHex * 2) + 1]));
             Delete.Delete(idHex);
         }
     }
@@ -435,7 +441,7 @@ public class HegemoniaConfig : MonoBehaviour
     {
         ProcessStartInfo start = new ProcessStartInfo();
         start.FileName = "python.exe";
-        start.Arguments = $"C:/wojtek746/borgo/{Borgo.oponent.ToLower()}Learn.py";
+        start.Arguments = $"C:/wojtek746/hegemonia/{Hegemonia.oponent.ToLower()}Learn.py";
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;
@@ -443,18 +449,18 @@ public class HegemoniaConfig : MonoBehaviour
 
     public void Net()
     {
-        foreach (int i in Borgo.net)
+        foreach (int i in Hegemonia.net)
         {
-            Borgo.hex[i].setNet(true); 
+            Hegemonia.hex[i].setNet(true); 
         }
-        Borgo.net = new List<int>();
+        Hegemonia.net = new List<int>();
     }
 
     public void DeleteNet()
     {
         for (int i = 0; i < 19; i++)
         {
-            Borgo.hex[i].setNet(false);
+            Hegemonia.hex[i].setNet(false);
         }
     }
 }
