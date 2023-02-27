@@ -62,6 +62,12 @@
     <Compile Include="Assets\Scripts\BorgoCreate.cs" />
     <Compile Include="Assets\Scripts\borgo.cs" />
     <Compile Include="Assets\Scripts\hegemonia.cs" />
+    <Compile Include="Assets\Scripts\BorgoConfig.cs" />
+    <Compile Include="Assets\Scripts\BorgoDelete.cs" />
+    <Compile Include="Assets\Scripts\HegemoniaDelete.cs" />
+    <Compile Include="Assets\Scripts\HegemoniaConfig.cs" />
+    <Compile Include="Assets\Scripts\HegemoniaCore.cs" />
+    <Compile Include="Assets\Scripts\HegemoniaCreate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\png\Borgo\Borgo.txt" />
