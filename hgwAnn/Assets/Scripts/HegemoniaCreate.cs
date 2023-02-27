@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System;
 
-public class BorgoCreate : MonoBehaviour
+public class HegemoniaCreate : MonoBehaviour
 {
     public BorgoCore borgo;
 

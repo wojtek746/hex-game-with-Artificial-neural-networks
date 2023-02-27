@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System;
 
-public class BorgoCore : MonoBehaviour
+public class HegemoniaCore : MonoBehaviour
 {
     public struct Hex
     {
