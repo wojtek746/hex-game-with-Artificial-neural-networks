@@ -88,10 +88,16 @@ public class BorgoCore : MonoBehaviour
 
     void Start()
     {
+        hex = new List<Hex>();
+        for (int i = 0; i < 40; i++)
+        {
+            id.Add(0);
+        }
         for (int i = 0; i < 19; i++)
         {
             hex.Add(new Hex(0, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, false, ""));
         }
+        objects = new List<Hex>();
         objects.Add(new Hex(0, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, false, ""));
         objects.Add(new Hex(20, new List<bool>() { false, true, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 1, 1, 1, 1 }, false, true, "HQ"));
         objects.Add(new Hex(2, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 2, 1, 0, 0, 0, 1 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Brawler"));

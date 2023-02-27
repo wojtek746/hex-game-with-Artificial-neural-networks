@@ -24,7 +24,7 @@ public class HegemoniaCreate : MonoBehaviour
     public GameObject Move;
     public GameObject Grenade;
 
-    private void Start()
+    void Start()
     {
         hegemonia = FindObjectsOfType<HegemoniaCore>()[0];
     }
