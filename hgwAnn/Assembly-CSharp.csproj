@@ -58,8 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BorgoCore.cs" />
     <Compile Include="Assets\Scripts\core.cs" />
+    <Compile Include="Assets\Scripts\HegemoniaBattle.cs" />
     <Compile Include="Assets\Scripts\TestJson.cs" />
     <Compile Include="Assets\Scripts\HegemoniaCreate.cs" />
+    <Compile Include="Assets\Scripts\BorgoBattle.cs" />
     <Compile Include="Assets\Scripts\BorgoConfig.cs" />
     <Compile Include="Assets\Scripts\BorgoCreate.cs" />
     <Compile Include="Assets\Scripts\BorgoDelete.cs" />
@@ -68,8 +70,6 @@
     <Compile Include="Assets\Scripts\HegemoniaCore.cs" />
     <Compile Include="Assets\Scripts\borgo.cs" />
     <Compile Include="Assets\Scripts\hegemonia.cs" />
-    <Compile Include="Assets\Scripts\BorgoBattle.cs" />
-    <Compile Include="Assets\Scripts\HegemoniaBattle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\png\Borgo\Borgo.txt" />
