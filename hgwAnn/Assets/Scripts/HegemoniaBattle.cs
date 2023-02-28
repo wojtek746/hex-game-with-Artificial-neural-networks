@@ -11,7 +11,7 @@ public class HegemoniaBattle : MonoBehaviour
     public core Core;
     public HegemoniaDelete Delete; 
 
-    void Start()
+    public void StartGame()
     {
         hegemonia = FindObjectsOfType<HegemoniaCore>()[0];
         Core = FindObjectsOfType<core>()[0];

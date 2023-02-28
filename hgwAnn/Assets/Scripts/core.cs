@@ -18,15 +18,11 @@ public class core : MonoBehaviour
     public string bot2;
     //public int[] id = new int[40];
     public bool iswin = false; 
-    public List<int> id; 
+    public List<int> id = new List<int>(); 
 
     void Start()
     {
         //standardowe na start
-        for (int i = 0; i < 40; i++)
-        {
-            id.Add(0);
-        }
         heg = FindObjectsOfType<HegemoniaConfig>()[0];
         bor = FindObjectsOfType<BorgoConfig>()[0];
         hegBattle = FindObjectsOfType<HegemoniaBattle>()[0];

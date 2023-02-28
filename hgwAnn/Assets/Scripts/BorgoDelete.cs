@@ -7,7 +7,7 @@ public class BorgoDelete : MonoBehaviour
     public BorgoCore borgo;
     public BorgoConfig Config; 
 
-    private void Start()
+    public void StartGame()
     {
         borgo = FindObjectsOfType<BorgoCore>()[0];
         Config = FindObjectsOfType<BorgoConfig>()[0];

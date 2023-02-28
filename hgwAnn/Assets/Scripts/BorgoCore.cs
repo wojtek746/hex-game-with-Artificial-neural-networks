@@ -86,7 +86,7 @@ public class BorgoCore : MonoBehaviour
     public List<int> net; 
     public core Core;
 
-    void Start()
+    public void StartGame()
     {
         hex = new List<Hex>();
         for (int i = 0; i < 40; i++)

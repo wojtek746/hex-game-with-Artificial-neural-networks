@@ -9,7 +9,8 @@ public class BorgoConfig : MonoBehaviour
 {
     public BorgoCore Borgo;
     public BorgoCreate Create;
-    public BorgoDelete Delete; 
+    public BorgoDelete Delete;
+    public BorgoBattle Battle;
     public core Core;
     public bool isLife; 
 
@@ -19,9 +20,14 @@ public class BorgoConfig : MonoBehaviour
     {
         //standardowe na start
         Borgo = FindObjectsOfType<BorgoCore>()[0];
+        Create = FindObjectsOfType<BorgoCreate>()[0];
         Delete = FindObjectsOfType<BorgoDelete>()[0];
         Core = FindObjectsOfType<core>()[0];
+        Battle = FindObjectsOfType<BorgoBattle>()[0];
         GameObject borgo = GameObject.Find("borgo");
+        Borgo.StartGame();
+        Delete.StartGame();
+        Battle.StartGame(); 
         int pyth;
         Borgo.which = which;
         Borgo.oponent = oponent; 

@@ -82,11 +82,11 @@ public class HegemoniaCore : MonoBehaviour
     public string oponent;
     public List<Hex> objects;
     public List<Hex> hex;
-    public List<int> id;
+    public List<int> id = new List<int>();
     public List<int> net; 
     public core Core;
 
-    void Start()
+    public void StartGame()
     {
         hex = new List<Hex>();
         for(int i = 0; i < 40; i++)

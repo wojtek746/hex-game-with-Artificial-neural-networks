@@ -24,7 +24,7 @@ public class BorgoCreate : MonoBehaviour
     public GameObject Move;
     public GameObject Grenade;
 
-    private void Start()
+    public void StartGame()
     {
         borgo = FindObjectsOfType<BorgoCore>()[0];
     }

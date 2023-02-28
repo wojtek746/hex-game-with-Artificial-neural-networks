@@ -11,7 +11,7 @@ public class BorgoBattle : MonoBehaviour
     public core Core;
     public BorgoDelete Delete;
 
-    void Start()
+    public void StartGame()
     {
         borgo = FindObjectsOfType<BorgoCore>()[0];
         Core = FindObjectsOfType<core>()[0];

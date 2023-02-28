@@ -7,7 +7,7 @@ public class HegemoniaDelete : MonoBehaviour
     public HegemoniaCore hegemonia;
     public HegemoniaConfig Config; 
 
-    private void Start()
+    public void StartGame()
     {
         hegemonia = FindObjectsOfType<HegemoniaCore>()[0];
         Config = FindObjectsOfType<HegemoniaConfig>()[0];
