@@ -23,7 +23,7 @@ if name == "pushing":
     for i in range(38):
         inputs[i] = int(sys.argv[i + 1])
     inputs[38] = int(sys.argv[40])
-    with open("C:/wojtek746/hegemonia/borgo.json", "r") as file:
+    with open("../hegemonia/borgo.json", "r") as file:
         hq = json.loads(file.read())["pushing"]
         if name == "pushing":
             p = True
@@ -33,12 +33,12 @@ if name == "pushing":
         print(nn.feed_forward())
 else:
     if name != "battle" and name != "hq" and name != "sniper" and name != "pushBack" and name != "move":
-        with open("C:/wojtek746/hegemonia/borgo.json", "r") as file:
+        with open("../hegemonia/borgo.json", "r") as file:
             hq = json.loads(file.read())[name]
             nn = NN_38_115.Net(inputs, hq["weights1"], hq["biases1"], hq["weights2"], hq["biases2"], hq["weights3"], hq["biases3"])
             print(nn.feed_forward())
     elif name != "battle":
-        with open("C:/wojtek746/hegemonia/borgo.json", "r") as file:
+        with open("../hegemonia/borgo.json", "r") as file:
             hq = json.loads(file.read())[name]
             if name == "hq":
                 h = True
@@ -55,7 +55,7 @@ else:
             nn = NN_38_20.Net(inputs, hq["weights1"], hq["biases1"], hq["weights2"], hq["biases2"], hq["weights3"], hq["biases3"], hq["weights4"], hq["biases4"], h, m, p)
             print(nn.feed_forward())
     else:
-        with open("C:/wojtek746/hegemonia/borgo.json", "r") as file:
+        with open("../hegemonia/borgo.json", "r") as file:
             hq = json.loads(file.read())["battle"]
             nn = NN_38_2.Net(inputs, hq["weights1"], hq["biases1"], hq["weights2"], hq["biases2"], hq["weights3"], hq["biases3"], hq["weights4"], hq["biases4"], hq["weights5"], hq["biases5"], hq["weights6"], hq["biases6"])
             print(nn.feed_forward())
