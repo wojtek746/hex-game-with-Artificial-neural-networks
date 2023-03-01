@@ -372,10 +372,18 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/borgo.cs"
+"Assets/Scripts/BorgoBattle.cs"
+"Assets/Scripts/BorgoConfig.cs"
 "Assets/Scripts/BorgoCore.cs"
 "Assets/Scripts/BorgoCreate.cs"
+"Assets/Scripts/BorgoDelete.cs"
 "Assets/Scripts/core.cs"
 "Assets/Scripts/hegemonia.cs"
+"Assets/Scripts/HegemoniaBattle.cs"
+"Assets/Scripts/HegemoniaConfig.cs"
+"Assets/Scripts/HegemoniaCore.cs"
+"Assets/Scripts/HegemoniaCreate.cs"
+"Assets/Scripts/HegemoniaDelete.cs"
 "Assets/Scripts/TestJson.cs"
 -langversion:9.0
 
