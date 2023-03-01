@@ -13,6 +13,7 @@ public class HegemoniaConfig : MonoBehaviour
     public HegemoniaBattle Battle;
     public bool isLife; 
     public core Core;
+    public string pathToPython; 
 
     public List<int> shop = new List<int>{ 0, 0, 0, 0, 0 };
 
@@ -33,6 +34,9 @@ public class HegemoniaConfig : MonoBehaviour
         int pyth;
         Hegemonia.which = which;
         Hegemonia.oponent = oponent;
+
+        string path = $"{Application.dataPath}/python/hegemonia/{Hegemonia.oponent.ToLower()}";
+        pathToPython = path.Replace(@"/", @"\"); 
 
         //ustawianie sklepu w odpowiednim miejscu
         if (which == 1)
@@ -58,12 +62,10 @@ public class HegemoniaConfig : MonoBehaviour
         //uruchomienie pythona
         ProcessStartInfo start = new ProcessStartInfo();
         start.FileName = "python.exe";
-        string path = $"{Application.dataPath}/python/hegemonia/{Hegemonia.oponent.ToLower()}.py";
-        UnityEngine.Debug.Log(path.Replace(@"/", @"\"));
         UnityEngine.Debug.Log($"hegemonia StartGame(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq");
         //start.Arguments = $@"C:\Users\code 3\Documents\GitHub\hex-game-with-Artificial-neural-networks\hgwAnn\Assets\python\hegemonia\borgo.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq";
         //start.Arguments = $"{Path.Combine(Application.dataPath, "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq";
-        start.Arguments = $@"{path.Replace(@"/", @"\")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq";
+        start.Arguments = $@"{pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} hq";
 
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
@@ -260,7 +262,7 @@ public class HegemoniaConfig : MonoBehaviour
             if (name != "grenade")
             {
                 UnityEngine.Debug.Log($"hegemonia Movement(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}");
-                start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}";
+                start.Arguments = $"{pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}";
             }
             else
             {
@@ -275,7 +277,7 @@ public class HegemoniaConfig : MonoBehaviour
                 }
                 whq++; 
                 UnityEngine.Debug.Log($"hegemonia Movement(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} grenade {whq}");
-                start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} grenade {whq}";
+                start.Arguments = $"{pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} grenade {whq}";
             }
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
@@ -388,7 +390,7 @@ public class HegemoniaConfig : MonoBehaviour
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = "python.exe";
             UnityEngine.Debug.Log($"hegemonia Pushing({idHex}): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]}");
-            start.Arguments = $"{Path.Combine("Assets", "python", "hegemonia", $"{Hegemonia.oponent.ToLower()}.py")} {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} pushing {idHex}";
+            start.Arguments = $"{pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} pushing {idHex}";
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
@@ -454,7 +456,7 @@ public class HegemoniaConfig : MonoBehaviour
     {
         ProcessStartInfo start = new ProcessStartInfo();
         start.FileName = "python.exe";
-        start.Arguments = $"C:/wojtek746/hegemonia/{Hegemonia.oponent.ToLower()}Learn.py";
+        start.Arguments = $"{pathToPython}Learn.py";
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;

@@ -14,7 +14,8 @@ public class BorgoConfig : MonoBehaviour
     public core Core;
     public bool isLife; 
 
-    public List<int> shop = new List<int>{ 0, 0, 0, 0, 0 }; 
+    public List<int> shop = new List<int>{ 0, 0, 0, 0, 0 };
+    public string pathToPython; 
 
     public void StartGame(int which, string oponent)
     {
@@ -30,7 +31,10 @@ public class BorgoConfig : MonoBehaviour
         Battle.StartGame(); 
         int pyth;
         Borgo.which = which;
-        Borgo.oponent = oponent; 
+        Borgo.oponent = oponent;
+
+        string path = $"{Application.dataPath}/python/borgo/{Borgo.oponent.ToLower()}";
+        pathToPython = path.Replace(@"/", @"\");
 
         //ustawianie sklepu w odpowiednim miejscu
         if (which == 1)
@@ -57,7 +61,7 @@ public class BorgoConfig : MonoBehaviour
         //uruchomienie pythona
         start.FileName = "python.exe";
         UnityEngine.Debug.Log($"borgo StartGame(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} hq");
-        start.Arguments = $"{Path.Combine("Assets", "python", "borgo", $"{Borgo.oponent.ToLower()}.py")} {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} hq";
+        start.Arguments = $"{pathToPython}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} hq";
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;
@@ -253,7 +257,7 @@ public class BorgoConfig : MonoBehaviour
             if (name != "grenade")
             {
                 UnityEngine.Debug.Log($"borgo Movement(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} {name}");
-                start.Arguments = $"{Path.Combine("Assets", "python", "borgo", $"{Borgo.oponent.ToLower()}.py")} {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} {name}";
+                start.Arguments = $"{pathToPython}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} {name}";
             }
             else
             {
@@ -268,7 +272,7 @@ public class BorgoConfig : MonoBehaviour
                 }
                 whq++; 
                 UnityEngine.Debug.Log($"borgo Movement(): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} grenade {whq}");
-                start.Arguments = $"{Path.Combine("Assets", "python", "borgo", $"{Borgo.oponent.ToLower()}.py")} {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} grenade {whq}";
+                start.Arguments = $"{pathToPython}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} grenade {whq}";
             }
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
@@ -381,7 +385,7 @@ public class BorgoConfig : MonoBehaviour
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = "python.exe";
             UnityEngine.Debug.Log($"borgo Pushing({idHex}): {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]}");
-            start.Arguments = $"{Path.Combine("Assets", "python", "borgo", $"{Borgo.oponent.ToLower()}.py")} {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} pushing {idHex}";
+            start.Arguments = $"{pathToPython}.py {Borgo.id[2]} {Borgo.id[3]} {Borgo.id[4]} {Borgo.id[5]} {Borgo.id[6]} {Borgo.id[7]} {Borgo.id[8]} {Borgo.id[9]} {Borgo.id[10]} {Borgo.id[11]} {Borgo.id[12]} {Borgo.id[13]} {Borgo.id[14]} {Borgo.id[15]} {Borgo.id[16]} {Borgo.id[17]} {Borgo.id[18]} {Borgo.id[19]} {Borgo.id[20]} {Borgo.id[21]} {Borgo.id[22]} {Borgo.id[23]} {Borgo.id[24]} {Borgo.id[25]} {Borgo.id[26]} {Borgo.id[27]} {Borgo.id[28]} {Borgo.id[29]} {Borgo.id[30]} {Borgo.id[31]} {Borgo.id[32]} {Borgo.id[33]} {Borgo.id[34]} {Borgo.id[35]} {Borgo.id[36]} {Borgo.id[37]} {Borgo.id[38]} {Borgo.id[39]} pushing {idHex}";
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
@@ -447,7 +451,7 @@ public class BorgoConfig : MonoBehaviour
     {
         ProcessStartInfo start = new ProcessStartInfo();
         start.FileName = "python.exe";
-        start.Arguments = $"{Path.Combine("Assets", "python", "borgo", $"{Borgo.oponent.ToLower()}Learn.py")}";
+        start.Arguments = $"{pathToPython}Learn.py";
         start.UseShellExecute = false;
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;

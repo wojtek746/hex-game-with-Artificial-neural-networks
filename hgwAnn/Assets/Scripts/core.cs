@@ -66,7 +66,7 @@ public class core : MonoBehaviour
         //zrobienie 4x na zmianê ruchu ka¿dego bota
         //for (int j = 0; j < 4; j++)
         int j = 0; 
-        for (j = 0; j <= 1000; j++)
+        for (j = 0; j <= 50; j++)
         {
             if (!iswin)
             {
