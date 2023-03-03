@@ -2051,9 +2051,11 @@ MonoBehaviour:
   Borgo: {fileID: 0}
   Create: {fileID: 0}
   Delete: {fileID: 0}
+  Battle: {fileID: 0}
   Core: {fileID: 0}
   isLife: 0
   shop: 0000000000000000000000000000000000000000
+  pathToPython: 
 --- !u!114 &1658152516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,7 +2186,7 @@ MonoBehaviour:
   Scout: {fileID: 8803025740789476377, guid: 9e8447c8abf1a384ab35b014447f9b90, type: 3}
   Battle: {fileID: 4959061405928075143, guid: 9793e15725db51948b83e048fb22104f, type: 3}
   Move: {fileID: 3179712441506360895, guid: eeef8de564dca014a9d557015e3124bb, type: 3}
-  Grenade: {fileID: 0}
+  Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
 --- !u!114 &1732199731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2217,8 +2219,10 @@ MonoBehaviour:
   Hegemonia: {fileID: 0}
   Create: {fileID: 0}
   Delete: {fileID: 0}
+  Battle: {fileID: 0}
   isLife: 0
   Core: {fileID: 0}
+  pathToPython: 
   shop: 0000000000000000000000000000000000000000
 --- !u!114 &1732199733
 MonoBehaviour:

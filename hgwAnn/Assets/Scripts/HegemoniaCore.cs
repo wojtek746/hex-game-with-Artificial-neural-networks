@@ -100,17 +100,20 @@ public class HegemoniaCore : MonoBehaviour
         objects = new List<Hex>(); 
         objects.Add(new Hex(0, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, false, ""));
         objects.Add(new Hex(20, new List<bool>() { false, true, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 1, 1, 1, 1 }, false, true, "HQ"));
-        objects.Add(new Hex(2, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 2, 1, 0, 0, 0, 1 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Brawler"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, false, true, "Medic"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Mutant"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 2, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Super_Mutant"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, false, true, "Officer"));
-        objects.Add(new Hex(2, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, false, true, "Super_Officer"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, false, true }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Butcher"));
-        objects.Add(new Hex(1, new List<bool>() { false, false, false, true }, new List<int>() { 1, 0, 0, 0, 0, 0 }, new List<int> { 1, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Assassin"));
-        objects.Add(new Hex(1, new List<bool>() { false, true, false, false }, new List<int>() { 2, 0, 0, 0, 0, 0 }, new List<int> { 3, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "NetFlighter"));
+        objects.Add(new Hex(1, new List<bool>() { true, false, false, false }, new List<int>() { 2, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Net_Fighter"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 0 }, false, true, "The_Boss"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, false, true, "OfficerII"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Runner"));
+        objects.Add(new Hex(2, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Guard"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 0, 0, 0, 0, 0 }, false, true, "QuarterMaster"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 1, 1, 1, 1 }, false, true, "Transport"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, true, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 2, 1, 0, 0, 0, 1 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Thug"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, true, false }, new List<int>() { 0, 2, 0, 0, 0, 2 }, new List<int> { 1, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Net_Master"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, true }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Ganger"));
+        objects.Add(new Hex(2, new List<bool>() { false, true, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 2, 2, 0, 0, 0, 2 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Gladiator"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, true }, new List<int>() { 1, 0, 0, 0, 0, 0 }, new List<int> { 2, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, false, true, "Uniwersal_Solider"));
+        objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 0 }, false, true, "OfficerI"));
         objects.Add(new Hex(1, new List<bool>() { false, false, false, false }, new List<int>() { 0, 0, 0, 0, 0, 0 }, new List<int> { 0, 0, 0, 0, 0, 0 }, new List<int> { 1, 1, 0, 0, 0, 1 }, false, true, "Scout"));
-
         Core = FindObjectsOfType<core>()[0];
     }
 
@@ -120,32 +123,40 @@ public class HegemoniaCore : MonoBehaviour
         {
             case "HQ":
                 return 1;
-            case "Brawler":
+            case "Net_Fighter":
                 return 2;
-            case "Medic":
+            case "The_Boss":
                 return 3;
-            case "Mutant":
+            case "OfficerII":
                 return 4;
-            case "Super_Mutant":
+            case "Runner":
                 return 5;
-            case "Officer":
+            case "Guard":
                 return 6;
-            case "Super_Officer":
+            case "QuarterMaster":
                 return 7;
-            case "Butcher":
+            case "Transport":
                 return 8;
-            case "Assassin":
+            case "Thug":
                 return 9;
-            case "NetFlighter":
+            case "Net_Master":
                 return 10;
-            case "Scout":
+            case "Ganger":
                 return 11;
-            case "Battle":
+            case "Gladiator":
                 return 12;
-            case "Move":
+            case "Uniwersal_Solider":
                 return 13;
+            case "OfficerI":
+                return 14;
+            case "Scout":
+                return 15;
+            case "Battle":
+                return 16;
+            case "Move":
+                return 17;
             case "Grenade":
-                return 14; 
+                return 18; 
             default:
                 return 0; 
         }

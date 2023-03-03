@@ -102,67 +102,67 @@ public class HegemoniaConfig : MonoBehaviour
             switch (random)
             {
                 case 2:
-                    gameObject = Create.Brawler;
+                    gameObject = Create.Net_Fighter;
                     name = "brawler";
                     fullName = "Brawler";
                     break;
                 case 3:
-                    gameObject = Create.Medic;
+                    gameObject = Create.The_Boss;
                     name = "medic";
                     fullName = "Medic";
                     break;
                 case 4:
-                    gameObject = Create.Mutant;
+                    gameObject = Create.;
                     name = "mutant";
                     fullName = "Mutant";
                     break;
                 case 5:
-                    gameObject = Create.Super_Mutant;
+                    gameObject = Create.;
                     name = "super_Mutant";
                     fullName = "Super_Mutant";
                     break;
                 case 6:
-                    gameObject = Create.Officer;
+                    gameObject = Create.;
                     name = "officer";
                     fullName = "Officer";
                     break;
                 case 7:
-                    gameObject = Create.Super_Officer;
+                    gameObject = Create.;
                     name = "super_Officer";
                     fullName = "Super_Officer";
                     break;
                 case 8:
-                    gameObject = Create.Butcher;
+                    gameObject = Create.;
                     name = "butcher";
                     fullName = "Butcher";
                     break;
                 case 9:
-                    gameObject = Create.Assassin;
+                    gameObject = Create.;
                     name = "assassin";
                     fullName = "Assassin";
                     break;
                 case 10:
-                    gameObject = Create.NetFlighter;
+                    gameObject = Create.;
                     name = "netFlighter";
                     fullName = "NetFlighter";
                     break;
                 case 11:
-                    gameObject = Create.Scout;
+                    gameObject = Create.;
                     name = "scout";
                     fullName = "Scout";
                     break;
                 case 12:
-                    gameObject = Create.Battle;
+                    gameObject = Create.;
                     name = "battle";
                     fullName = "Battle";
                     break;
                 case 13:
-                    gameObject = Create.Move;
+                    gameObject = Create.;
                     name = "move";
                     fullName = "Move";
                     break;
                 case 14:
-                    gameObject = Create.Grenade;
+                    gameObject = Create.;
                     name = "grenade";
                     fullName = "Grenade";
                     break;
@@ -261,7 +261,7 @@ public class HegemoniaConfig : MonoBehaviour
             start.FileName = "python.exe";
             if (name != "grenade")
             {
-                UnityEngine.Debug.Log($"hegemonia Movement(): {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}");
+                UnityEngine.Debug.Log($"hegemonia Movement(): {pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}");
                 start.Arguments = $"{pathToPython}.py {Hegemonia.id[2]} {Hegemonia.id[3]} {Hegemonia.id[4]} {Hegemonia.id[5]} {Hegemonia.id[6]} {Hegemonia.id[7]} {Hegemonia.id[8]} {Hegemonia.id[9]} {Hegemonia.id[10]} {Hegemonia.id[11]} {Hegemonia.id[12]} {Hegemonia.id[13]} {Hegemonia.id[14]} {Hegemonia.id[15]} {Hegemonia.id[16]} {Hegemonia.id[17]} {Hegemonia.id[18]} {Hegemonia.id[19]} {Hegemonia.id[20]} {Hegemonia.id[21]} {Hegemonia.id[22]} {Hegemonia.id[23]} {Hegemonia.id[24]} {Hegemonia.id[25]} {Hegemonia.id[26]} {Hegemonia.id[27]} {Hegemonia.id[28]} {Hegemonia.id[29]} {Hegemonia.id[30]} {Hegemonia.id[31]} {Hegemonia.id[32]} {Hegemonia.id[33]} {Hegemonia.id[34]} {Hegemonia.id[35]} {Hegemonia.id[36]} {Hegemonia.id[37]} {Hegemonia.id[38]} {Hegemonia.id[39]} {name}";
             }
             else

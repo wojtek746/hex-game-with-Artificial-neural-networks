@@ -10,15 +10,19 @@ public class HegemoniaCreate : MonoBehaviour
     public HegemoniaCore hegemonia;
 
     public GameObject HQ;
-    public GameObject Brawler;
-    public GameObject Medic;
-    public GameObject Mutant;
-    public GameObject Super_Mutant;
-    public GameObject Officer;
-    public GameObject Super_Officer;
-    public GameObject Butcher;
-    public GameObject Assassin;
-    public GameObject NetFlighter;
+    public GameObject Net_Fighter;
+    public GameObject The_Boss;
+    public GameObject OfficerII;
+    public GameObject Runner;
+    public GameObject Guard;
+    public GameObject QuarterMaster;
+    public GameObject Transport;
+    public GameObject Thug;
+    public GameObject Net_Master;
+    public GameObject Ganger;
+    public GameObject Gladiator;
+    public GameObject Uniwersal_Solider;
+    public GameObject OfficerI;
     public GameObject Scout;
     public GameObject Battle;
     public GameObject Move;
@@ -46,35 +50,56 @@ public class HegemoniaCreate : MonoBehaviour
                         case "HQ":
                             gameObject = HQ;
                             break;
-                        case "Brawler":
-                            gameObject = Brawler;
+                        case "Net_Fighter":
+                            gameObject = Net_Fighter;
                             break;
-                        case "Medic":
-                            gameObject = Medic;
+                        case "The_Boss":
+                            gameObject = The_Boss;
                             break;
-                        case "Mutant":
-                            gameObject = Mutant;
+                        case "OfficerII":
+                            gameObject = OfficerII;
                             break;
-                        case "Super_Mutant":
-                            gameObject = Super_Mutant;
+                        case "Runner":
+                            gameObject = Runner;
                             break;
-                        case "Officer":
-                            gameObject = Officer;
+                        case "Guard":
+                            gameObject = Guard;
                             break;
-                        case "Super_Officer":
-                            gameObject = Super_Officer;
+                        case "QuarterMaster":
+                            gameObject = QuarterMaster;
                             break;
-                        case "Butcher":
-                            gameObject = Butcher;
+                        case "Transport":
+                            gameObject = Transport;
                             break;
-                        case "Assassin":
-                            gameObject = Assassin;
+                        case "Thug":
+                            gameObject = Thug;
                             break;
-                        case "NetFlighter":
-                            gameObject = NetFlighter;
+                        case "Net_Master":
+                            gameObject = Net_Master;
+                            break;
+                        case "Ganger":
+                            gameObject = Ganger;
+                            break;
+                        case "Gladiator":
+                            gameObject = Gladiator;
+                            break;
+                        case "Uniwersal_Solider":
+                            gameObject = Uniwersal_Solider;
+                            break;
+                        case "OfficerI":
+                            gameObject = OfficerI;
                             break;
                         case "Scout":
                             gameObject = Scout;
+                            break;
+                        case "Battle":
+                            gameObject = Battle;
+                            break;
+                        case "Move":
+                            gameObject = Move;
+                            break;
+                        case "Grenade":
+                            gameObject = Grenade;
                             break;
                         default:
                             gameObject = null;

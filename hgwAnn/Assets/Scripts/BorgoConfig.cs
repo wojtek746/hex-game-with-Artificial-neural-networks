@@ -27,6 +27,7 @@ public class BorgoConfig : MonoBehaviour
         Battle = FindObjectsOfType<BorgoBattle>()[0];
         GameObject borgo = GameObject.Find("borgo");
         Borgo.StartGame();
+        Create.StartGame();
         Delete.StartGame();
         Battle.StartGame(); 
         int pyth;

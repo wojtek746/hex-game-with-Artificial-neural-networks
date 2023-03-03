@@ -93,17 +93,6 @@ public class HegemoniaBattle : MonoBehaviour
         {
             if (health > 0)
             {
-                //medyk leczy atakowanego
-                ArrayList a = hegemonia.isLooking(idHex + 1, "Medic");
-                if ((bool)a[0])
-                {
-                    if (hegemonia.hex[Int32.Parse(a[1].ToString())].distance[Int32.Parse(a[2].ToString())] == 2) 
-                    {
-                        health--;
-                        Delete.Delete(Int32.Parse(a[1].ToString()));
-                    }
-                }
-
                 //obni¿enie zdrowia atakowanego (nie jest on na razie usuwany, poniewa¿ nawet, je¿eli bêdzie mia³ -100 ¿ycia, to i tak mo¿e atakowaæ w tej inicjatywie)
                 hegemonia.hex[idHex - 1].setHealth(hegemonia.hex[idHex - 1].health - health); 
             }
