@@ -37,7 +37,7 @@ public class BorgoCreate : MonoBehaviour
             while (true)
             {
                 //sprawdzanie, czy mo¿na stworzyæ w danym miejscu element
-                if (borgo.hex[idHex - 1].name == "")
+                if (!borgo.hex[idHex - 1].isLife)
                 {
                     GameObject gameObject;
 

@@ -155,8 +155,10 @@ public class HegemoniaCore : MonoBehaviour
                 return 16;
             case "Move":
                 return 17;
-            case "Grenade":
-                return 18; 
+            case "PushBack":
+                return 18;
+            case "Sniper":
+                return 19;
             default:
                 return 0; 
         }

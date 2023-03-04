@@ -363,7 +363,15 @@ public class BorgoConfig : MonoBehaviour
 
     public int GiveId(int i)
     {
-        return Borgo.id[i];
+        if (i < 2)
+        {
+            return 0;
+        }
+        if (i % 2 == 0)
+        {
+            return Borgo.GetId(Borgo.hex[(i / 2) - 1].name);
+        }
+        return Borgo.hex[((i - 1) / 2) - 1].whereLook;
     }
 
     public void GrenadeF(int idHex)

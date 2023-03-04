@@ -103,68 +103,93 @@ public class HegemoniaConfig : MonoBehaviour
             {
                 case 2:
                     gameObject = Create.Net_Fighter;
-                    name = "brawler";
-                    fullName = "Brawler";
+                    name = "net_Fighter";
+                    fullName = "Net_Fighter";
                     break;
                 case 3:
                     gameObject = Create.The_Boss;
-                    name = "medic";
-                    fullName = "Medic";
+                    name = "the_Boss";
+                    fullName = "The_Boss";
                     break;
                 case 4:
-                    gameObject = Create.;
-                    name = "mutant";
-                    fullName = "Mutant";
+                    gameObject = Create.OfficerII;
+                    name = "officerII";
+                    fullName = "OfficerII";
                     break;
                 case 5:
-                    gameObject = Create.;
-                    name = "super_Mutant";
-                    fullName = "Super_Mutant";
+                    gameObject = Create.Runner;
+                    name = "runner";
+                    fullName = "Runner";
                     break;
                 case 6:
-                    gameObject = Create.;
-                    name = "officer";
-                    fullName = "Officer";
+                    gameObject = Create.Guard;
+                    name = "guard";
+                    fullName = "Guard";
                     break;
                 case 7:
-                    gameObject = Create.;
-                    name = "super_Officer";
-                    fullName = "Super_Officer";
+                    gameObject = Create.QuarterMaster;
+                    name = "quarterMaster";
+                    fullName = "QuarterMaster";
                     break;
                 case 8:
-                    gameObject = Create.;
-                    name = "butcher";
-                    fullName = "Butcher";
+                    gameObject = Create.Transport;
+                    name = "transport";
+                    fullName = "Transport";
                     break;
                 case 9:
-                    gameObject = Create.;
-                    name = "assassin";
-                    fullName = "Assassin";
+                    gameObject = Create.Thug;
+                    name = "thug";
+                    fullName = "Thug";
                     break;
                 case 10:
-                    gameObject = Create.;
-                    name = "netFlighter";
-                    fullName = "NetFlighter";
+                    gameObject = Create.Net_Master;
+                    name = "net_Master";
+                    fullName = "Net_Master";
                     break;
                 case 11:
-                    gameObject = Create.;
+                    gameObject = Create.Ganger;
+                    name = "ganger";
+                    fullName = "Ganger";
+                    break;
+                case 12:
+                    gameObject = Create.Gladiator;
+                    name = "gladiator";
+                    fullName = "Gladiator";
+                    break;
+                case 13:
+                    gameObject = Create.Uniwersal_Solider;
+                    name = "uniwersal_Solider";
+                    fullName = "Uniwersal_Solider";
+                    break;
+                case 14:
+                    gameObject = Create.OfficerI;
+                    name = "officerI";
+                    fullName = "OfficerI";
+                    break;
+                case 15:
+                    gameObject = Create.Scout;
                     name = "scout";
                     fullName = "Scout";
                     break;
-                case 12:
-                    gameObject = Create.;
+                case 16:
+                    gameObject = Create.Battle;
                     name = "battle";
                     fullName = "Battle";
                     break;
-                case 13:
-                    gameObject = Create.;
+                case 17:
+                    gameObject = Create.Move;
                     name = "move";
                     fullName = "Move";
                     break;
-                case 14:
-                    gameObject = Create.;
-                    name = "grenade";
-                    fullName = "Grenade";
+                case 18:
+                    gameObject = Create.PushBack;
+                    name = "pushBack";
+                    fullName = "PushBack";
+                    break;
+                case 19:
+                    gameObject = Create.Sniper;
+                    name = "sniper";
+                    fullName = "Sniper";
                     break;
                 default:
                     gameObject = null;
@@ -185,69 +210,94 @@ public class HegemoniaConfig : MonoBehaviour
             switch (shop[i])
             {
                 case 2:
-                    gameObject = Create.Brawler;
-                    name = "brawler";
-                    fullName = "Brawler";
+                    gameObject = Create.Net_Fighter;
+                    name = "net_Fighter";
+                    fullName = "Net_Fighter";
                     break;
                 case 3:
-                    gameObject = Create.Medic;
-                    name = "medic";
-                    fullName = "Medic";
+                    gameObject = Create.The_Boss;
+                    name = "the_Boss";
+                    fullName = "The_Boss";
                     break;
                 case 4:
-                    gameObject = Create.Mutant;
-                    name = "mutant";
-                    fullName = "Mutant";
+                    gameObject = Create.OfficerII;
+                    name = "officerII";
+                    fullName = "OfficerII";
                     break;
                 case 5:
-                    gameObject = Create.Super_Mutant;
-                    name = "super_Mutant";
-                    fullName = "Super_Mutant";
+                    gameObject = Create.Runner;
+                    name = "runner";
+                    fullName = "Runner";
                     break;
                 case 6:
-                    gameObject = Create.Officer;
-                    name = "officer";
-                    fullName = "Officer";
+                    gameObject = Create.Guard;
+                    name = "guard";
+                    fullName = "Guard";
                     break;
                 case 7:
-                    gameObject = Create.Super_Officer;
-                    name = "super_Officer";
-                    fullName = "Super_Officer";
+                    gameObject = Create.QuarterMaster;
+                    name = "quarterMaster";
+                    fullName = "QuarterMaster";
                     break;
                 case 8:
-                    gameObject = Create.Butcher;
-                    name = "butcher";
-                    fullName = "Butcher";
+                    gameObject = Create.Transport;
+                    name = "transport";
+                    fullName = "Transport";
                     break;
                 case 9:
-                    gameObject = Create.Assassin;
-                    name = "assassin";
-                    fullName = "Assassin";
+                    gameObject = Create.Thug;
+                    name = "thug";
+                    fullName = "Thug";
                     break;
                 case 10:
-                    gameObject = Create.NetFlighter;
-                    name = "netFlighter";
-                    fullName = "NetFlighter";
+                    gameObject = Create.Net_Master;
+                    name = "net_Master";
+                    fullName = "Net_Master";
                     break;
                 case 11:
+                    gameObject = Create.Ganger;
+                    name = "ganger";
+                    fullName = "Ganger";
+                    break;
+                case 12:
+                    gameObject = Create.Gladiator;
+                    name = "gladiator";
+                    fullName = "Gladiator";
+                    break;
+                case 13:
+                    gameObject = Create.Uniwersal_Solider;
+                    name = "uniwersal_Solider";
+                    fullName = "Uniwersal_Solider";
+                    break;
+                case 14:
+                    gameObject = Create.OfficerI;
+                    name = "officerI";
+                    fullName = "OfficerI";
+                    break;
+                case 15:
                     gameObject = Create.Scout;
                     name = "scout";
                     fullName = "Scout";
                     break;
-                case 12:
+                case 16:
                     gameObject = Create.Battle;
                     name = "battle";
                     fullName = "Battle";
                     break;
-                case 13:
+                case 17:
                     gameObject = Create.Move;
                     name = "move";
                     fullName = "Move";
                     break;
-                case 14:
-                    gameObject = Create.Grenade;
-                    name = "grenade";
-                    fullName = "Grenade";
+                case 18:
+                    gameObject = Create.PushBack;
+                    name = "pushBack";
+                    fullName = "PushBack";
+                    break;
+                case 19:
+                    gameObject = Create.Sniper;
+                    name = "sniper";
+                    fullName = "Sniper";
                     break;
                 default:
                     gameObject = null;
@@ -367,7 +417,15 @@ public class HegemoniaConfig : MonoBehaviour
 
     public int GiveId(int i)
     {
-        return Hegemonia.id[i]; 
+        if(i < 2)
+        {
+            return 0; 
+        }
+        if (i % 2 == 0)
+        {
+            return Hegemonia.GetId(Hegemonia.hex[(i / 2) - 1].name);
+        }
+        return Hegemonia.hex[((i - 1) / 2) - 1].whereLook; 
     }
 
     public void GrenadeF(int idHex)
@@ -412,33 +470,45 @@ public class HegemoniaConfig : MonoBehaviour
             switch (Hegemonia.id[idHex * 2])
             {
                 case 2:
-                    name = "Brawler";
+                    name = "Net_Fighter";
                     break;
                 case 3:
-                    name = "Medic";
+                    name = "The_Boss";
                     break;
                 case 4:
-                    name = "Mutant";
+                    name = "OfficerII";
                     break;
                 case 5:
-                    name = "Super_Mutant";
+                    name = "Runner";
                     break;
                 case 6:
-                    name = "Officer";
+                    name = "Guard";
                     break;
                 case 7:
-                    name = "Super_Officer";
+                    name = "QuarterMaster";
                     break;
                 case 8:
-                    name = "Butcher";
+                    name = "Transport";
                     break;
                 case 9:
-                    name = "Assassin";
+                    name = "Thug";
                     break;
                 case 10:
-                    name = "NetFlighter";
+                    name = "Net_Master";
                     break;
                 case 11:
+                    name = "Ganger";
+                    break;
+                case 12:
+                    name = "Gladiator";
+                    break;
+                case 13:
+                    name = "Uniwersal_Solider";
+                    break;
+                case 14:
+                    name = "OfficerI";
+                    break;
+                case 15:
                     name = "Scout";
                     break;
                 default:

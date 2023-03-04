@@ -36,13 +36,19 @@ public class core : MonoBehaviour
             case "Borgo":
                 bor.isLife = true; 
                 bor.StartGame(1, bot2);
-                GetId(1);
+                for (int i = 0; i < 40; i++)
+                {
+                    id[i] = bor.GiveId(i);
+                }
                 UnityEngine.Debug.Log($"core Start(): bor.StartGame(): {id[2]} {id[3]} {id[4]} {id[5]} {id[6]} {id[7]} {id[8]} {id[9]} {id[10]} {id[11]} {id[12]} {id[13]} {id[14]} {id[15]} {id[16]} {id[17]} {id[18]} {id[19]} {id[20]} {id[21]} {id[22]} {id[23]} {id[24]} {id[25]} {id[26]} {id[27]} {id[28]} {id[29]} {id[30]} {id[31]} {id[32]} {id[33]} {id[34]} {id[35]} {id[36]} {id[37]} {id[38]} {id[39]}");
                 break;
             case "Hegemonia":
                 heg.isLife = true;
                 heg.StartGame(1, bot2);
-                GetId(1);
+                for (int i = 0; i < 40; i++)
+                {
+                    id[i] = heg.GiveId(i);
+                }
                 UnityEngine.Debug.Log($"core Start(): heg.StartGame(): {id[2]} {id[3]} {id[4]} {id[5]} {id[6]} {id[7]} {id[8]} {id[9]} {id[10]} {id[11]} {id[12]} {id[13]} {id[14]} {id[15]} {id[16]} {id[17]} {id[18]} {id[19]} {id[20]} {id[21]} {id[22]} {id[23]} {id[24]} {id[25]} {id[26]} {id[27]} {id[28]} {id[29]} {id[30]} {id[31]} {id[32]} {id[33]} {id[34]} {id[35]} {id[36]} {id[37]} {id[38]} {id[39]}");
                 break;
         }
@@ -52,13 +58,13 @@ public class core : MonoBehaviour
             case "Borgo":
                 bor.isLife = true;
                 bor.StartGame(2, bot1);
-                GetId(2);
+                GetId();
                 UnityEngine.Debug.Log($"core Start(): bor.StartGame(): {id[2]} {id[3]} {id[4]} {id[5]} {id[6]} {id[7]} {id[8]} {id[9]} {id[10]} {id[11]} {id[12]} {id[13]} {id[14]} {id[15]} {id[16]} {id[17]} {id[18]} {id[19]} {id[20]} {id[21]} {id[22]} {id[23]} {id[24]} {id[25]} {id[26]} {id[27]} {id[28]} {id[29]} {id[30]} {id[31]} {id[32]} {id[33]} {id[34]} {id[35]} {id[36]} {id[37]} {id[38]} {id[39]}");
                 break;
             case "Hegemonia":
                 heg.isLife = true;
                 heg.StartGame(2, bot1);
-                GetId(2); 
+                GetId(); 
                 UnityEngine.Debug.Log($"core Start(): heg.StartGame(): {id[2]} {id[3]} {id[4]} {id[5]} {id[6]} {id[7]} {id[8]} {id[9]} {id[10]} {id[11]} {id[12]} {id[13]} {id[14]} {id[15]} {id[16]} {id[17]} {id[18]} {id[19]} {id[20]} {id[21]} {id[22]} {id[23]} {id[24]} {id[25]} {id[26]} {id[27]} {id[28]} {id[29]} {id[30]} {id[31]} {id[32]} {id[33]} {id[34]} {id[35]} {id[36]} {id[37]} {id[38]} {id[39]}");
                 break;
         }
@@ -75,22 +81,22 @@ public class core : MonoBehaviour
                 {
                     case "Hegemonia":
                         heg.Movement();
-                        GetId(1); 
+                        GetId(); 
                         break;
                     case "Borgo":
                         bor.Movement();
-                        GetId(1);
+                        GetId();
                         break;
                 }
                 switch (bot2)
                 {
                     case "Hegemonia":
                         heg.Movement();
-                        GetId(2);
+                        GetId();
                         break;
                     case "Borgo":
                         bor.Movement();
-                        GetId(2);
+                        GetId();
                         break;
                 }
             }
@@ -238,14 +244,14 @@ public class core : MonoBehaviour
             case "Hegemonia":
                 if (name != "Hegemonia")
                 {
-                    GetId(2);
+                    GetId();
                     hegBattle.Attack(idHex, health, isNet);
                 }
                 break;
             case "Borgo":
                 if (name != "Borgo")
                 {
-                    GetId(2);
+                    GetId();
                     borBattle.Attack(idHex, health, isNet);
                 }
                 break;
@@ -255,72 +261,68 @@ public class core : MonoBehaviour
             case "Hegemonia":
                 if (name != "Hegemonia")
                 {
-                    GetId(1);
+                    GetId();
                     hegBattle.Attack(idHex, health, isNet);
                 }
                 break;
             case "Borgo":
                 if (name != "Borgo")
                 {
-                    GetId(1);
+                    GetId();
                     borBattle.Attack(idHex, health, isNet);
                 }
                 break;
         }
     }
 
-    public void GetId(int s)
+    public void GetId()
     {
-        switch (s)
+        switch (bot1)
         {
-            case 1:
-                switch (bot1)
+            case "Hegemonia":
+                for (int i = 0; i < 40; i++)
                 {
-                    case "Hegemonia":
-                        for (int i = 0; i < 40; i++)
+                    id[i] = heg.GiveId(i);
+                }
+                break;
+            case "Borgo":
+                for (int i = 0; i < 40; i++)
+                {
+                    id[i] = bor.GiveId(i);
+                }
+                break;
+        }
+        switch (bot2)
+        {
+            case "Hegemonia":
+                for (int i = 0; i < 40; i++)
+                {
+                    if (id[i] == 0)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            id[i] = heg.GiveId(i) * -1;
+                        }
+                        else
                         {
                             id[i] = heg.GiveId(i);
                         }
-                        break;
-                    case "Borgo":
-                        for (int i = 0; i < 40; i++)
-                        {
-                            id[i] = bor.GiveId(i);
-                        }
-                        break;
+                    }
                 }
                 break;
-            case 2:
-                switch (bot2)
+            case "Borgo":
+                for (int i = 0; i < 40; i++)
                 {
-                    case "Hegemonia":
-                        for (int i = 0; i < 40; i++)
-                        {
-                            if (i % 2 == 0)
-                            {
-                                id[i] = heg.GiveId(i) * -1;
-                            }
-                            else
-                            {
-                                id[i] = heg.GiveId(i);
-                            }
-                        }
-                        break;
-                    case "Borgo":
-                        for (int i = 0; i < 40; i++)
-                        {
-                            if (i % 2 == 0)
-                            {
-                                id[i] = bor.GiveId(i) * -1;
-                            }
-                            else
-                            {
-                                id[i] = heg.GiveId(i);
-                            }
-                        }
-                        break;
+                    if (i % 2 == 0)
+                    {
+                        id[i] = bor.GiveId(i) * -1;
+                    }
+                    else
+                    {
+                        id[i] = heg.GiveId(i);
+                    }
                 }
-                break; 
+                break;
         }
     }
 
@@ -332,14 +334,14 @@ public class core : MonoBehaviour
             case "Hegemonia":
                 if(name != "Hegemonia")
                 {
-                    GetId(2); 
+                    GetId(); 
                     heg.GrenadeF(idHex); 
                 }
                 break;
             case "Borgo":
                 if(name != "Borgo")
                 {
-                    GetId(2);
+                    GetId();
                     bor.GrenadeF(idHex); 
                 }
                 break; 
@@ -349,14 +351,14 @@ public class core : MonoBehaviour
             case "Hegemonia":
                 if(name != "Hegemonia")
                 {
-                    GetId(1);
+                    GetId();
                     heg.GrenadeF(idHex); 
                 }
                 break;
             case "Borgo":
                 if(name != "Borgo")
                 {
-                    GetId(1);
+                    GetId();
                     bor.GrenadeF(idHex); 
                 }
                 break; 

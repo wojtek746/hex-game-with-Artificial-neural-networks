@@ -26,7 +26,8 @@ public class HegemoniaCreate : MonoBehaviour
     public GameObject Scout;
     public GameObject Battle;
     public GameObject Move;
-    public GameObject Grenade;
+    public GameObject PushBack;
+    public GameObject Sniper;
 
     public void StartGame()
     {
@@ -41,7 +42,7 @@ public class HegemoniaCreate : MonoBehaviour
             while (true)
             {
                 //sprawdzanie, czy mo¿na stworzyæ w danym miejscu element
-                if (hegemonia.hex[idHex - 1].name == "")
+                if (hegemonia.hex[idHex - 1].isLife)
                 {
                     GameObject gameObject;
 
@@ -98,8 +99,11 @@ public class HegemoniaCreate : MonoBehaviour
                         case "Move":
                             gameObject = Move;
                             break;
-                        case "Grenade":
-                            gameObject = Grenade;
+                        case "PushBack":
+                            gameObject = PushBack;
+                            break;
+                        case "Sniper":
+                            gameObject = Sniper;
                             break;
                         default:
                             gameObject = null;
