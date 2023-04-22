@@ -1,0 +1,66 @@
+{
+    "HQ": [
+        {
+            "layer": 10,
+            "bias": 2,
+            "dendrites": [
+                {
+                    "looking": 0,
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "layer": 10,
+            "bias": 1,
+            "dendrites": [
+                {
+                    "looking": 0,
+                    "weight": -1
+                }
+            ]
+        },
+        {
+            "layer": 10,
+            "bias": 0,
+            "dendrites": [
+                {
+                    "looking": 3,
+                    "weight": 1
+                }
+            ]
+        }
+    ], 
+    "A": [
+        {
+            "layer": 10,
+            "bias": 2,
+            "dendrites": [
+                {
+                    "looking": 0,
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "layer": 10,
+            "bias": 1,
+            "dendrites": [
+                {
+                    "looking": 0,
+                    "weight": -1
+                }
+            ]
+        },
+        {
+            "layer": 10,
+            "bias": 0,
+            "dendrites": [
+                {
+                    "looking": 3,
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}
