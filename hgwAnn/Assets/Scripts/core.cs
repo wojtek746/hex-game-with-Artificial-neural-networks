@@ -43,6 +43,7 @@ public class core : MonoBehaviour
         heg.StartGame(2, bot1);
         GetId();
 
+        bor.Test(); 
         heg.Test(); 
     }
 

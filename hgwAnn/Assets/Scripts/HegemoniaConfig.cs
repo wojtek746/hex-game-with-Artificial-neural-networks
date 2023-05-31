@@ -54,9 +54,9 @@ public class HegemoniaConfig : MonoBehaviour
 
     public void Test()
     {
-        Create.Create("Runner", 2, 1);
-        Create.Create("Guard", 2, 1);
-        Create.Create("Guard", 3, 1);
+        StartCoroutine(Create.Create("Runner", 2, 1));
+        StartCoroutine(Create.Create("Guard", 2, 1));
+        StartCoroutine(Create.Create("Guard", 3, 1));
         Delete.Delete(3); 
     }
 

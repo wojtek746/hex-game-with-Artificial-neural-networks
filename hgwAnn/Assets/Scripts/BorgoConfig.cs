@@ -51,6 +51,14 @@ public class BorgoConfig : MonoBehaviour
         GetId();
     }
 
+    public void Test()
+    {
+        StartCoroutine(Create.Create("Brawler", 2, 1));
+        StartCoroutine(Create.Create("Mutant", 2, 1));
+        StartCoroutine(Create.Create("Mutant", 3, 1));
+        Delete.Delete(3);
+    }
+
     public void GetId()
     {
         //pobranie tablicy id z rdzenia (nie wa�ne jak dzia�a, wa�ne, �e dzia�a xd)

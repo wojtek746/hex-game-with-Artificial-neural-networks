@@ -138,7 +138,6 @@ public class HegemoniaCreate : MonoBehaviour
                     hegemonia.hex[idHex - 1].setIsLife(hegemonia.objects[hegemonia.GetId(name)].isLife);
                     hegemonia.hex[idHex - 1].setName(name);
 
-
                     //tworzymy element na scenie
                     GameObject hex;
                     hex = GameObject.Find("hex " + idHex);
