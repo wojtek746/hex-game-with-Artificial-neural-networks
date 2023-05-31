@@ -153,7 +153,7 @@ public class BorgoCore : MonoBehaviour
 
     public int Around(int idHex, int looks, int far)
     {
-        //zwraca id elementu, na który siê patrzy
+        //zwraca id elementu, na ktï¿½ry siï¿½ patrzy
         switch (idHex)
         {
             case 1:
@@ -1125,7 +1125,7 @@ public class BorgoCore : MonoBehaviour
                 if (hex[a - 1].name == name)
                 {
                     int j = (i + 3) % 6;
-                    return new ArrayList() { true, a, j }; //0 - czy siê patrzy, 1 - gdzie jest patrz¹cy, 2 - w któr¹ stronê musi patrzeæ, ¿eby widzieæ
+                    return new ArrayList() { true, a, j }; //0 - czy siï¿½ patrzy, 1 - gdzie jest patrzï¿½cy, 2 - w ktï¿½rï¿½ stronï¿½ musi patrzeï¿½, ï¿½eby widzieï¿½
                 }
             }
         }

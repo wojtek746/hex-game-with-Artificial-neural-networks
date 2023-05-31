@@ -106,27 +106,4 @@ public class BorgoDelete : MonoBehaviour
             }
         }
     }
-
-    public void DeleteAll()
-    {
-        //usuwa wszystkie elementy, które maj¹ 0 lub mniej ¿ycia, ale istniej¹
-        UnityEngine.Debug.Log($"borgo DeleteAll()");
-        Config.GetId();
-
-        for (int i = 0; i < 19; i++)
-        {
-            if (borgo.hex[i].isLife)
-            {
-                if (borgo.hex[i].health <= 0) 
-                {
-                    Delete(i + 1);
-                }
-            }
-        }
-
-        if (!Config.isHQLife(true))
-        {
-            Config.isLife = false;
-        }
-    }
 }

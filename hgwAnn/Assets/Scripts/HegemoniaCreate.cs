@@ -36,12 +36,12 @@ public class HegemoniaCreate : MonoBehaviour
 
     public IEnumerator Create(string name, int idHex, int rotation)
     {
-        //je¿eli two¿ymy na planszy
+        //jeï¿½eli twoï¿½ymy na planszy
         if (idHex > 0 && idHex < 20)
         {
             while (true)
             {
-                //sprawdzanie, czy mo¿na stworzyæ w danym miejscu element
+                //sprawdzanie, czy moï¿½na stworzyï¿½ w danym miejscu element
                 if (hegemonia.hex[idHex - 1].isLife)
                 {
                     GameObject gameObject;
@@ -234,7 +234,7 @@ public class HegemoniaCreate : MonoBehaviour
                     StopCoroutine("Create");
                     break;
                 }
-                //sztab musi zostaæ postawiony
+                //sztab musi zostaï¿½ postawiony
                 else if (name == "HQ")
                 {
                     idHex = UnityEngine.Random.Range(0, 20);
