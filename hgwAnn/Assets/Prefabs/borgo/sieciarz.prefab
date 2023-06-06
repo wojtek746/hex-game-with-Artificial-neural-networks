@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7531587493097623669}
   - component: {fileID: 7912645487133513080}
+  - component: {fileID: 992504987624388092}
   m_Layer: 0
   m_Name: sieciarz
   m_TagString: Untagged
@@ -84,3 +85,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &992504987624388092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457762639322376613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695f36e900678ca41a23fd8b65d67d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  name: sieciarz
+  id: 0
+  nameSztab: borgo
+  whereLook: 0
+  initiative: 00010000
+  distance: 020000000000000000000000000000000000000000000000
+  strength: 030000000000000000000000000000000000000000000000
+  functions: 000000000000000000000000000000000000000000000000
+  net: 0
+  isLife: 1
+  defultHealth: 0
+  defultInitiative: 
+  defultDistance: 
+  defultStrength: 
+  defultFunctions: 
+  virtualInitiative: 00000000
+  virtualDistance: 000000000000000000000000000000000000000000000000
+  virtualStrength: 000000000000000000000000000000000000000000000000
+  virtualFunctions: 000000000000000000000000000000000000000000000000
+  virtualNet: 0
+  virtualIsLife: 0
+  isMedyk: 0
+  isOficer: 0
+  isMove: 0
+  isZwiadowca: 0

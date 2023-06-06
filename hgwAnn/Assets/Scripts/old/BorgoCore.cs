@@ -5,78 +5,79 @@ using System.Diagnostics;
 using System.IO;
 using System;
 
+public struct Hex
+{
+    public int health;
+    public int whereLook;
+    public List<bool> initiative;
+    public List<int> distance;
+    public List<int> strength;
+    public List<int> functions;
+    public bool net;
+    public bool isLife;
+    public string name;
+
+    public Hex(int health, List<bool> initiative, List<int> distance, List<int> strength, List<int> functions, bool net, bool isLife, string name)
+    {
+        this.health = health;
+        this.whereLook = 0;
+        this.initiative = initiative;
+        this.distance = distance;
+        this.strength = strength;
+        this.functions = functions;
+        this.net = net;
+        this.isLife = isLife;
+        this.name = name;
+    }
+
+    public void setHealth(int health)
+    {
+        this.health = health;
+    }
+
+    public void setWhereLook(int whereLook)
+    {
+        this.whereLook = whereLook;
+    }
+
+    public void setInitiative(bool initiative, int where)
+    {
+        this.initiative[where] = initiative;
+    }
+
+    public void setDistance(int distance, int where)
+    {
+        this.distance[where] = distance;
+    }
+
+    public void setStrength(int strength, int where)
+    {
+        this.strength[where] = strength;
+    }
+
+    public void setFunctions(int functions, int where)
+    {
+        this.functions[where] = functions;
+    }
+
+    public void setNet(bool net)
+    {
+        this.net = net;
+    }
+
+    public void setIsLife(bool isLife)
+    {
+        this.isLife = isLife;
+    }
+
+    public void setName(string name)
+    {
+        this.name = name;
+    }
+}
+
 public class BorgoCore : MonoBehaviour
 {
-    public struct Hex
-    {
-        public int health;
-        public int whereLook; 
-        public List<bool> initiative;
-        public List<int> distance;
-        public List<int> strength;
-        public List<int> functions;
-        public bool net;
-        public bool isLife;
-        public string name;
-
-        public Hex(int health, List<bool> initiative, List<int> distance, List<int> strength, List<int> functions, bool net, bool isLife, string name)
-        {
-            this.health = health;
-            this.whereLook = 0; 
-            this.initiative = initiative;
-            this.distance = distance;
-            this.strength = strength;
-            this.functions = functions;
-            this.net = net;
-            this.isLife = isLife;
-            this.name = name;
-        }
-
-        public void setHealth(int health)
-        {
-            this.health = health;
-        }
-
-        public void setWhereLook(int whereLook)
-        {
-            this.whereLook = whereLook;
-        }
-
-        public void setInitiative(bool initiative, int where)
-        {
-            this.initiative[where] = initiative;
-        }
-
-        public void setDistance(int distance, int where)
-        {
-            this.distance[where] = distance;
-        }
-
-        public void setStrength(int strength, int where)
-        {
-            this.strength[where] = strength;
-        }
-
-        public void setFunctions(int functions, int where)
-        {
-            this.functions[where] = functions;
-        }
-
-        public void setNet(bool net)
-        {
-            this.net = net;
-        }
-
-        public void setIsLife(bool isLife)
-        {
-            this.isLife = isLife;
-        }
-
-        public void setName(string name)
-        {
-            this.name = name;
-        }
-    }
 
     public int which;
     public string oponent;
@@ -153,7 +154,7 @@ public class BorgoCore : MonoBehaviour
 
     public int Around(int idHex, int looks, int far)
     {
-        //zwraca id elementu, na który siê patrzy
+        //zwraca id elementu, na ktï¿½ry siï¿½ patrzy
         switch (idHex)
         {
             case 1:
@@ -1125,7 +1126,7 @@ public class BorgoCore : MonoBehaviour
                 if (hex[a - 1].name == name)
                 {
                     int j = (i + 3) % 6;
-                    return new ArrayList() { true, a, j }; //0 - czy siê patrzy, 1 - gdzie jest patrz¹cy, 2 - w któr¹ stronê musi patrzeæ, ¿eby widzieæ
+                    return new ArrayList() { true, a, j }; //0 - czy siï¿½ patrzy, 1 - gdzie jest patrzï¿½cy, 2 - w ktï¿½rï¿½ stronï¿½ musi patrzeï¿½, ï¿½eby widzieï¿½
                 }
             }
         }

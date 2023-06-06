@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8517036355109438303}
   - component: {fileID: 780213287869933940}
+  - component: {fileID: 9050821942470110372}
   m_Layer: 0
   m_Name: superoficer
   m_TagString: Untagged
@@ -84,3 +85,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9050821942470110372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254267592371050508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695f36e900678ca41a23fd8b65d67d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  name: superoficer
+  id: 0
+  nameSztab: borgo
+  whereLook: 0
+  initiative: 01000000
+  distance: 000000000000000000000000000000000000000000000000
+  strength: 000000000000000000000000000000000000000000000000
+  functions: 010000000100000000000000000000000000000001000000
+  net: 0
+  isLife: 1
+  defultHealth: 0
+  defultInitiative: 
+  defultDistance: 
+  defultStrength: 
+  defultFunctions: 
+  virtualInitiative: 00000000
+  virtualDistance: 000000000000000000000000000000000000000000000000
+  virtualStrength: 000000000000000000000000000000000000000000000000
+  virtualFunctions: 000000000000000000000000000000000000000000000000
+  virtualNet: 0
+  virtualIsLife: 0
+  isMedyk: 0
+  isOficer: 0
+  isMove: 0
+  isZwiadowca: 0
