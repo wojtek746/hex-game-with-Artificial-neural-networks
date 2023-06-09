@@ -67,7 +67,7 @@ public class BorgoConfig : MonoBehaviour
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;
 
-        //pobranie printów z pythona
+        //pobranie printï¿½w z pythona
         using (Process process = Process.Start(start))
         {
             using (StreamReader reader = process.StandardOutput)
@@ -90,7 +90,7 @@ public class BorgoConfig : MonoBehaviour
 
         GetId();
 
-        //wylosowanie wartoœci do sklepu
+        //wylosowanie wartoï¿½ci do sklepu
         for (int i = 1; i < 4; i++)
         {
             int random = UnityEngine.Random.Range(2, 15);
@@ -175,7 +175,7 @@ public class BorgoConfig : MonoBehaviour
             shop[i] = random;
         }
 
-        //uruchomienie wszystkich elementów ze sklepu
+        //uruchomienie wszystkich elementï¿½w ze sklepu
         for (int i = 1; i < 4; i++)
         {
             switch (shop[i])
@@ -262,7 +262,7 @@ public class BorgoConfig : MonoBehaviour
             }
             else
             {
-                //jeœli jest to granat, jest nam potrzebna jeszcze 1 zmienna na koñcu œcierzki
+                //jeï¿½li jest to granat, jest nam potrzebna jeszcze 1 zmienna na koï¿½cu ï¿½cierzki
                 int whq = 0;
                 for (int j = 0; j < 19; j++)
                 {
@@ -279,7 +279,7 @@ public class BorgoConfig : MonoBehaviour
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
 
-            //pobranie printów z pythona
+            //pobranie printï¿½w z pythona
             int pyth;
             using (Process process = Process.Start(start))
             {
@@ -298,7 +298,7 @@ public class BorgoConfig : MonoBehaviour
             }
             else
             {
-                //je¿eli nie jest funkcyjny, to go ustawia na planszy
+                //jeï¿½eli nie jest funkcyjny, to go ustawia na planszy
                 int where, rotation;
                 if (pyth != 114)
                 {
@@ -337,7 +337,7 @@ public class BorgoConfig : MonoBehaviour
 
     public void GetId()
     {
-        //pobranie tablicy id z rdzenia (nie wa¿ne jak dzia³a, wa¿ne, ¿e dzia³a xd)
+        //pobranie tablicy id z rdzenia (nie waï¿½ne jak dziaï¿½a, waï¿½ne, ï¿½e dziaï¿½a xd)
         if (Borgo.which == 1)
         {
             for (int i = 0; i < 40; i++)
@@ -376,7 +376,7 @@ public class BorgoConfig : MonoBehaviour
 
     public void GrenadeF(int idHex)
     {
-        //rdzeñ wysy³a informacjê, ¿e przeciwnik wys³a³ na nasz¹ jednostkê granat
+        //rdzeï¿½ wysyï¿½a informacjï¿½, ï¿½e przeciwnik wysï¿½aï¿½ na naszï¿½ jednostkï¿½ granat
         GetId();
         if (Borgo.GetId(Borgo.hex[idHex - 1].name) > 1) 
         {
@@ -387,7 +387,7 @@ public class BorgoConfig : MonoBehaviour
     public void Pushing(int idHex)
     {
         UnityEngine.Debug.Log($"borgo Pushing({idHex})");
-        //sprawdzanie, cze mo¿na przepchn¹æ
+        //sprawdzanie, cze moï¿½na przepchnï¿½ï¿½
         if (Borgo.hex[idHex - 1].name != "")
         {
             //uruchomienie pythona
@@ -399,7 +399,7 @@ public class BorgoConfig : MonoBehaviour
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
 
-            //pobranie printów z pythona
+            //pobranie printï¿½w z pythona
             int pyth;
             using (Process process = Process.Start(start))
             {
@@ -411,7 +411,7 @@ public class BorgoConfig : MonoBehaviour
                 }
             }
 
-            //przesuniêcie odpowiedniego elementu do wybranego miejsca
+            //przesuniï¿½cie odpowiedniego elementu do wybranego miejsca
             string name = "";
             switch (Borgo.id[idHex * 2])
             {

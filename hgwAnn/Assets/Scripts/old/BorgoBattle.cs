@@ -54,7 +54,7 @@ public class BorgoBattle : MonoBehaviour
                                     k++;
                                 }
                             }
-                            //sieæ
+                            //sieï¿½
                             else if (borgo.hex[i].distance[j] == 2)
                             {
                                 int a = borgo.Around(i, j, 0);
@@ -63,7 +63,7 @@ public class BorgoBattle : MonoBehaviour
                                     Core.Attack("Borgo", a, borgo.hex[i].strength[j], true);
                                 }
                             }
-                            //mo¿e wybraæ, czy na blisko, czy na daleko
+                            //moï¿½e wybraï¿½, czy na blisko, czy na daleko
                             else
                             {
                                 //kod do zrobienia; tymczasowo:
@@ -88,7 +88,7 @@ public class BorgoBattle : MonoBehaviour
 
     public void Attack(int idHex, int health, bool isNet)
     {
-        //sprawdzamy, czy mo¿emy zaatakowaæ
+        //sprawdzamy, czy moï¿½emy zaatakowaï¿½
         if (borgo.hex[idHex].isLife)
         {
             if (health > 0)
@@ -104,7 +104,7 @@ public class BorgoBattle : MonoBehaviour
                     }
                 }
 
-                //obni¿enie zdrowia atakowanego (nie jest on na razie usuwany, poniewa¿ nawet, je¿eli bêdzie mia³ -100 ¿ycia, to i tak mo¿e atakowaæ w tej inicjatywie)
+                //obniï¿½enie zdrowia atakowanego (nie jest on na razie usuwany, poniewaï¿½ nawet, jeï¿½eli bï¿½dzie miaï¿½ -100 ï¿½ycia, to i tak moï¿½e atakowaï¿½ w tej inicjatywie)
                 borgo.hex[idHex - 1].setHealth(borgo.hex[idHex - 1].health - health);
             }
             else if (isNet)
