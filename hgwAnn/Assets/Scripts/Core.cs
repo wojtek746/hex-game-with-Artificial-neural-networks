@@ -11,4 +11,9 @@ public class Core : MonoBehaviour
 
         return lista; 
     }
+
+    public void start()
+    {
+
+    }
 }

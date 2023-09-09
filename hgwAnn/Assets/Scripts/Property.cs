@@ -20,6 +20,7 @@ public class Property : MonoBehaviour
     public List<int> defultDistance;
     public List<int> defultStrength;
     public List<int> defultFunctions;
+    public int virtualHealth; 
     public List<bool> virtualInitiative;
     public List<int> virtualDistance;
     public List<int> virtualStrength;
@@ -30,7 +31,9 @@ public class Property : MonoBehaviour
     public bool isMedyk;
     public bool isOficer;
     public bool isMove;
+    public bool isTransport;
     public bool isZwiadowca;
+    public bool isKwatermistrz;
 
     public void copyToVirtual()
     {
@@ -44,6 +47,7 @@ public class Property : MonoBehaviour
 
     public void start()
     {
+        isLife = true; 
         defultHealth = health;
         defultInitiative = initiative;
         defultDistance = distance;

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9129716325468369249}
   - component: {fileID: 4739010866098728143}
+  - component: {fileID: 303982238913726692}
   m_Layer: 0
   m_Name: straznik
   m_TagString: Untagged
@@ -84,3 +85,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &303982238913726692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941510853104436130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695f36e900678ca41a23fd8b65d67d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  name: straznik
+  id: 0
+  nameSztab: hegemonia
+  whereLook: 0
+  initiative: 00000100
+  distance: 000000000000000000000000000000000000000000000000
+  strength: 010000000100000000000000000000000000000001000000
+  functions: 000000000000000000000000000000000000000000000000
+  net: 0
+  isLife: 1
+  defultHealth: 0
+  defultInitiative: 00000000
+  defultDistance: 000000000000000000000000000000000000000000000000
+  defultStrength: 000000000000000000000000000000000000000000000000
+  defultFunctions: 000000000000000000000000000000000000000000000000
+  virtualHealth: 0
+  virtualInitiative: 00000000
+  virtualDistance: 000000000000000000000000000000000000000000000000
+  virtualStrength: 000000000000000000000000000000000000000000000000
+  virtualFunctions: 000000000000000000000000000000000000000000000000
+  virtualNet: 0
+  virtualIsLife: 0
+  isMedyk: 0
+  isOficer: 0
+  isMove: 0
+  isZwiadowca: 0
+  isKwatermistrz: 0

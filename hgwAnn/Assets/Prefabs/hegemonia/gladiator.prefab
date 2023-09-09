@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8074071775108545975}
   - component: {fileID: 7390023847476439281}
+  - component: {fileID: 5206057927953373065}
   m_Layer: 0
   m_Name: gladiator
   m_TagString: Untagged
@@ -84,3 +85,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5206057927953373065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179712441506360895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695f36e900678ca41a23fd8b65d67d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  name: gladiator
+  id: 0
+  nameSztab: hegemonia
+  whereLook: 0
+  initiative: 00010000
+  distance: 000000000000000000000000000000000000000000000000
+  strength: 020000000200000000000000000000000000000002000000
+  functions: 000000000000000000000000000000000000000000000000
+  net: 0
+  isLife: 1
+  defultHealth: 0
+  defultInitiative: 00000000
+  defultDistance: 000000000000000000000000000000000000000000000000
+  defultStrength: 000000000000000000000000000000000000000000000000
+  defultFunctions: 000000000000000000000000000000000000000000000000
+  virtualHealth: 0
+  virtualInitiative: 00000000
+  virtualDistance: 000000000000000000000000000000000000000000000000
+  virtualStrength: 000000000000000000000000000000000000000000000000
+  virtualFunctions: 000000000000000000000000000000000000000000000000
+  virtualNet: 0
+  virtualIsLife: 0
+  isMedyk: 0
+  isOficer: 0
+  isMove: 0
+  isZwiadowca: 0
