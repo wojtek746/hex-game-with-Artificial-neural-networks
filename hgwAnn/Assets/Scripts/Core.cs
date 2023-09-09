@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Core : MonoBehaviour
 {
+    public borgoCreate borgo; 
+
 
     public List<int> getId(int which)
     {
@@ -12,8 +14,11 @@ public class Core : MonoBehaviour
         return lista; 
     }
 
-    public void start()
+    public void Start()
     {
+        borgo = FindObjectsOfType<borgoCreate>()[0];
 
+        borgo.StartGame();
+        StartCoroutine(borgo.Create("Brawler", 3, 4)); 
     }
 }

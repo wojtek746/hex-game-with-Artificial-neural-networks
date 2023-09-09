@@ -1008,6 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562f1fcc5938b0d4f8b3e8f0f45e33f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  borgo: {fileID: 0}
 --- !u!114 &1118328471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,8 +1924,8 @@ GameObject:
   - component: {fileID: 1658152512}
   - component: {fileID: 1658152516}
   - component: {fileID: 1658152515}
-  - component: {fileID: 1658152514}
   - component: {fileID: 1658152513}
+  - component: {fileID: 1658152517}
   m_Layer: 0
   m_Name: borgo
   m_TagString: Untagged
@@ -2011,33 +2012,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   borgo: {fileID: 0}
   Config: {fileID: 0}
---- !u!114 &1658152514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44bbc3a4e66879f43bb5a6d120a2f7ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  borgo: {fileID: 0}
-  HQ: {fileID: 561586420189573011, guid: 3c7137b5249bdfa46a4f873df6484993, type: 3}
-  Brawler: {fileID: 5165601299201370068, guid: 5f75008addeaeb94083f43e5e6199113, type: 3}
-  Medic: {fileID: 5351631685066916176, guid: 86b20562d6408934084ce6fa9e80075b, type: 3}
-  Mutant: {fileID: 7893554637456232139, guid: aa5b79fa5573fab4a8f86085393921a8, type: 3}
-  Super_Mutant: {fileID: 677100607912163619, guid: f4dd3f21617b3494e95b8d4dc3aa58a9, type: 3}
-  Officer: {fileID: 2223751185930009494, guid: 4067b7e6fd4b62d449be5385ff3d6245, type: 3}
-  Super_Officer: {fileID: 5254267592371050508, guid: c269c1f51d003614ca30b9b3ce26a6f8, type: 3}
-  Butcher: {fileID: 3265994722696892752, guid: e7444701bde9bab439206099ea79560d, type: 3}
-  Assassin: {fileID: 5106356354312007748, guid: f4dc017c001854b48997eb3dc9240a92, type: 3}
-  NetFlighter: {fileID: 6457762639322376613, guid: 4f664ee9e95430f4fbbf815f8c474e81, type: 3}
-  Scout: {fileID: 832836363612478148, guid: 1668a3ea72ba14b49a5d5139397d9673, type: 3}
-  Battle: {fileID: 2115596451515034649, guid: 65970c9b35ba7a340be904025e9a0b60, type: 3}
-  Move: {fileID: 7583425073632686423, guid: 8f089ceeeb0db504688e52798467449e, type: 3}
-  Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
 --- !u!114 &1658152515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,6 +2047,33 @@ MonoBehaviour:
   borgo: {fileID: 0}
   Core: {fileID: 0}
   Delete: {fileID: 0}
+--- !u!114 &1658152517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658152509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932148555a053db42b5ea1131bf36117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: {fileID: 0}
+  HQ: {fileID: 561586420189573011, guid: 3c7137b5249bdfa46a4f873df6484993, type: 3}
+  Brawler: {fileID: 5165601299201370068, guid: 5f75008addeaeb94083f43e5e6199113, type: 3}
+  Medic: {fileID: 5351631685066916176, guid: 86b20562d6408934084ce6fa9e80075b, type: 3}
+  Mutant: {fileID: 7893554637456232139, guid: aa5b79fa5573fab4a8f86085393921a8, type: 3}
+  Super_Mutant: {fileID: 677100607912163619, guid: f4dd3f21617b3494e95b8d4dc3aa58a9, type: 3}
+  Officer: {fileID: 2223751185930009494, guid: 4067b7e6fd4b62d449be5385ff3d6245, type: 3}
+  Super_Officer: {fileID: 5254267592371050508, guid: c269c1f51d003614ca30b9b3ce26a6f8, type: 3}
+  Butcher: {fileID: 3265994722696892752, guid: e7444701bde9bab439206099ea79560d, type: 3}
+  Assassin: {fileID: 5106356354312007748, guid: f4dc017c001854b48997eb3dc9240a92, type: 3}
+  NetFlighter: {fileID: 6457762639322376613, guid: 4f664ee9e95430f4fbbf815f8c474e81, type: 3}
+  Scout: {fileID: 832836363612478148, guid: 1668a3ea72ba14b49a5d5139397d9673, type: 3}
+  Battle: {fileID: 2115596451515034649, guid: 65970c9b35ba7a340be904025e9a0b60, type: 3}
+  Move: {fileID: 7583425073632686423, guid: 8f089ceeeb0db504688e52798467449e, type: 3}
+  Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
 --- !u!1 &1732199726
 GameObject:
   m_ObjectHideFlags: 0

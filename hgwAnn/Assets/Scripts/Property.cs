@@ -45,7 +45,7 @@ public class Property : MonoBehaviour
         virtualIsLife = isLife;
     }
 
-    public void start()
+    public void Start()
     {
         isLife = true; 
         defultHealth = health;
