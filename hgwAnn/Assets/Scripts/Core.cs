@@ -19,6 +19,10 @@ public class Core : MonoBehaviour
         borgo = FindObjectsOfType<borgoCreate>()[0];
 
         borgo.StartGame();
-        StartCoroutine(borgo.Create("Brawler", 3, 4)); 
+        StartCoroutine(borgo.Create("Butcher", 3, 0));
+
+        borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
+        battle.StartGame(); 
+        battle.InitiativeBattle(3); 
     }
 }

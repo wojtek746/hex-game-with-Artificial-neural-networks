@@ -8,7 +8,8 @@ public class borgoBattle : MonoBehaviour
     public GameObject attackhex; 
     public Property currentProperty;
     public Property attackProperty; 
-    public around a; 
+    public around a;
+    public string nameSztab; 
 
     public void StartGame()
     {
@@ -17,7 +18,7 @@ public class borgoBattle : MonoBehaviour
 
     public void InitiativeBattle(int initiative)
     {
-        for(int i = 1; i <= 19; i++)
+        for (int i = 1; i <= 19; i++)
         {
             currenthex = GameObject.Find("hex " + i);
 
@@ -31,7 +32,7 @@ public class borgoBattle : MonoBehaviour
 
                     if (currentProperty != null)
                     {
-                        if(currentProperty.nameSztab == "borgo")
+                        if(currentProperty.nameSztab == nameSztab)
                         {
                             if (currentProperty.initiative[initiative] && !currentProperty.net)
                             {
@@ -44,7 +45,9 @@ public class borgoBattle : MonoBehaviour
                                             if (currentProperty.strength[kierunek] > 0)
                                             {
                                                 whereLook = (currentProperty.whereLook + kierunek) % 6;
+                                                UnityEngine.Debug.Log($"{whereLook}"); 
                                                 whereLook = a.a(i, whereLook, 0);
+                                                UnityEngine.Debug.Log($"whereLook: {whereLook} for {currentProperty.strength[kierunek]} on {kierunek}");
                                                 if (whereLook != 0)
                                                 {
                                                     attackhex = GameObject.Find("hex " + whereLook);

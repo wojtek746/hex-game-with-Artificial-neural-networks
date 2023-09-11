@@ -102,6 +102,11 @@ public class borgoCreate : MonoBehaviour
                 newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
                 newObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation * 60));
                 newObject.transform.name = "hex";
+                Property currentProperty = newObject.GetComponent<Property>();
+                if (currentProperty != null)
+                {
+                    currentProperty.whereLook = rotation; 
+                }
             }
 
             if (name == "HQ")
@@ -139,13 +144,18 @@ public class borgoCreate : MonoBehaviour
                             newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
                             newObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation * 60));
                             newObject.transform.name = "hex";
+                            Property currentProperty = newObject.GetComponent<Property>();
+                            if (currentProperty != null)
+                            {
+                                currentProperty.whereLook = rotation;
+                            }
                             break;
                         }
                     }
                 }
             }
 
-            currenthex = GameObject.Find("hex " + idHex);
+            /*currenthex = GameObject.Find("hex " + idHex);
             if (currenthex != null)
             {
                 Transform hex = currenthex.transform.Find("hex");
@@ -208,7 +218,11 @@ public class borgoCreate : MonoBehaviour
                         }
                     }
                 }
-            }
+            }*/
+        }
+        else
+        {
+            //w sklepie
         }
 
         StopCoroutine("Create");

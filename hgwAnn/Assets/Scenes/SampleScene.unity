@@ -1922,10 +1922,10 @@ GameObject:
   - component: {fileID: 1658152511}
   - component: {fileID: 1658152510}
   - component: {fileID: 1658152512}
-  - component: {fileID: 1658152516}
   - component: {fileID: 1658152515}
   - component: {fileID: 1658152513}
   - component: {fileID: 1658152517}
+  - component: {fileID: 1658152518}
   m_Layer: 0
   m_Name: borgo
   m_TagString: Untagged
@@ -2032,21 +2032,6 @@ MonoBehaviour:
   isLife: 0
   shop: 0000000000000000000000000000000000000000
   pathToPython: 
---- !u!114 &1658152516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b90afadc980fa8b419b8a69c0bd17b4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  borgo: {fileID: 0}
-  Core: {fileID: 0}
-  Delete: {fileID: 0}
 --- !u!114 &1658152517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2074,6 +2059,24 @@ MonoBehaviour:
   Battle: {fileID: 2115596451515034649, guid: 65970c9b35ba7a340be904025e9a0b60, type: 3}
   Move: {fileID: 7583425073632686423, guid: 8f089ceeeb0db504688e52798467449e, type: 3}
   Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
+--- !u!114 &1658152518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658152509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f343ba41fded834592ace0a3d0f1cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthex: {fileID: 0}
+  attackhex: {fileID: 0}
+  currentProperty: {fileID: 0}
+  attackProperty: {fileID: 0}
+  a: {fileID: 0}
+  nameSztab: borgo
 --- !u!1 &1732199726
 GameObject:
   m_ObjectHideFlags: 0
