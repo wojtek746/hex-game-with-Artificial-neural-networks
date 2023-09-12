@@ -25,4 +25,9 @@ public class Core : MonoBehaviour
         battle.StartGame(); 
         battle.InitiativeBattle(3); 
     }
+
+    public int isMedic(int whereIs)
+    {
+        return 0; //do zmiany
+    }
 }

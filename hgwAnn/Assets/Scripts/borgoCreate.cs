@@ -105,7 +105,8 @@ public class borgoCreate : MonoBehaviour
                 Property currentProperty = newObject.GetComponent<Property>();
                 if (currentProperty != null)
                 {
-                    currentProperty.whereLook = rotation; 
+                    currentProperty.whereLook = rotation;
+                    currentProperty.whereIs = idHex;
                 }
             }
 
@@ -148,6 +149,7 @@ public class borgoCreate : MonoBehaviour
                             if (currentProperty != null)
                             {
                                 currentProperty.whereLook = rotation;
+                                currentProperty.whereIs = idHex;
                             }
                             break;
                         }

@@ -127,6 +127,18 @@ public class borgoBattle : MonoBehaviour
                                             break;
                                     }
                                 }
+                                if (currentProperty.isOficer)
+                                {
+                                    //officer(+atak)
+                                }
+                                if (currentProperty.isZwiadowca)
+                                {
+                                    //zwiadowca(+iniciatywa)
+                                }
+                                if (currentProperty.isKwatermistrz)
+                                {
+                                    //kwatermistrz(zmiana z pięści na strzelbę)
+                                }
                             }
                         }
                     }
