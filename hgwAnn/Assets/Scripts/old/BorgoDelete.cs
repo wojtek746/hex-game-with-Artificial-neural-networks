@@ -109,7 +109,7 @@ public class BorgoDelete : MonoBehaviour
 
     public void DeleteAll()
     {
-        //usuwa wszystkie elementy, które maj¹ 0 lub mniej ¿ycia, ale istniej¹
+        //usuwa wszystkie elementy, ktï¿½re majï¿½ 0 lub mniej ï¿½ycia, ale istniejï¿½
         UnityEngine.Debug.Log($"borgo DeleteAll()");
         Config.GetId();
 

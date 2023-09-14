@@ -54,9 +54,16 @@ public class Property : MonoBehaviour
         strength = defultStrength;
         functions = defultFunctions;
         net = false;
-        int medic = core.isMedic(whereIs);
-        health += medic; 
+        if(health < previousHealth)
+        {
+            int medic = core.isMedic(whereIs);
+            health += medic;
+        }
         previousHealth = health;
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Start()
@@ -68,5 +75,7 @@ public class Property : MonoBehaviour
         defultDistance = distance;
         defultStrength = strength;
         defultFunctions = functions;
+        health = 0;
+        afterBattle(); 
     }
 }

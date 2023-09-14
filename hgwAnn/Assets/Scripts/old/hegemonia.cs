@@ -17,15 +17,15 @@ public class hegemonia : MonoBehaviour
     {
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ, 3 - mo¿e sobie wybraæ: 0 lub 1(zale¿nie od sytuacji))
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½, 3 - moï¿½e sobie wybraï¿½: 0 lub 1(zaleï¿½nie od sytuacji))
             {
                 0,
                 0,
@@ -34,7 +34,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -52,8 +52,8 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            false, //czy zablokowany przez sieæ
-            false, //czy ¿yje
+            false, //czy zablokowany przez sieï¿½
+            false, //czy ï¿½yje
             "" //nazwa
         },
         new ArrayList()
@@ -99,15 +99,15 @@ public class hegemonia : MonoBehaviour
         },
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -116,7 +116,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -134,7 +134,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            false, //czy zablokowany przez sieæ
+            false, //czy zablokowany przez sieï¿½
             false,
             ""
         },
@@ -345,15 +345,15 @@ public class hegemonia : MonoBehaviour
         },
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -362,89 +362,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            new ArrayList() //funkcje
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            false,
-            false,
-            ""
-        },
-        new ArrayList()
-        {
-            0,
-            new ArrayList()
-            {
-                false,
-                false,
-                false,
-                false
-            },
-            new ArrayList()
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            new ArrayList()
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            new ArrayList()
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            false,
-            false,
-            ""
-        },
-        new ArrayList()
-        {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
-            {
-                false,
-                false,
-                false,
-                false
-            },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
-            {
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -509,15 +427,15 @@ public class hegemonia : MonoBehaviour
         },
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -526,7 +444,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -591,15 +509,15 @@ public class hegemonia : MonoBehaviour
         },
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -608,7 +526,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -673,15 +591,15 @@ public class hegemonia : MonoBehaviour
         },
         new ArrayList()
         {
-            0, //¿ycie
-            new ArrayList() //w której fali atakuje
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 false,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -690,7 +608,89 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            new ArrayList() //funkcje
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            false,
+            false,
+            ""
+        },
+        new ArrayList()
+        {
+            0,
+            new ArrayList()
+            {
+                false,
+                false,
+                false,
+                false
+            },
+            new ArrayList()
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            new ArrayList()
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            new ArrayList()
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            false,
+            false,
+            ""
+        },
+        new ArrayList()
+        {
+            0, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
+            {
+                false,
+                false,
+                false,
+                false
+            },
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
+            {
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            },
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -842,18 +842,18 @@ public class hegemonia : MonoBehaviour
 
     public void StartGame()
     {
-        //uzupe³niamy elementy odpowiednimi wartoœciami
+        //uzupeï¿½niamy elementy odpowiednimi wartoï¿½ciami
         objects["HQ"] = new ArrayList()
         {
-            20, //¿ycie
-            new ArrayList() //w której fali atakuje
+            20, //ï¿½ycie
+            new ArrayList() //w ktï¿½rej fali atakuje
             {
                 false,
                 true,
                 false,
                 false
             },
-            new ArrayList() //czy atakuje na odleg³oœæ(0 - blisko, 1 - daleko, 2 - sieæ)
+            new ArrayList() //czy atakuje na odlegï¿½oï¿½ï¿½(0 - blisko, 1 - daleko, 2 - sieï¿½)
             {
                 0,
                 0,
@@ -862,7 +862,7 @@ public class hegemonia : MonoBehaviour
                 0,
                 0
             },
-            new ArrayList() //w któr¹ stronê atakuje i za ile
+            new ArrayList() //w ktï¿½rï¿½ stronï¿½ atakuje i za ile
             {
                 0,
                 0,
@@ -880,8 +880,8 @@ public class hegemonia : MonoBehaviour
                 1,
                 1
             },
-            false, //czy zablokowany przez sieæ
-            true, //czy ¿yje
+            false, //czy zablokowany przez sieï¿½
+            true, //czy ï¿½yje
             "HQ"
         };
         objects["Empty"] = new ArrayList()
@@ -1535,7 +1535,7 @@ public class hegemonia : MonoBehaviour
         start.RedirectStandardOutput = true;
         start.CreateNoWindow = true;
 
-        //pobranie printów z pythona
+        //pobranie printï¿½w z pythona
         using (Process process = Process.Start(start))
         {
             using (StreamReader reader = process.StandardOutput)
@@ -1587,7 +1587,7 @@ public class hegemonia : MonoBehaviour
                                     k++;
                                 }
                             }
-                            //sieæ
+                            //sieï¿½
                             else if (Int32.Parse(((ArrayList)((ArrayList)idObjects[i])[2])[j].ToString()) == 2)
                             {
                                 int a = Around(i, j, 0);
@@ -1596,7 +1596,7 @@ public class hegemonia : MonoBehaviour
                                     Core.Attack("Hegemonia", a, Int32.Parse(((ArrayList)((ArrayList)idObjects[i])[3])[j].ToString()), true);
                                 }
                             }
-                            //mo¿e wybraæ, czy na blisko, czy na daleko
+                            //moï¿½e wybraï¿½, czy na blisko, czy na daleko
                             else
                             {
                                 //kod do zrobienia; tymczasowo:
@@ -1622,13 +1622,13 @@ public class hegemonia : MonoBehaviour
     public void Attack(int idHex, int health, bool isNet)
     {
         idHex++; 
-        //sprawdzamy, czy mo¿emy zaatakowaæ
+        //sprawdzamy, czy moï¿½emy zaatakowaï¿½
         UnityEngine.Debug.Log($"{Int32.Parse(id[idHex * 2].ToString())}"); 
         if (Int32.Parse(id[idHex * 2].ToString()) > 0)
         {
             if (health > 0)
             {
-                //obni¿enie zdrowia atakowanego (nie jest on na razie usuwany, poniewa¿ nawet, je¿eli bêdzie mia³ -100 ¿ycia, to i tak mo¿e atakowaæ w tej inicjatywie)
+                //obniï¿½enie zdrowia atakowanego (nie jest on na razie usuwany, poniewaï¿½ nawet, jeï¿½eli bï¿½dzie miaï¿½ -100 ï¿½ycia, to i tak moï¿½e atakowaï¿½ w tej inicjatywie)
                 ((ArrayList)idObjects[idHex - 1])[0] = Convert.ToInt32(((ArrayList)idObjects[idHex - 1])[0]) - health;
             }
             else if (isNet)
@@ -1645,7 +1645,7 @@ public class hegemonia : MonoBehaviour
 
         GetId();
 
-        //wylosowanie wartoœci do sklepu
+        //wylosowanie wartoï¿½ci do sklepu
         for (int i = 1; i < 4; i++)
         {
             int random = 6;
@@ -1760,7 +1760,7 @@ public class hegemonia : MonoBehaviour
             shop[i] = random;
         }
 
-        //uruchomienie wszystkich elementów ze sklepu
+        //uruchomienie wszystkich elementï¿½w ze sklepu
         for (int i = 1; i < 4; i++)
         {
             switch (shop[i])
@@ -1871,7 +1871,7 @@ public class hegemonia : MonoBehaviour
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
 
-            //pobranie printów z pythona
+            //pobranie printï¿½w z pythona
             int pyth;
             using (Process process = Process.Start(start))
             {
@@ -1897,7 +1897,7 @@ public class hegemonia : MonoBehaviour
             }
             else
             {
-                //je¿eli nie jest funkcyjny, to go ustawia na planszy
+                //jeï¿½eli nie jest funkcyjny, to go ustawia na planszy
                 int where, rotation;
                 if (pyth != 114)
                 {
@@ -1919,7 +1919,7 @@ public class hegemonia : MonoBehaviour
 
     public void DeleteAll()
     {
-        //usuwa wszystkie elementy, które maj¹ 0 lub mniej ¿ycia, ale istniej¹
+        //usuwa wszystkie elementy, ktï¿½re majï¿½ 0 lub mniej ï¿½ycia, ale istniejï¿½
 
         GetId();
 
@@ -1960,7 +1960,7 @@ public class hegemonia : MonoBehaviour
 
     public void GetId()
     {
-        //pobranie tablicy id z rdzenia (nie wa¿ne jak dzia³a, wa¿ne, ¿e dzia³a xd)
+        //pobranie tablicy id z rdzenia (nie waï¿½ne jak dziaï¿½a, waï¿½ne, ï¿½e dziaï¿½a xd)
         if (which == 1)
         {
             for (int i = 0; i < 40; i++)
@@ -1986,7 +1986,7 @@ public class hegemonia : MonoBehaviour
 
     public int Around(int idHex, int looks, int far)
     {
-        //zwraca id elementu, na który siê patrzy
+        //zwraca id elementu, na ktï¿½ry siï¿½ patrzy
         switch (idHex)
         {
             case 1:
@@ -2967,7 +2967,7 @@ public class hegemonia : MonoBehaviour
 
     public void GrenadeF(int idHex)
     {
-        //rdzeñ wysy³a informacjê, ¿e przeciwnik wys³a³ na nasz¹ jednostkê granat
+        //rdzeï¿½ wysyï¿½a informacjï¿½, ï¿½e przeciwnik wysï¿½aï¿½ na naszï¿½ jednostkï¿½ granat
         GetId();
         if (Int32.Parse(id[idHex * 2].ToString()) > 1)
         {
@@ -2978,7 +2978,7 @@ public class hegemonia : MonoBehaviour
     public void Pushing(int idHex)
     {
         UnityEngine.Debug.Log($"hegemonia Pushing({idHex})");
-        //sprawdzanie, cze mo¿na przepchn¹æ
+        //sprawdzanie, cze moï¿½na przepchnï¿½ï¿½
         if (Int32.Parse(id[idHex * 2].ToString()) > 0)
         {
             //uruchomienie pythona
@@ -2990,7 +2990,7 @@ public class hegemonia : MonoBehaviour
             start.RedirectStandardOutput = true;
             start.CreateNoWindow = true;
 
-            //pobranie printów z pythona
+            //pobranie printï¿½w z pythona
             int pyth;
             using (Process process = Process.Start(start))
             {
@@ -3002,7 +3002,7 @@ public class hegemonia : MonoBehaviour
                 }
             }
 
-            //przesuniêcie odpowiedniego elementu do wybranego miejsca
+            //przesuniï¿½cie odpowiedniego elementu do wybranego miejsca
             string name = ""; 
             switch (id[idHex * 2])
             {
@@ -3061,12 +3061,12 @@ public class hegemonia : MonoBehaviour
 
     public IEnumerator Create(string name, int idHex, int rotation)
     {
-        //je¿eli two¿ymy na planszy
+        //jeï¿½eli twoï¿½ymy na planszy
         if (idHex > 0 && idHex < 20)
         {
             while (true)
             {
-                //sprawdzanie, czy mo¿na stworzyæ w danym miejscu element
+                //sprawdzanie, czy moï¿½na stworzyï¿½ w danym miejscu element
                 if (Int32.Parse(id[idHex * 2].ToString()) == 0)
                 {
                     GameObject gameObject;
@@ -3311,7 +3311,7 @@ public class hegemonia : MonoBehaviour
                     break;
                 }
 
-                //sztab musi zostaæ postawiony
+                //sztab musi zostaï¿½ postawiony
                 else if (name == "HQ")
                 {
                     idHex = UnityEngine.Random.Range(0, 20);

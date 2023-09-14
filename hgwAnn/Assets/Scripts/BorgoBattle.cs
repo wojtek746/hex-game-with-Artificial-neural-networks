@@ -36,18 +36,18 @@ public class borgoBattle : MonoBehaviour
                         {
                             if (currentProperty.initiative[initiative] && !currentProperty.net)
                             {
-                                for (int kierunek = 0; kierunek < 6; kierunek++)
+                                for (int direction = 0; direction < 6; direction++)
                                 {
                                     int whereLook = 0; 
-                                    switch (currentProperty.distance[kierunek])
+                                    switch (currentProperty.distance[direction])
                                     {
                                         case 0:
-                                            if (currentProperty.strength[kierunek] > 0)
+                                            if (currentProperty.strength[direction] > 0)
                                             {
-                                                whereLook = (currentProperty.whereLook + kierunek) % 6;
+                                                whereLook = (currentProperty.whereLook + direction) % 6;
                                                 UnityEngine.Debug.Log($"{whereLook}"); 
                                                 whereLook = a.a(i, whereLook, 0);
-                                                UnityEngine.Debug.Log($"whereLook: {whereLook} for {currentProperty.strength[kierunek]} on {kierunek}");
+                                                UnityEngine.Debug.Log($"whereLook: {whereLook} for {currentProperty.strength[direction]} on {direction}");
                                                 if (whereLook != 0)
                                                 {
                                                     attackhex = GameObject.Find("hex " + whereLook);
@@ -61,7 +61,7 @@ public class borgoBattle : MonoBehaviour
                                                             {
                                                                 if (attackProperty.nameSztab != "borgo")
                                                                 {
-                                                                    attackProperty.health = attackProperty.health - currentProperty.strength[kierunek];
+                                                                    attackProperty.health -= currentProperty.strength[direction];
                                                                 }
                                                             }
                                                         }
@@ -70,12 +70,12 @@ public class borgoBattle : MonoBehaviour
                                             }
                                             break;
                                         case 1:
-                                            if (currentProperty.strength[kierunek] > 0)
+                                            if (currentProperty.strength[direction] > 0)
                                             {
                                                 int j = 1;
                                                 while (true)
                                                 {
-                                                    whereLook = (currentProperty.whereLook + kierunek) % 6;
+                                                    whereLook = (currentProperty.whereLook + direction) % 6;
                                                     whereLook = a.a(i, whereLook, j);
                                                     if (whereLook == 0)
                                                     {
@@ -92,7 +92,7 @@ public class borgoBattle : MonoBehaviour
                                                             {
                                                                 if (attackProperty.nameSztab != "borgo")
                                                                 {
-                                                                    attackProperty.health = attackProperty.health - currentProperty.strength[kierunek];
+                                                                    attackProperty.health -= currentProperty.strength[direction];
                                                                 }
                                                             }
                                                         }
@@ -102,7 +102,7 @@ public class borgoBattle : MonoBehaviour
                                             }
                                             break;
                                         case 2:
-                                            whereLook = (currentProperty.whereLook + kierunek) % 6;
+                                            whereLook = (currentProperty.whereLook + direction) % 6;
                                             whereLook = a.a(i, whereLook, 0);
                                             if (whereLook != 0)
                                             {
@@ -117,7 +117,7 @@ public class borgoBattle : MonoBehaviour
                                                         {
                                                             if (attackProperty.nameSztab != "borgo")
                                                             {
-                                                                attackProperty.health = attackProperty.health - currentProperty.strength[kierunek];
+                                                                attackProperty.health -= currentProperty.strength[direction];
                                                                 attackProperty.net = true;
                                                             }
                                                         }
@@ -130,14 +130,109 @@ public class borgoBattle : MonoBehaviour
                                 if (currentProperty.isOficer)
                                 {
                                     //officer(+atak)
+                                    for (int direction = 0; direction < 6; direction++)
+                                    {
+                                        if (currentProperty.functions[direction] > 0)
+                                        {
+                                            int whereLook = (currentProperty.whereLook + direction) % 6;
+                                            whereLook = a.a(i, whereLook, 0);
+                                            if (whereLook != 0)
+                                            {
+                                                attackhex = GameObject.Find("hex " + whereLook);
+                                                if (attackhex != null)
+                                                {
+                                                    hex = attackhex.transform.Find("hex");
+                                                    if (hex != null)
+                                                    {
+                                                        attackProperty = hex.GetComponent<Property>();
+                                                        if (attackProperty != null)
+                                                        {
+                                                            if (attackProperty.nameSztab == "borgo")
+                                                            {
+                                                                attackProperty.strength[0] += currentProperty.functions[direction]; 
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                                 if (currentProperty.isZwiadowca)
                                 {
                                     //zwiadowca(+iniciatywa)
+                                    for (int direction = 0; direction < 6; direction++)
+                                    {
+                                        if (currentProperty.functions[direction] > 0)
+                                        {
+                                            int whereLook = (currentProperty.whereLook + direction) % 6;
+                                            whereLook = a.a(i, whereLook, 0);
+                                            if (whereLook != 0)
+                                            {
+                                                attackhex = GameObject.Find("hex " + whereLook);
+                                                if (attackhex != null)
+                                                {
+                                                    hex = attackhex.transform.Find("hex");
+                                                    if (hex != null)
+                                                    {
+                                                        attackProperty = hex.GetComponent<Property>();
+                                                        if (attackProperty != null)
+                                                        {
+                                                            if (attackProperty.nameSztab == "borgo")
+                                                            {
+                                                                attackProperty.initiative[currentProperty.functions[direction]] = true;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                                 if (currentProperty.isKwatermistrz)
                                 {
                                     //kwatermistrz(zmiana z pięści na strzelbę)
+                                    for (int direction = 0; direction < 6; direction++)
+                                    {
+                                        if (currentProperty.functions[direction] > 0)
+                                        {
+                                            int whereLook = (currentProperty.whereLook + direction) % 6;
+                                            whereLook = a.a(i, whereLook, 0);
+                                            if (whereLook != 0)
+                                            {
+                                                attackhex = GameObject.Find("hex " + whereLook);
+                                                if (attackhex != null)
+                                                {
+                                                    hex = attackhex.transform.Find("hex");
+                                                    if (hex != null)
+                                                    {
+                                                        attackProperty = hex.GetComponent<Property>();
+                                                        if (attackProperty != null)
+                                                        {
+                                                            if (attackProperty.nameSztab == "borgo")
+                                                            {
+                                                                attackProperty.initiative[currentProperty.functions[direction]] = true;
+                                                                for(int gdzie = 0; gdzie < 6; gdzie++)
+                                                                {
+                                                                    if (attackProperty.distance[gdzie] != 2)
+                                                                    {
+                                                                        if (attackProperty.distance[gdzie] == 1)
+                                                                        {
+                                                                            attackProperty.distance[gdzie] = 0; 
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            attackProperty.distance[gdzie] = 1;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
