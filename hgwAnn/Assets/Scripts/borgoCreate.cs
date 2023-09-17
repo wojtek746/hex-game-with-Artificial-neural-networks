@@ -107,6 +107,7 @@ public class borgoCreate : MonoBehaviour
                 {
                     currentProperty.whereLook = rotation;
                     currentProperty.whereIs = idHex;
+                    currentProperty.StartGame();
                 }
             }
 
@@ -150,6 +151,7 @@ public class borgoCreate : MonoBehaviour
                             {
                                 currentProperty.whereLook = rotation;
                                 currentProperty.whereIs = idHex;
+                                currentProperty.StartGame(); 
                             }
                             break;
                         }

@@ -54,7 +54,8 @@ public class Property : MonoBehaviour
         strength = defultStrength;
         functions = defultFunctions;
         net = false;
-        if(health < previousHealth)
+        UnityEngine.Debug.Log("afterBattle()");
+        if (health < previousHealth)
         {
             int medic = core.isMedic(whereIs);
             health += medic;
@@ -66,7 +67,7 @@ public class Property : MonoBehaviour
         }
     }
 
-    public void Start()
+    public void StartGame()
     {
         core = FindObjectsOfType<Core>()[0]; 
         isLife = true; 
@@ -75,7 +76,5 @@ public class Property : MonoBehaviour
         defultDistance = distance;
         defultStrength = strength;
         defultFunctions = functions;
-        health = 0;
-        afterBattle(); 
     }
 }
