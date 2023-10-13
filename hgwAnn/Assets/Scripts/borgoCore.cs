@@ -12,6 +12,7 @@ public class borgoCore : MonoBehaviour
         create = FindObjectsOfType<borgoCreate>()[0];
 
         battle.StartGame();
-        create.StartGame(); 
+        create.StartGame();
+        StartCoroutine(create.Create("Officer", -2, 4)); 
     }
 }

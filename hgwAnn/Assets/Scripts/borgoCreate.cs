@@ -151,7 +151,7 @@ public class borgoCreate : MonoBehaviour
                             {
                                 currentProperty.whereLook = rotation;
                                 currentProperty.whereIs = idHex;
-                                currentProperty.StartGame(); 
+                                currentProperty.StartGame();
                             }
                             break;
                         }
@@ -227,6 +227,66 @@ public class borgoCreate : MonoBehaviour
         else
         {
             //w sklepie
+            GameObject gameObject;
+
+            switch (name)
+            {
+                case "HQ":
+                    gameObject = HQ;
+                    break;
+                case "Brawler":
+                    gameObject = Brawler;
+                    break;
+                case "Medic":
+                    gameObject = Medic;
+                    break;
+                case "Mutant":
+                    gameObject = Mutant;
+                    break;
+                case "Super_Mutant":
+                    gameObject = Super_Mutant;
+                    break;
+                case "Officer":
+                    gameObject = Officer;
+                    break;
+                case "Super_Officer":
+                    gameObject = Super_Officer;
+                    break;
+                case "Butcher":
+                    gameObject = Butcher;
+                    break;
+                case "Assassin":
+                    gameObject = Assassin;
+                    break;
+                case "NetFlighter":
+                    gameObject = NetFlighter;
+                    break;
+                case "Scout":
+                    gameObject = Scout;
+                    break;
+                default:
+                    gameObject = null;
+                    break;
+            }
+
+            if (gameObject == null)
+            {
+                StopCoroutine("Create");
+            }
+
+            GameObject currenthex = GameObject.Find("borgo " + idHex * -1);
+            if (currenthex != null)
+            {
+                Transform hex = currenthex.transform.Find("hex");
+                if (hex == null)
+                {
+                    //dodajemy do sklepu
+                    GameObject newObject = Instantiate(gameObject, currenthex.transform.position, currenthex.transform.rotation);
+                    newObject.transform.parent = currenthex.transform;
+                    newObject.transform.position = new Vector3(currenthex.transform.position.x, currenthex.transform.position.y, -1);
+                    newObject.transform.name = "hex";
+                }
+            }
         }
 
         StopCoroutine("Create");
