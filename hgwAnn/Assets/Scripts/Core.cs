@@ -23,12 +23,29 @@ public class Core : MonoBehaviour
         StartCoroutine(borgo.Create("Butcher", 3, 4));
 
         borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
-        battle.StartGame(); 
+        battle.StartGame();
         battle.InitiativeBattle(3);
 
         StartCoroutine(borgo.Create("Medic", 1, 4));
 
-        afterBattle(); 
+        GameObject currenthex = GameObject.Find("hex " + 3);
+
+        if (currenthex != null)
+        {
+            Transform currentHex = currenthex.transform.Find("hex");
+
+            if (currentHex != null)
+            {
+                Property currentProperty = currentHex.GetComponent<Property>();
+
+                if (currentProperty != null)
+                {
+                    currentProperty.health = 0; 
+                }
+            }
+        }
+
+        afterBattle();
     }
 
     public int isMedic(int whereIs)
