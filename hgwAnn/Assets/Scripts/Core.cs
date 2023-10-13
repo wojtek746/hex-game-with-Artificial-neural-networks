@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Core : MonoBehaviour
 {
-    public borgoCreate borgo;
-    public around a; 
+    public borgoCore borgo;
+    public around a;
+    public hegemoniaCore hegemonia;
+    public string first;
+    public string second;
 
     public List<int> getId(int which)
     {
@@ -16,21 +19,44 @@ public class Core : MonoBehaviour
 
     public void Start()
     {
-        borgo = FindObjectsOfType<borgoCreate>()[0];
+        GameObject hex;
+
+        switch (first)
+        {
+            case "borgo":
+                hex = GameObject.Find("borgo");
+                break;
+            case "hegemonia":
+                hex = GameObject.Find("hegemonia");
+                break;
+            default:
+                hex = null;
+                break;
+        }
+
+        hex.transform.position = new Vector3(-4.5f, hex.transform.position.y, hex.transform.position.z);
+
+
+        borgo = FindObjectsOfType<borgoCore>()[0];
         a = FindObjectsOfType<around>()[0];
+        hegemonia = FindObjectsOfType<hegemoniaCore>()[0];
 
         borgo.StartGame();
-        StartCoroutine(borgo.Create("Butcher", 3, 4));
+        hegemonia.StartGame();
 
-        borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
-        battle.StartGame();
-        battle.InitiativeBattle(3);
 
-        StartCoroutine(borgo.Create("Medic", 1, 4));
+        
+        //StartCoroutine(borgo.Create("Butcher", 3, 4));
 
-        GameObject currenthex = GameObject.Find("hex " + 3);
+        //borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
+        //battle.StartGame();
+        //battle.InitiativeBattle(3);
 
-        if (currenthex != null)
+        //StartCoroutine(borgo.Create("Medic", 1, 4));
+
+        //GameObject currenthex = GameObject.Find("hex " + 3);
+
+        /*if (currenthex != null)
         {
             Transform currentHex = currenthex.transform.Find("hex");
 
@@ -43,7 +69,7 @@ public class Core : MonoBehaviour
                     currentProperty.health = 0; 
                 }
             }
-        }
+        }*/
 
         afterBattle();
     }

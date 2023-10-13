@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class borgoBattle : MonoBehaviour
+public class hegemoniaBattle : MonoBehaviour
 {
     public GameObject currenthex;
     public GameObject attackhex; 

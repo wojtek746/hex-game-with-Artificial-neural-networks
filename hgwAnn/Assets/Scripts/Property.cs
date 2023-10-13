@@ -30,7 +30,7 @@ public class Property : MonoBehaviour
     public bool virtualNet;
     public bool virtualIsLife;
 
-    public bool isMedyk; //do zrobienia
+    public bool isMedyk; 
     public bool isOficer;
     public bool isMove; //do zrobienia
     public bool isTransport; //do zrobienia

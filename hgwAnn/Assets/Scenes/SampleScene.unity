@@ -1009,6 +1009,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   borgo: {fileID: 0}
+  a: {fileID: 0}
+  hegemonia: {fileID: 0}
+  first: borgo
+  second: hegemonia
 --- !u!114 &1118328471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,12 +1924,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658152511}
-  - component: {fileID: 1658152510}
-  - component: {fileID: 1658152512}
-  - component: {fileID: 1658152515}
   - component: {fileID: 1658152513}
-  - component: {fileID: 1658152517}
-  - component: {fileID: 1658152518}
+  - component: {fileID: 1658152512}
+  - component: {fileID: 1658152514}
   m_Layer: 0
   m_Name: borgo
   m_TagString: Untagged
@@ -1933,36 +1934,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1658152510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c753f72b4719a054fa022d01b6aa7bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  which: 0
-  timer: 5
-  oponent: 
-  isLife: 0
-  HQ: {fileID: 561586420189573011, guid: 3c7137b5249bdfa46a4f873df6484993, type: 3}
-  Brawler: {fileID: 5165601299201370068, guid: 5f75008addeaeb94083f43e5e6199113, type: 3}
-  Medic: {fileID: 5351631685066916176, guid: 86b20562d6408934084ce6fa9e80075b, type: 3}
-  Mutant: {fileID: 7893554637456232139, guid: aa5b79fa5573fab4a8f86085393921a8, type: 3}
-  Super_Mutant: {fileID: 677100607912163619, guid: f4dd3f21617b3494e95b8d4dc3aa58a9, type: 3}
-  Officer: {fileID: 2223751185930009494, guid: 4067b7e6fd4b62d449be5385ff3d6245, type: 3}
-  Super_Officer: {fileID: 5254267592371050508, guid: c269c1f51d003614ca30b9b3ce26a6f8, type: 3}
-  Butcher: {fileID: 3265994722696892752, guid: e7444701bde9bab439206099ea79560d, type: 3}
-  Assassin: {fileID: 5106356354312007748, guid: f4dc017c001854b48997eb3dc9240a92, type: 3}
-  NetFlighter: {fileID: 6457762639322376613, guid: 4f664ee9e95430f4fbbf815f8c474e81, type: 3}
-  Scout: {fileID: 832836363612478148, guid: 1668a3ea72ba14b49a5d5139397d9673, type: 3}
-  Battle: {fileID: 2115596451515034649, guid: 65970c9b35ba7a340be904025e9a0b60, type: 3}
-  Move: {fileID: 7583425073632686423, guid: 8f089ceeeb0db504688e52798467449e, type: 3}
-  Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
 --- !u!4 &1658152511
 Transform:
   m_ObjectHideFlags: 0
@@ -1990,57 +1961,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1658152509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4effcbd8566740e4991da60a631eb64b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  which: 0
-  oponent: 
-  id: 
-  net: 
-  Core: {fileID: 0}
---- !u!114 &1658152513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3f1fe317397a6f48bee4d70dd6ad20d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  borgo: {fileID: 0}
-  Config: {fileID: 0}
---- !u!114 &1658152515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e56b0915e8d8884bb2d1804d7d6a8d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Borgo: {fileID: 0}
-  Create: {fileID: 0}
-  Delete: {fileID: 0}
-  Battle: {fileID: 0}
-  Core: {fileID: 0}
-  isLife: 0
-  shop: 0000000000000000000000000000000000000000
-  pathToPython: 
---- !u!114 &1658152517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658152509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 932148555a053db42b5ea1131bf36117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -2059,7 +1979,7 @@ MonoBehaviour:
   Battle: {fileID: 2115596451515034649, guid: 65970c9b35ba7a340be904025e9a0b60, type: 3}
   Move: {fileID: 7583425073632686423, guid: 8f089ceeeb0db504688e52798467449e, type: 3}
   Grenade: {fileID: 2511259428482509048, guid: 425a08fffd5f2b7448506d9eaa50a99f, type: 3}
---- !u!114 &1658152518
+--- !u!114 &1658152513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2077,6 +1997,18 @@ MonoBehaviour:
   attackProperty: {fileID: 0}
   a: {fileID: 0}
   nameSztab: borgo
+--- !u!114 &1658152514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658152509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ceca3e9f92d9ba4eb2a51db6d577ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1732199726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,12 +2018,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1732199727}
-  - component: {fileID: 1732199728}
-  - component: {fileID: 1732199733}
-  - component: {fileID: 1732199732}
-  - component: {fileID: 1732199731}
-  - component: {fileID: 1732199730}
   - component: {fileID: 1732199729}
+  - component: {fileID: 1732199728}
+  - component: {fileID: 1732199730}
   m_Layer: 0
   m_Name: hegemonia
   m_TagString: Untagged
@@ -2126,32 +2055,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732199726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e4d8654d219ba43a1cceef494dd658, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d8d5ad751cd9d242889191e54252da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  which: 0
-  timer: 0
-  oponent: 
-  isLife: 0
-  HQ: {fileID: 197894432797424900, guid: bf9fb93a14d136343960b063639752d1, type: 3}
-  NetFlighter: {fileID: 1372537820829367572, guid: d601f097b232886408b903f82328edde, type: 3}
-  TheBoss: {fileID: 2984194339120370366, guid: d006fa83391a45c4aa63588d88014567, type: 3}
-  OfficerI: {fileID: 2746994797590859362, guid: 5b47ac6fd22e80049b52c61ea929a747, type: 3}
-  OfficerII: {fileID: 2178569540999443471, guid: 15c68931c0b4b8e4bad27779208d9379, type: 3}
-  Runner: {fileID: 116162032167611574, guid: b0e6e5ac03de4e642b6462c23f5cc083, type: 3}
-  Guard: {fileID: 3941510853104436130, guid: 3a9085c1d1a82ac4b90353d6e42a9daa, type: 3}
-  Quartermaster: {fileID: 2204495556797512064, guid: 9b32d6fbbb0a24b47a2a950c007b3c70, type: 3}
-  Transport: {fileID: 2651245186094298009, guid: ea3ed0e1474a4d948a0b3ef92c73eda7, type: 3}
-  Thug: {fileID: 6171873431932117871, guid: 83a27721970e5c04ba7eb377363338a8, type: 3}
-  NetMaster: {fileID: 8803025740789476377, guid: 9e8447c8abf1a384ab35b014447f9b90, type: 3}
-  Ganger: {fileID: 4959061405928075143, guid: 9793e15725db51948b83e048fb22104f, type: 3}
-  Gladiator: {fileID: 3179712441506360895, guid: eeef8de564dca014a9d557015e3124bb, type: 3}
-  UniversalSoldier: {fileID: 5789489817964852972, guid: 6e44838256f7756418218e7e61936360, type: 3}
-  Scout: {fileID: 6496913280309307409, guid: b531600db5d03b14282c1fff2b744398, type: 3}
-  Battle: {fileID: 4162584206783684805, guid: 997baeba11056d64388b9f7ae25c7ba3, type: 3}
-  Move: {fileID: 3237738999496467193, guid: bc38fc63bd736b94687ba74e74b2ccd0, type: 3}
-  PushBack: {fileID: 5288570817350596829, guid: 3e53028fa2b16cb4d8e9e4c448fab376, type: 3}
-  Sniper: {fileID: 3294763129333434351, guid: 039226499a93c1e43a75e315b942702d, type: 3}
+  a: {fileID: 0}
+  HQ: {fileID: 0}
+  Brawler: {fileID: 0}
+  Medic: {fileID: 0}
+  Mutant: {fileID: 0}
+  Super_Mutant: {fileID: 0}
+  Officer: {fileID: 0}
+  Super_Officer: {fileID: 0}
+  Butcher: {fileID: 0}
+  Assassin: {fileID: 0}
+  NetFlighter: {fileID: 0}
+  Scout: {fileID: 0}
+  Battle: {fileID: 0}
+  Move: {fileID: 0}
+  Grenade: {fileID: 0}
 --- !u!114 &1732199729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,11 +2082,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732199726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbbb4a659a04c2e43a34800d792e931d, type: 3}
+  m_Script: {fileID: 11500000, guid: 02b114cd119daaf45aaa7a204c9e4e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hegemonia: {fileID: 0}
-  Config: {fileID: 0}
+  currenthex: {fileID: 0}
+  attackhex: {fileID: 0}
+  currentProperty: {fileID: 0}
+  attackProperty: {fileID: 0}
+  a: {fileID: 0}
+  nameSztab: hegemonia
 --- !u!114 &1732199730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,81 +2100,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732199726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b9352ae892764946ba36f4733200800, type: 3}
+  m_Script: {fileID: 11500000, guid: c6a1bcc66add01a44b5be31d2a7699ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hegemonia: {fileID: 0}
-  HQ: {fileID: 197894432797424900, guid: bf9fb93a14d136343960b063639752d1, type: 3}
-  Net_Fighter: {fileID: 1372537820829367572, guid: d601f097b232886408b903f82328edde, type: 3}
-  The_Boss: {fileID: 2984194339120370366, guid: d006fa83391a45c4aa63588d88014567, type: 3}
-  OfficerII: {fileID: 2178569540999443471, guid: 15c68931c0b4b8e4bad27779208d9379, type: 3}
-  Runner: {fileID: 116162032167611574, guid: b0e6e5ac03de4e642b6462c23f5cc083, type: 3}
-  Guard: {fileID: 3941510853104436130, guid: 3a9085c1d1a82ac4b90353d6e42a9daa, type: 3}
-  QuarterMaster: {fileID: 2204495556797512064, guid: 9b32d6fbbb0a24b47a2a950c007b3c70, type: 3}
-  Transport: {fileID: 2651245186094298009, guid: ea3ed0e1474a4d948a0b3ef92c73eda7, type: 3}
-  Thug: {fileID: 6171873431932117871, guid: 83a27721970e5c04ba7eb377363338a8, type: 3}
-  Net_Master: {fileID: 8803025740789476377, guid: 9e8447c8abf1a384ab35b014447f9b90, type: 3}
-  Ganger: {fileID: 4959061405928075143, guid: 9793e15725db51948b83e048fb22104f, type: 3}
-  Gladiator: {fileID: 3179712441506360895, guid: eeef8de564dca014a9d557015e3124bb, type: 3}
-  Uniwersal_Solider: {fileID: 5789489817964852972, guid: 6e44838256f7756418218e7e61936360, type: 3}
-  OfficerI: {fileID: 2746994797590859362, guid: 5b47ac6fd22e80049b52c61ea929a747, type: 3}
-  Scout: {fileID: 6496913280309307409, guid: b531600db5d03b14282c1fff2b744398, type: 3}
-  Battle: {fileID: 4162584206783684805, guid: 997baeba11056d64388b9f7ae25c7ba3, type: 3}
-  Move: {fileID: 3237738999496467193, guid: bc38fc63bd736b94687ba74e74b2ccd0, type: 3}
-  PushBack: {fileID: 5288570817350596829, guid: 3e53028fa2b16cb4d8e9e4c448fab376, type: 3}
-  Sniper: {fileID: 3294763129333434351, guid: 039226499a93c1e43a75e315b942702d, type: 3}
---- !u!114 &1732199731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732199726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bb52976231b2d4bb622002a19f3def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  which: 0
-  oponent: 
-  id: 
-  net: 
-  Core: {fileID: 0}
---- !u!114 &1732199732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732199726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f2c73451b1d4546a4e786c251b1ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hegemonia: {fileID: 0}
-  Create: {fileID: 0}
-  Delete: {fileID: 0}
-  Battle: {fileID: 0}
-  isLife: 0
-  Core: {fileID: 0}
-  pathToPython: 
-  shop: 0000000000000000000000000000000000000000
---- !u!114 &1732199733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732199726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9021492ed3038b84582663b472fb1a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hegemonia: {fileID: 0}
-  Core: {fileID: 0}
-  Delete: {fileID: 0}
 --- !u!1 &1855843150
 GameObject:
   m_ObjectHideFlags: 0
