@@ -74,7 +74,7 @@ public class borgoCreate : MonoBehaviour
 
             if (gameObject == null)
             {
-                StopCoroutine("Create");
+                yield break;
             }
 
             bool isEmpty = true;
@@ -264,6 +264,15 @@ public class borgoCreate : MonoBehaviour
                 case "Scout":
                     gameObject = Scout;
                     break;
+                case "Battle":
+                    gameObject = Battle;
+                    break;
+                case "Move":
+                    gameObject = Move;
+                    break;
+                case "Grenade":
+                    gameObject = Grenade;
+                    break;
                 default:
                     gameObject = null;
                     break;
@@ -271,7 +280,7 @@ public class borgoCreate : MonoBehaviour
 
             if (gameObject == null)
             {
-                StopCoroutine("Create");
+                yield break;
             }
 
             GameObject currenthex = GameObject.Find("borgo " + idHex * -1);

@@ -45,7 +45,7 @@ public class Core : MonoBehaviour
         hegemonia.StartGame();
 
 
-        
+
         //StartCoroutine(borgo.Create("Butcher", 3, 4));
 
         //borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
@@ -70,7 +70,8 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-
+        borgo.turn();
+        battle(); 
         afterBattle();
     }
 
@@ -129,6 +130,46 @@ public class Core : MonoBehaviour
             }
         }
         return sumMedic; 
+    }
+
+    public void battle()
+    {
+        for(int i = 0; i < 4; i++)
+        {
+            switch (first)
+            {
+                case "borgo":
+                    borgo.InitiativeBattle(i); 
+                    switch (second)
+                    {
+                        case "borgo":
+                            borgo.InitiativeBattle(i);
+                            break;
+                        case "hegemonia":
+                            hegemonia.InitiativeBattle(i);
+                            break;
+                        default:
+                            break; 
+                    }
+                    break;
+                case "hegemonia":
+                    hegemonia.InitiativeBattle(i);
+                    switch (second)
+                    {
+                        case "borgo":
+                            borgo.InitiativeBattle(i);
+                            break;
+                        case "hegemonia":
+                            hegemonia.InitiativeBattle(i);
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     public void afterBattle()

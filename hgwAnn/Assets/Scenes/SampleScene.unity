@@ -2009,6 +2009,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ceca3e9f92d9ba4eb2a51db6d577ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objects:
+  - HQ
+  - Brawler
+  - Medic
+  - Mutant
+  - Super_Mutant
+  - Officer
+  - Super_Officer
+  - Butcher
+  - Assassin
+  - NetFlighter
+  - Scout
+  - Battle
+  - Move
+  - Grenade
 --- !u!1 &1732199726
 GameObject:
   m_ObjectHideFlags: 0

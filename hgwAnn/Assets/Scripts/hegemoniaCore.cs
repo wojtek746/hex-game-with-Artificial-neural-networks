@@ -14,4 +14,9 @@ public class hegemoniaCore : MonoBehaviour
         battle.StartGame();
         create.StartGame(); 
     }
+
+    public void InitiativeBattle(int initiative)
+    {
+        battle.InitiativeBattle(initiative);
+    }
 }
