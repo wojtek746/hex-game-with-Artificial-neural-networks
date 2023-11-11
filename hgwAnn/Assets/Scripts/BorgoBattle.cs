@@ -45,9 +45,7 @@ public class borgoBattle : MonoBehaviour
                                             if (currentProperty.strength[direction] > 0)
                                             {
                                                 whereLook = (currentProperty.whereLook + direction) % 6;
-                                                UnityEngine.Debug.Log($"{whereLook}"); 
                                                 whereLook = a.a(i, whereLook, 0);
-                                                UnityEngine.Debug.Log($"whereLook: {whereLook} for {currentProperty.strength[direction]} on {direction}");
                                                 if (whereLook != 0)
                                                 {
                                                     attackhex = GameObject.Find("hex " + whereLook);

@@ -44,8 +44,6 @@ public class Core : MonoBehaviour
         borgo.StartGame();
         hegemonia.StartGame();
 
-
-
         //StartCoroutine(borgo.Create("Butcher", 3, 4));
 
         //borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
@@ -71,8 +69,7 @@ public class Core : MonoBehaviour
             }
         }*/
         borgo.turn();
-        battle(); 
-        afterBattle();
+        //battle(); 
     }
 
     public int isMedic(int whereIs)
@@ -170,6 +167,7 @@ public class Core : MonoBehaviour
                     break;
             }
         }
+        afterBattle(); 
     }
 
     public void afterBattle()
