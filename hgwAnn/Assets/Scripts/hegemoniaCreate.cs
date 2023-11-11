@@ -6,19 +6,24 @@ public class hegemoniaCreate : MonoBehaviour
 {
     public around a;
     public GameObject HQ;
-    public GameObject Brawler;
-    public GameObject Medic;
-    public GameObject Mutant;
-    public GameObject Super_Mutant;
+    public GameObject Runner;
+    public GameObject Boss;
+    public GameObject Brute;
+    public GameObject Ganger;
+    public GameObject Gladiator;
+    public GameObject Quartermaster;
     public GameObject Officer;
-    public GameObject Super_Officer;
-    public GameObject Butcher;
-    public GameObject Assassin;
+    public GameObject Officer2;
     public GameObject NetFlighter;
+    public GameObject Guard;
+    public GameObject SuperNet;
+    public GameObject Transport;
+    public GameObject UniversalSolidier;
     public GameObject Scout;
     public GameObject Battle;
     public GameObject Move;
-    public GameObject Grenade;
+    public GameObject Push;
+    public GameObject Sniper;
 
     public void StartGame()
     {
@@ -28,6 +33,7 @@ public class hegemoniaCreate : MonoBehaviour
     public IEnumerator Create(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
+        UnityEngine.Debug.Log($"hegemonia create: {name} on {idHex} with rotation {rotation}");
         if (idHex > 0 && idHex <= 19)
         {
             GameObject gameObject;
@@ -37,32 +43,44 @@ public class hegemoniaCreate : MonoBehaviour
                 case "HQ":
                     gameObject = HQ;
                     break;
-                case "Brawler":
-                    gameObject = Brawler;
+                case "Runner":
+                    gameObject = Runner;
                     break;
-                case "Medic":
-                    gameObject = Medic;
+                case "Boss":
+                    gameObject = Boss;
                     break;
-                case "Mutant":
-                    gameObject = Mutant;
+                case "Brute":
+                    gameObject = Brute;
                     break;
-                case "Super_Mutant":
-                    gameObject = Super_Mutant;
+                case "Ganger":
+                    gameObject = Ganger;
+                    break;
+                case "Gladiator":
+                    gameObject = Gladiator;
+                    break;
+                case "Quartermaster":
+                    gameObject = Quartermaster;
                     break;
                 case "Officer":
                     gameObject = Officer;
                     break;
-                case "Super_Officer":
-                    gameObject = Super_Officer;
-                    break;
-                case "Butcher":
-                    gameObject = Butcher;
-                    break;
-                case "Assassin":
-                    gameObject = Assassin;
+                case "Officer2":
+                    gameObject = Officer2;
                     break;
                 case "NetFlighter":
                     gameObject = NetFlighter;
+                    break;
+                case "Guard":
+                    gameObject = Guard;
+                    break;
+                case "SuperNet":
+                    gameObject = SuperNet;
+                    break;
+                case "Transport":
+                    gameObject = Transport;
+                    break;
+                case "UniversalSolidier":
+                    gameObject = UniversalSolidier;
                     break;
                 case "Scout":
                     gameObject = Scout;
@@ -74,7 +92,7 @@ public class hegemoniaCreate : MonoBehaviour
 
             if (gameObject == null)
             {
-                StopCoroutine("Create");
+                yield break;
             }
 
             bool isEmpty = true;
@@ -151,7 +169,7 @@ public class hegemoniaCreate : MonoBehaviour
                             {
                                 currentProperty.whereLook = rotation;
                                 currentProperty.whereIs = idHex;
-                                currentProperty.StartGame(); 
+                                currentProperty.StartGame();
                             }
                             break;
                         }
@@ -162,6 +180,87 @@ public class hegemoniaCreate : MonoBehaviour
         else
         {
             //w sklepie
+            GameObject gameObject;
+
+            switch (name)
+            {
+                case "HQ":
+                    gameObject = HQ;
+                    break;
+                case "Runner":
+                    gameObject = Runner;
+                    break;
+                case "Boss":
+                    gameObject = Boss;
+                    break;
+                case "Brute":
+                    gameObject = Brute;
+                    break;
+                case "Ganger":
+                    gameObject = Ganger;
+                    break;
+                case "Gladiator":
+                    gameObject = Gladiator;
+                    break;
+                case "Quartermaster":
+                    gameObject = Quartermaster;
+                    break;
+                case "Officer":
+                    gameObject = Officer;
+                    break;
+                case "Officer2":
+                    gameObject = Officer2;
+                    break;
+                case "NetFlighter":
+                    gameObject = NetFlighter;
+                    break;
+                case "Guard":
+                    gameObject = Guard;
+                    break;
+                case "SuperNet":
+                    gameObject = SuperNet;
+                    break;
+                case "UniversalSolidier":
+                    gameObject = UniversalSolidier;
+                    break;
+                case "Scout":
+                    gameObject = Scout;
+                    break;
+                case "Battle":
+                    gameObject = Battle;
+                    break;
+                case "Move":
+                    gameObject = Move;
+                    break;
+                case "Push":
+                    gameObject = Push;
+                    break;
+                case "Sniper":
+                    gameObject = Sniper;
+                    break;
+                default:
+                    gameObject = null;
+                    break;
+            }
+
+            if (gameObject == null)
+            {
+                yield break;
+            }
+
+            GameObject currenthex = GameObject.Find("hegemonia " + idHex * -1);
+            if (currenthex != null)
+            {
+                Transform hex = currenthex.transform.Find("hex");
+                if (hex == null)
+                {
+                    //dodajemy do sklepu
+                    GameObject newObject = Instantiate(gameObject, currenthex.transform.position, currenthex.transform.rotation);
+                    newObject.transform.parent = currenthex.transform;
+                    newObject.transform.position = new Vector3(currenthex.transform.position.x, currenthex.transform.position.y, -1);
+                    newObject.transform.name = "hex";
+                }
+            }
         }
 
         StopCoroutine("Create");

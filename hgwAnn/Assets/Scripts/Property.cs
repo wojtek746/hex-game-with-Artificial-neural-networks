@@ -54,7 +54,6 @@ public class Property : MonoBehaviour
         strength = defultStrength;
         functions = defultFunctions;
         net = false;
-        UnityEngine.Debug.Log("afterBattle()");
         if (health < previousHealth)
         {
             int medic = core.isMedic(whereIs);

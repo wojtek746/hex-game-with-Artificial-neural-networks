@@ -2024,6 +2024,8 @@ MonoBehaviour:
   - Battle
   - Move
   - Grenade
+  shop: 000000000000000000000000
+  emptyHexs: 
 --- !u!1 &1732199726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,20 +2076,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {fileID: 0}
-  HQ: {fileID: 0}
-  Brawler: {fileID: 0}
-  Medic: {fileID: 0}
-  Mutant: {fileID: 0}
-  Super_Mutant: {fileID: 0}
-  Officer: {fileID: 0}
-  Super_Officer: {fileID: 0}
-  Butcher: {fileID: 0}
-  Assassin: {fileID: 0}
-  NetFlighter: {fileID: 0}
-  Scout: {fileID: 0}
-  Battle: {fileID: 0}
-  Move: {fileID: 0}
-  Grenade: {fileID: 0}
+  HQ: {fileID: 197894432797424900, guid: bf9fb93a14d136343960b063639752d1, type: 3}
+  Runner: {fileID: 116162032167611574, guid: b0e6e5ac03de4e642b6462c23f5cc083, type: 3}
+  Boss: {fileID: 2984194339120370366, guid: d006fa83391a45c4aa63588d88014567, type: 3}
+  Brute: {fileID: 6171873431932117871, guid: 83a27721970e5c04ba7eb377363338a8, type: 3}
+  Ganger: {fileID: 4959061405928075143, guid: 9793e15725db51948b83e048fb22104f, type: 3}
+  Gladiator: {fileID: 3179712441506360895, guid: eeef8de564dca014a9d557015e3124bb, type: 3}
+  Quartermaster: {fileID: 2204495556797512064, guid: 9b32d6fbbb0a24b47a2a950c007b3c70, type: 3}
+  Officer: {fileID: 2746994797590859362, guid: 5b47ac6fd22e80049b52c61ea929a747, type: 3}
+  Officer2: {fileID: 2178569540999443471, guid: 15c68931c0b4b8e4bad27779208d9379, type: 3}
+  NetFlighter: {fileID: 1372537820829367572, guid: d601f097b232886408b903f82328edde, type: 3}
+  Guard: {fileID: 3941510853104436130, guid: 3a9085c1d1a82ac4b90353d6e42a9daa, type: 3}
+  SuperNet: {fileID: 8803025740789476377, guid: 9e8447c8abf1a384ab35b014447f9b90, type: 3}
+  Transport: {fileID: 2651245186094298009, guid: ea3ed0e1474a4d948a0b3ef92c73eda7, type: 3}
+  UniversalSolidier: {fileID: 5789489817964852972, guid: 6e44838256f7756418218e7e61936360, type: 3}
+  Scout: {fileID: 6496913280309307409, guid: b531600db5d03b14282c1fff2b744398, type: 3}
+  Battle: {fileID: 4162584206783684805, guid: 997baeba11056d64388b9f7ae25c7ba3, type: 3}
+  Move: {fileID: 3237738999496467193, guid: bc38fc63bd736b94687ba74e74b2ccd0, type: 3}
+  Push: {fileID: 5288570817350596829, guid: 3e53028fa2b16cb4d8e9e4c448fab376, type: 3}
+  Sniper: {fileID: 3294763129333434351, guid: 039226499a93c1e43a75e315b942702d, type: 3}
 --- !u!114 &1732199729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,6 +2125,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a1bcc66add01a44b5be31d2a7699ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objects:
+  - HQ
+  - Runner
+  - Boss
+  - Brute
+  - Ganger
+  - Gladiator
+  - Quartermaster
+  - Officer
+  - Officer2
+  - NetFlighter
+  - Guard
+  - SuperNet
+  - Transport
+  - UniversalSolidier
+  - Scout
+  - Battle
+  - Move
+  - Push
+  - Sniper
+  shop: 000000000000000000000000
+  emptyHexs: 
 --- !u!1 &1855843150
 GameObject:
   m_ObjectHideFlags: 0

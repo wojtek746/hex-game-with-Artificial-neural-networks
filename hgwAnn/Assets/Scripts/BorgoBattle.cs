@@ -59,6 +59,7 @@ public class borgoBattle : MonoBehaviour
                                                             {
                                                                 if (attackProperty.nameSztab != nameSztab)
                                                                 {
+                                                                    UnityEngine.Debug.Log($"borgoBattle: z {i} na {whereLook} za {currentProperty.strength[direction]} na blisko");
                                                                     attackProperty.health -= currentProperty.strength[direction];
                                                                 }
                                                             }
@@ -90,6 +91,7 @@ public class borgoBattle : MonoBehaviour
                                                             {
                                                                 if (attackProperty.nameSztab != nameSztab)
                                                                 {
+                                                                    UnityEngine.Debug.Log($"borgoBattle: z {i} na {whereLook} za {currentProperty.strength[direction]} na daleko");
                                                                     attackProperty.health -= currentProperty.strength[direction];
                                                                 }
                                                             }
@@ -115,6 +117,7 @@ public class borgoBattle : MonoBehaviour
                                                         {
                                                             if (attackProperty.nameSztab != nameSztab)
                                                             {
+                                                                UnityEngine.Debug.Log($"borgoBattle: z {i} na {whereLook} za {currentProperty.strength[direction]} siecią");
                                                                 attackProperty.health -= currentProperty.strength[direction];
                                                                 attackProperty.net = true;
                                                             }

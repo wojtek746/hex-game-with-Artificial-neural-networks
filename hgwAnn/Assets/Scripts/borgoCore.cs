@@ -199,7 +199,7 @@ public class borgoCore : MonoBehaviour
                                 Property currentProperty = currentHex.GetComponent<Property>();
                                 if (currentProperty != null)
                                 {
-                                    if (currentProperty.nameSztab != "borgo")
+                                    if (currentProperty.nameSztab != "borgo" && currentProperty.name != "sztab")
                                     {
                                         emptyHexs.Add(j);
                                     }
@@ -219,7 +219,7 @@ public class borgoCore : MonoBehaviour
                             Transform currentHex = currenthex.transform.Find("hex");
                             if (currentHex != null)
                             {
-                                Destroy(currentHex); 
+                                Destroy(currentHex.gameObject); 
                             }
                         }
                     }

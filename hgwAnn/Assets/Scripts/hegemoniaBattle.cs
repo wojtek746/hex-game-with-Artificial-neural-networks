@@ -5,11 +5,11 @@ using UnityEngine;
 public class hegemoniaBattle : MonoBehaviour
 {
     public GameObject currenthex;
-    public GameObject attackhex; 
+    public GameObject attackhex;
     public Property currentProperty;
-    public Property attackProperty; 
+    public Property attackProperty;
     public around a;
-    public string nameSztab; 
+    public string nameSztab;
 
     public void StartGame()
     {
@@ -32,22 +32,20 @@ public class hegemoniaBattle : MonoBehaviour
 
                     if (currentProperty != null)
                     {
-                        if(currentProperty.nameSztab == nameSztab)
+                        if (currentProperty.nameSztab == nameSztab)
                         {
                             if (currentProperty.initiative[initiative] && !currentProperty.net)
                             {
                                 for (int direction = 0; direction < 6; direction++)
                                 {
-                                    int whereLook = 0; 
+                                    int whereLook = 0;
                                     switch (currentProperty.distance[direction])
                                     {
                                         case 0:
                                             if (currentProperty.strength[direction] > 0)
                                             {
                                                 whereLook = (currentProperty.whereLook + direction) % 6;
-                                                UnityEngine.Debug.Log($"{whereLook}"); 
                                                 whereLook = a.a(i, whereLook, 0);
-                                                UnityEngine.Debug.Log($"whereLook: {whereLook} for {currentProperty.strength[direction]} on {direction}");
                                                 if (whereLook != 0)
                                                 {
                                                     attackhex = GameObject.Find("hex " + whereLook);
@@ -149,7 +147,7 @@ public class hegemoniaBattle : MonoBehaviour
                                                         {
                                                             if (attackProperty.nameSztab == nameSztab)
                                                             {
-                                                                attackProperty.strength[0] += currentProperty.functions[direction]; 
+                                                                attackProperty.strength[0] += currentProperty.functions[direction];
                                                             }
                                                         }
                                                     }
@@ -212,13 +210,13 @@ public class hegemoniaBattle : MonoBehaviour
                                                             if (attackProperty.nameSztab == nameSztab)
                                                             {
                                                                 attackProperty.initiative[currentProperty.functions[direction]] = true;
-                                                                for(int gdzie = 0; gdzie < 6; gdzie++)
+                                                                for (int gdzie = 0; gdzie < 6; gdzie++)
                                                                 {
                                                                     if (attackProperty.distance[gdzie] != 2)
                                                                     {
                                                                         if (attackProperty.distance[gdzie] == 1)
                                                                         {
-                                                                            attackProperty.distance[gdzie] = 0; 
+                                                                            attackProperty.distance[gdzie] = 0;
                                                                         }
                                                                         else
                                                                         {
