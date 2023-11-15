@@ -14,6 +14,15 @@ public class NeuralNetwork : MonoBehaviour
             Debug.LogError("Invalid network configuration.");
             return; 
         }
+        for(int layer = 0; layer < neuronsPerLayer.Length; layer++)
+        {
+            if(neuronsPerLayer[layer] != biases[layer].Count || neuronsPerLayer[layer] != dendrites[layer].Count)
+            {
+                Debug.LogError("Invalid network configuration.");
+                return;
+            }
+        }
+
         neurons = new Neuron[neuronsPerLayer.Length, Mathf.Max(neuronsPerLayer)]; 
 
         for(int layer = 0; layer < neuronsPerLayer.Length; layer++)
@@ -44,13 +53,13 @@ public class NeuralNetwork : MonoBehaviour
         dendrites.Add(new List<List<List<int>>> {
             new List<List<int>>
             {
-                new List<int> {0, 0, 1}, new List<int> {0, 1, 1}
+                new List<int> {0, 0, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}
             }
         });
         dendrites.Add(new List<List<List<int>>> {
             new List<List<int>>
             {
-                new List<int> {0, 0, 2}, new List<int> {0, 1, 2}
+                new List<int> {0, 0, 2}
             }, new List<List<int>>
             {
                 new List<int> {0, 2, 2}, new List<int> {0, 3, 2}
@@ -62,7 +71,7 @@ public class NeuralNetwork : MonoBehaviour
                 new List<int> {0, 0, 3}, new List<int> {0, 1, 3}
             }, new List<List<int>>
             {
-                new List<int> {0, 2, 3}, new List<int> {0, 3, 3}
+                new List<int> {0, 2, 3}, new List<int> {0, 3, 3}, new List<int> {0, 3, 3}
             }, new List<List<int>>
             {
                 new List<int> {0, 4, 3}, new List<int> {0, 5, 3}
