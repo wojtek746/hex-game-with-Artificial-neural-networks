@@ -30,7 +30,7 @@ public struct dendrite
     }
 }
 
-public class NeuralNetwork : MonoBehaviour
+public class NeuralNetwork_old : MonoBehaviour
 {
     public List<neuron> neurons;
     public int lastLayer; 

@@ -68,7 +68,7 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        borgo.turn();
+        /*borgo.turn();
         hegemonia.turn();
         borgo.turn();
         hegemonia.turn();
@@ -76,7 +76,7 @@ public class Core : MonoBehaviour
         hegemonia.turn();
         borgo.turn();
         hegemonia.turn();
-        battle(); 
+        battle(); */
     }
 
     public int isMedic(int whereIs)

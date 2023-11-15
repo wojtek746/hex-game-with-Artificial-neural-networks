@@ -212,7 +212,6 @@ public class borgoBattle : MonoBehaviour
                                                         {
                                                             if (attackProperty.nameSztab == nameSztab)
                                                             {
-                                                                attackProperty.initiative[currentProperty.functions[direction]] = true;
                                                                 for(int gdzie = 0; gdzie < 6; gdzie++)
                                                                 {
                                                                     if (attackProperty.distance[gdzie] != 2)
