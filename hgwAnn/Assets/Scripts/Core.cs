@@ -68,15 +68,15 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        /*borgo.turn();
-        hegemonia.turn();
-        borgo.turn();
-        hegemonia.turn();
-        borgo.turn();
-        hegemonia.turn();
-        borgo.turn();
-        hegemonia.turn();
-        battle(); */
+        for(int turn = 0; turn < 5; turn++)
+        {
+            borgo.turn();
+            hegemonia.turn();
+            if(!isHQLife())
+            {
+                break; 
+            }
+        }
     }
 
     public int isMedic(int whereIs)
@@ -173,8 +173,8 @@ public class Core : MonoBehaviour
                 default:
                     break;
             }
+            afterBattle();
         }
-        afterBattle(); 
     }
 
     public void afterBattle()
@@ -198,5 +198,37 @@ public class Core : MonoBehaviour
                 }
             }
         }
+    }
+
+    public bool isHQLife()
+    {
+        int ileZyje = 0; 
+        for (int i = 1; i <= 19; i++)
+        {
+            GameObject currenthex = GameObject.Find("hex " + i);
+
+            if (currenthex != null)
+            {
+                Transform hex = currenthex.transform.Find("hex");
+
+                if (hex != null)
+                {
+                    Property currentProperty = hex.GetComponent<Property>();
+
+                    if (currentProperty != null)
+                    {
+                        if(currentProperty.name == "sztab")
+                        {
+                            ileZyje++; 
+                        }
+                    }
+                }
+            }
+        }
+        if(ileZyje >= 2)
+        {
+            return true; 
+        }
+        return false; 
     }
 }

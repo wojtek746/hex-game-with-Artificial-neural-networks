@@ -28,7 +28,7 @@ public class borgoCreate : MonoBehaviour
     public IEnumerator Create(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
-        UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}"); 
+        //UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}"); 
         if (idHex > 0 && idHex <= 19)
         {
             GameObject gameObject;
