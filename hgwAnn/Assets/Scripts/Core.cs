@@ -68,7 +68,7 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for(int turn = 0; turn < 5; turn++)
+        for(int turn = 0; turn < 4; turn++)
         {
             borgo.turn();
             hegemonia.turn();
