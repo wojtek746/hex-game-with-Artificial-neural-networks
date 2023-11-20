@@ -65,6 +65,9 @@
     <Compile Include="Assets\Scripts\borgoCreate.cs" />
     <Compile Include="Assets\Scripts\Core.cs" />
     <Compile Include="Assets\Scripts\borgoBattle.cs" />
+    <Compile Include="Assets\Scripts\Neuron.cs" />
+    <Compile Include="Assets\Scripts\Dendrite.cs" />
+    <Compile Include="Assets\Scripts\NeuralNetwork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\png\Borgo\Borgo.txt" />
@@ -770,9 +773,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
