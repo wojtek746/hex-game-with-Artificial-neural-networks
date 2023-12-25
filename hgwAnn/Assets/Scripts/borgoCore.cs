@@ -35,9 +35,12 @@ public class borgoCore : MonoBehaviour
                 }
             }
         }
-        int random = emptyHexs[Random.Range(0, emptyHexs.Count)];
+        if(emptyHexs.Count > 0)
+        {
+            int random = emptyHexs[Random.Range(0, emptyHexs.Count)];
 
-        StartCoroutine(create.Create("HQ", random, Random.Range(0, 7)));
+            StartCoroutine(create.Create("HQ", random, Random.Range(0, 7)));
+        }
         emptyHexs = new List<int>();
     }
 
@@ -74,6 +77,7 @@ public class borgoCore : MonoBehaviour
 
                     StartCoroutine(create.Create(objects[shop[i]], random, Random.Range(0, 6)));
                 }
+                emptyHexs = new List<int>();
 
                 GameObject borgoShop = GameObject.Find("borgo " + (i + 1));
                 if (borgoShop != null)
@@ -133,47 +137,47 @@ public class borgoCore : MonoBehaviour
                     }
                     int random1 = 0;
                     List<int> newHexs = new List<int>();
-                    if(emptyHexs.Count > 0)
+                    while (emptyHexs.Count > 0 && newHexs.Count == 0)
                     {
-                        while (true)
+                        int randomId = Random.Range(0, emptyHexs.Count);
+                        random1 = emptyHexs[randomId];
+                        for (int j = 0; j < 6; j++)
                         {
-                            random1 = emptyHexs[Random.Range(0, emptyHexs.Count)];
-                            for (int j = 0; j < 6; j++)
+                            GameObject currenthex = GameObject.Find("hex " + (a.a(random1, j, 0)));
+                            if (currenthex != null)
                             {
-                                GameObject currenthex = GameObject.Find("hex " + (a.a(random1, j, 0)));
-                                if (currenthex != null)
+                                Transform currentHex = currenthex.transform.Find("hex");
+                                if (currentHex == null)
                                 {
-                                    Transform currentHex = currenthex.transform.Find("hex");
-                                    if (currentHex == null)
-                                    {
-                                        newHexs.Add(a.a(random1, j, 0));
-                                    }
+                                    newHexs.Add(a.a(random1, j, 0));
                                 }
                             }
-                            if (newHexs.Count > 0)
+                        }
+                        emptyHexs.RemoveAt(randomId);
+                    }
+                    if(newHexs.Count > 0)
+                    {
+                        int random2 = newHexs[Random.Range(0, newHexs.Count)];
+                        emptyHexs = new List<int>();
+                        newHexs = new List<int>();
+                        //
+
+                        GameObject hex1 = GameObject.Find("hex " + random1);
+                        GameObject hex2 = GameObject.Find("hex " + random2);
+
+                        UnityEngine.Debug.Log($"move: z {random1} do {random2}");
+
+                        if (hex1 != null && hex2 != null)
+                        {
+                            Transform hex = hex1.transform.Find("hex");
+                            if (hex != null)
                             {
-                                break;
+                                hex.SetParent(hex2.transform);
+                                hex.localPosition = new Vector3(0, 0, -1);
                             }
                         }
                     }
-                    int random2 = newHexs[Random.Range(0, newHexs.Count)];
-                    //
-
-                    GameObject hex1 = GameObject.Find("hex " + random1);
-                    GameObject hex2 = GameObject.Find("hex " + random2);
-
-                    UnityEngine.Debug.Log($"move: z {random1} do {random2}"); 
-
-                    if(hex1 != null && hex2 != null)
-                    {
-                        Transform hex = hex1.transform.Find("hex");
-                        if(hex != null)
-                        {
-                            hex.SetParent(hex2.transform);
-                            hex.localPosition = new Vector3(0, 0, -1);
-                        }
-                    }
-
+                    
                     GameObject borgoShop = GameObject.Find("borgo " + (i + 1));
                     if (borgoShop != null)
                     {
@@ -223,6 +227,7 @@ public class borgoCore : MonoBehaviour
                             }
                         }
                     }
+                    emptyHexs = new List<int>();
 
                     GameObject borgoShop = GameObject.Find("borgo " + (i + 1));
                     if (borgoShop != null)

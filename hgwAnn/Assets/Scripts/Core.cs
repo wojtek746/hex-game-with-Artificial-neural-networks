@@ -68,12 +68,13 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for(int turn = 0; turn < 4; turn++)
+        for(int turn = 0; turn < 100; turn++)
         {
             borgo.turn();
             hegemonia.turn();
             if(!isHQLife())
             {
+                UnityEngine.Debug.Log("ktoś wygrał :)"); 
                 break; 
             }
         }
