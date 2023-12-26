@@ -204,7 +204,7 @@ public class Core : MonoBehaviour
     public bool isHQLife()
     {
         int ileZyje = 0; 
-        for (int i = 1; i <= 19; i++)
+        for (int i = 1; i <= 1; i++)
         {
             GameObject currenthex = GameObject.Find("hex " + i);
 

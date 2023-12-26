@@ -4,30 +4,33 @@
             "layer": 10,
             "bias": 2,
             "dendrites": [
-                {
-                    "looking": 0,
-                    "weight": 1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 0,
+                "weight": 1
+              }
             ]
         },
         {
             "layer": 10,
             "bias": 1,
             "dendrites": [
-                {
-                    "looking": 0,
-                    "weight": -1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 1,
+                "weight": -1
+              }
             ]
         },
         {
             "layer": 10,
             "bias": 0,
             "dendrites": [
-                {
-                    "looking": 3,
-                    "weight": 1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 3,
+                "weight": 1
+              }
             ]
         }
     ], 
@@ -36,30 +39,33 @@
             "layer": 10,
             "bias": 2,
             "dendrites": [
-                {
-                    "looking": 0,
-                    "weight": 1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 10,
+                "weight": 1
+              }
             ]
         },
         {
             "layer": 10,
             "bias": 1,
             "dendrites": [
-                {
-                    "looking": 0,
-                    "weight": -1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 0,
+                "weight": -1
+              }
             ]
         },
         {
             "layer": 10,
             "bias": 0,
             "dendrites": [
-                {
-                    "looking": 3,
-                    "weight": 1
-                }
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 3,
+                "weight": 1
+              }
             ]
         }
     ]
