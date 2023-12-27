@@ -68,14 +68,31 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for(int turn = 0; turn < 100; turn++)
+        for (int turn = 0; turn < 1; turn++)
         {
             borgo.turn();
             hegemonia.turn();
-            if(!isHQLife())
+            if (!isHQLife())
             {
-                UnityEngine.Debug.Log("ktoś wygrał :)"); 
-                break; 
+                UnityEngine.Debug.Log("ktoś wygrał :)");
+                break;
+            }
+        }
+
+        GameObject currenthex = GameObject.Find("neuralNetwork");
+
+        if (currenthex != null)
+        {
+            Transform currentHex = currenthex.transform;
+
+            if (currentHex != null)
+            {
+                NeuralNetwork currentProperty = currentHex.GetComponent<NeuralNetwork>();
+
+                if (currentProperty != null)
+                {
+                    currentProperty.GetInputs("borgo"); 
+                }
             }
         }
     }

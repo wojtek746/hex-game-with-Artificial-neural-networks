@@ -100,7 +100,7 @@ MonoBehaviour:
   core: {fileID: 0}
   health: 1
   name: nozownik
-  id: 0
+  id: 4
   nameSztab: borgo
   whereLook: 0
   whereIs: 0

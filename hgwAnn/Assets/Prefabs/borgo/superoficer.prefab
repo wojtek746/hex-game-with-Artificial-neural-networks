@@ -100,7 +100,7 @@ MonoBehaviour:
   core: {fileID: 0}
   health: 2
   name: superoficer
-  id: 0
+  id: 9
   nameSztab: borgo
   whereLook: 0
   whereIs: 0

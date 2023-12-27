@@ -32,4 +32,12 @@ public class Neuron : MonoBehaviour
             this.dendrites[i].Iniciate(dendrites[i][0], dendrites[i][1], dendrites[i][2]);
         }
     }
+
+    public void Reset()
+    {
+        for (int dendrite = 0; dendrite < dendrites.GetLength(0); dendrite++)
+        {
+            Destroy(dendrites[dendrite].gameObject);
+        }
+    }
 }

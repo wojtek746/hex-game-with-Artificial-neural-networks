@@ -97,18 +97,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695f36e900678ca41a23fd8b65d67d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  core: {fileID: 0}
   health: 1
   name: supermutant
-  id: 0
+  id: 8
   nameSztab: borgo
   whereLook: 0
+  whereIs: 0
   initiative: 00000100
   distance: 000000000000000000000000000000000000000000000000
   strength: 020000000000000000000000000000000000000000000000
   functions: 000000000000000000000000000000000000000000000000
   net: 0
   isLife: 1
-  defultHealth: 0
+  previousHealth: 0
   defultInitiative: 00000000
   defultDistance: 000000000000000000000000000000000000000000000000
   defultStrength: 000000000000000000000000000000000000000000000000
@@ -123,4 +125,6 @@ MonoBehaviour:
   isMedyk: 0
   isOficer: 0
   isMove: 0
+  isTransport: 0
   isZwiadowca: 0
+  isKwatermistrz: 0

@@ -8,6 +8,11 @@
                 "lookingLayer": 0,
                 "lookingNeuron": 0,
                 "weight": 1
+              },
+              {
+                "lookingLayer": 0,
+                "lookingNeuron": 2,
+                "weight": 1
               }
             ]
         },
