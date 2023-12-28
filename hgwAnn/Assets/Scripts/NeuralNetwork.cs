@@ -112,8 +112,22 @@ public class NeuralNetwork : MonoBehaviour
         Save("hegemonia", "borgo", "transport");
         Save("hegemonia", "borgo", "uniwersalnyzolnierz");
         Save("hegemonia", "borgo", "zwiadowca");
-        /*
-        Save("borgo", "hegemonia", "HQ");
+        Save("hegemonia", "borgo", "Move");
+        Save("hegemonia", "borgo", "Push");
+        for (int i = 19; i < 114; i++)
+        {
+            neurons[10, i].Destroy();
+            neurons[10, i] = null;
+        }
+        Save("hegemonia", "borgo", "Sniper");
+        for (int i = 2; i < 19; i++)
+        {
+            neurons[10, i].Destroy();
+            neurons[10, i] = null;
+        }
+        Save("hegemonia", "borgo", "Battle");
+
+        /*Save("borgo", "hegemonia", "HQ");
         Save("borgo", "hegemonia", "medyk");
         Save("borgo", "hegemonia", "mutek");
         Save("borgo", "hegemonia", "nozownik");
@@ -123,8 +137,21 @@ public class NeuralNetwork : MonoBehaviour
         Save("borgo", "hegemonia", "supermutant");
         Save("borgo", "hegemonia", "superoficer");
         Save("borgo", "hegemonia", "zabojca");
-        Save("borgo", "hegemonia", "zwiadowca");*/
-        Debug.Log(GetNeuron(10, 100)); 
+        Save("borgo", "hegemonia", "zwiadowca");
+        Save("borgo", "hegemonia", "Move");
+        for (int i = 19; i < 114; i++)
+        {
+            neurons[10, i].Destroy();
+            neurons[10, i] = null;
+        }
+        Save("borgo", "hegemonia", "Grenade");
+        for (int i = 2; i < 19; i++)
+        {
+            neurons[10, i].Destroy();
+            neurons[10, i] = null;
+        }
+        Save("borgo", "hegemonia", "Battle");*/
+        //Debug.Log(GetNeuron(10, 100)); 
         Reset(); 
     }
 

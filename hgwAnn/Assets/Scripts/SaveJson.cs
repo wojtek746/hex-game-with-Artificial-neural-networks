@@ -53,29 +53,32 @@ public class SaveJson : MonoBehaviour
         for (int i = 0; i < siec.neurons.GetLength(1); i++)
         {
             Neuron neuron = siec.neurons[10, i];
-
-            Dictionary<string, object> neuronData = new Dictionary<string, object>
+            if (neuron != null)
             {
-                { "layer", neuron.layer },
-                { "bias", neuron.bias }
-            };
 
-            List<Dictionary<string, object>> dendritesData = new List<Dictionary<string, object>>();
-
-            foreach (var dendrite in neuron.dendrites)
-            {
-                Dictionary<string, object> dendriteData = new Dictionary<string, object>
+                Dictionary<string, object> neuronData = new Dictionary<string, object>
                 {
-                    { "lookingLayer", dendrite.lookingLayer },
-                    { "lookingNeuron", dendrite.lookingNeuron },
-                    { "weight", dendrite.weight }
+                    { "layer", neuron.layer },
+                    { "bias", neuron.bias }
                 };
 
-                dendritesData.Add(dendriteData);
-            }
+                List<Dictionary<string, object>> dendritesData = new List<Dictionary<string, object>>();
 
-            neuronData["dendrites"] = dendritesData;
-            newNetworkData.Add(neuronData);
+                foreach (var dendrite in neuron.dendrites)
+                {
+                    Dictionary<string, object> dendriteData = new Dictionary<string, object>
+                    {
+                        { "lookingLayer", dendrite.lookingLayer },
+                        { "lookingNeuron", dendrite.lookingNeuron },
+                        { "weight", dendrite.weight }
+                    };
+
+                    dendritesData.Add(dendriteData);
+                }
+
+                neuronData["dendrites"] = dendritesData;
+                newNetworkData.Add(neuronData);
+            }
         }
 
         jsonData[which] = newNetworkData;
@@ -83,6 +86,6 @@ public class SaveJson : MonoBehaviour
         string newJsonString = JsonConvert.SerializeObject(jsonData, Formatting.Indented);
         File.WriteAllText(jsonFilePath, newJsonString);
 
-        Debug.Log($"Saved network configuration to {jsonFilePath}");
+        Debug.Log($"Saved network configuration to {jsonFilePath} in {which}");
     }
 }
