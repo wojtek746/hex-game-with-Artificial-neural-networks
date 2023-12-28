@@ -7,10 +7,14 @@ public class Neuron : MonoBehaviour
     public int layer;
     public int neuron;
     public int bias;
+    public bool isCalculated;
+    public int value; 
     public Dendrite[] dendrites;
 
     public void Iniciate(int layer, int neuron, int bias, List<List<int>> dendrites)
     {
+        this.isCalculated = false;
+        this.value = 0; 
         this.layer = layer;
         this.neuron = neuron;
         this.bias = bias;
@@ -33,11 +37,29 @@ public class Neuron : MonoBehaviour
         }
     }
 
-    public void Reset()
+    public int Calculate()
+    {
+        int value = this.bias; 
+        foreach(Dendrite dendrite in dendrites)
+        {
+            value += dendrite.value(); 
+        }
+        this.value = value;
+        this.isCalculated = true; 
+        return value; 
+    }
+
+    public void Destroy()
     {
         for (int dendrite = 0; dendrite < dendrites.GetLength(0); dendrite++)
         {
             Destroy(dendrites[dendrite].gameObject);
         }
+    }
+
+    public void Reset()
+    {
+        value = 0;
+        isCalculated = false; 
     }
 }

@@ -1,17 +1,12 @@
-using System.Collections;
-using System.Linq;
-using System;
 using System.Collections.Generic;
-using System.IO;
-using static UnityEngine.JsonUtility;
-using Newtonsoft.Json;
 using UnityEngine;
-using Newtonsoft.Json.Linq;
 
 public class NeuralNetwork : MonoBehaviour
 {
     public Neuron[,] neurons = new Neuron[0, 0];
     public int[] inputs;
+    public LoadJson load;
+    public SaveJson save; 
 
     public void Iniciate(int[] neuronsPerLayer, List<List<int>> biases, List<List<List<List<int>>>> dendrites)
     {
@@ -30,8 +25,9 @@ public class NeuralNetwork : MonoBehaviour
         }
 
         neurons = new Neuron[neuronsPerLayer.Length, Mathf.Max(neuronsPerLayer)]; 
+        //neurons = new Neuron[neuronsPerLayer.Length, 114];
 
-        for(int layer = 0; layer < neuronsPerLayer.Length; layer++)
+        for (int layer = 0; layer < neuronsPerLayer.Length; layer++)
         {
             for(int neuron = 0; neuron < neuronsPerLayer[layer]; neuron++)
             {
@@ -48,124 +44,119 @@ public class NeuralNetwork : MonoBehaviour
         }
     }
 
-    private void Start()
+    public int GetNeuron(int layer, int neuron)
     {
-        /*int[] neuronsPerLayer = new int[3] { 1, 2, 3 };
-        List<List<int>> biases = new List<List<int>>();
-        biases.Add(new List<int> { 1 });
-        biases.Add(new List<int> { 2, 3 });
-        biases.Add(new List<int> { 4, 5, 6 });
-        List<List<List<List<int>>>> dendrites = new List<List<List<List<int>>>>();
-        dendrites.Add(new List<List<List<int>>> {
-            new List<List<int>>
+        if(layer == 0)
+        {
+            return inputs[neuron]; 
+        }
+        if(neurons[layer, neuron] != null)
+        {
+            if(neurons[layer, neuron].isCalculated)
             {
-                new List<int> {0, 0, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}, new List<int> {0, 1, 1}
+                return neurons[layer, neuron].value; 
             }
-        });
-        dendrites.Add(new List<List<List<int>>> {
-            new List<List<int>>
-            {
-                new List<int> {0, 0, 2}
-            }, new List<List<int>>
-            {
-                new List<int> {0, 2, 2}, new List<int> {0, 3, 2}
-            }
-        });
-        dendrites.Add(new List<List<List<int>>> {
-            new List<List<int>>
-            {
-                new List<int> {0, 0, 3}, new List<int> {0, 1, 3}
-            }, new List<List<int>>
-            {
-                new List<int> {0, 2, 3}, new List<int> {0, 3, 3}, new List<int> {0, 3, 3}
-            }, new List<List<int>>
-            {
-                new List<int> {0, 4, 3}, new List<int> {0, 5, 3}
-            }
-        });
+            return neurons[layer, neuron].Calculate(); 
+        }
+        Debug.LogError($"nie znaleziono neuronu o współżędnych {layer}, {neuron}"); 
+        return 0; 
+    }
 
-        Iniciate(neuronsPerLayer, biases, dendrites); */
+    void Start()
+    {
+        GameObject currenthex = GameObject.Find("neuralNetwork");
+        if (currenthex != null)
+        {
+            Transform hex = currenthex.transform;
+
+            if (hex != null)
+            {
+                LoadJson currentProperty = hex.GetComponent<LoadJson>();
+
+                if (currentProperty != null)
+                {
+                    load = currentProperty;
+                    load.StartGame();
+                }
+
+                SaveJson currentProperty2 = hex.GetComponent<SaveJson>();
+
+                if (currentProperty2 != null)
+                {
+                    save = currentProperty2;
+                    save.StartGame();
+                }
+            }
+        }
+
         inputs = new int[19]; 
         Generate("borgo", "hegemonia", "HQ");
         GetInputs("borgo");
+        /*for (int i = 3; i < 114; i++)
+        {
+            neurons[10, i] = new GameObject($"Neuron_10_{i}").AddComponent<Neuron>();
+            neurons[10, i].Iniciate(10, i, neurons[10, 1].bias, new List<List<int>> { new List<int> { 0, 2, 1 }, new List<int> { 0, 5, 2 } });
+        }*/
+        Save("hegemonia", "borgo", "HQ");
+        Save("hegemonia", "borgo", "biegacz");
+        Save("hegemonia", "borgo", "boss");
+        Save("hegemonia", "borgo", "bydlak");
+        Save("hegemonia", "borgo", "ganger");
+        Save("hegemonia", "borgo", "gladiator");
+        Save("hegemonia", "borgo", "kwatermistrz");
+        Save("hegemonia", "borgo", "oficer");
+        Save("hegemonia", "borgo", "oficer2");
+        Save("hegemonia", "borgo", "sieciarz");
+        Save("hegemonia", "borgo", "straznik");
+        Save("hegemonia", "borgo", "supersieciarz");
+        Save("hegemonia", "borgo", "transport");
+        Save("hegemonia", "borgo", "uniwersalnyzolnierz");
+        Save("hegemonia", "borgo", "zwiadowca");
+        /*
+        Save("borgo", "hegemonia", "HQ");
+        Save("borgo", "hegemonia", "medyk");
+        Save("borgo", "hegemonia", "mutek");
+        Save("borgo", "hegemonia", "nozownik");
+        Save("borgo", "hegemonia", "oficer");
+        Save("borgo", "hegemonia", "sieciarz");
+        Save("borgo", "hegemonia", "silacz");
+        Save("borgo", "hegemonia", "supermutant");
+        Save("borgo", "hegemonia", "superoficer");
+        Save("borgo", "hegemonia", "zabojca");
+        Save("borgo", "hegemonia", "zwiadowca");*/
+        Debug.Log(GetNeuron(10, 100)); 
         Reset(); 
     }
 
     public void Generate(string my, string versus, string which)
     {
-        string jsonFilePath = $"Assets/pliki/{my}/{versus}.json";
-        if (!File.Exists(jsonFilePath))
+        load.Generate(my, versus, which); 
+    }
+
+    public void Save(string my, string versus, string which)
+    {
+        save.Save(my, versus, which);
+    }
+
+    public void Reset()
+    {
+        for (int i = 0; i < 19; i++)
         {
-            Debug.LogError($"Plik JSON o nazwie {my}/{versus} nie istnieje");
-            return;
+            inputs[i] = 0;
         }
-        string jsonString = File.ReadAllText(jsonFilePath);
-
-        Dictionary<string, List<Dictionary<string, object>>> jsonData = JsonConvert.DeserializeObject<Dictionary<string, List<Dictionary<string, object>>>>(jsonString);
-
-        foreach (var key in jsonData.Keys)
+        for (int layer = 0; layer < neurons.GetLength(0); layer++)
         {
-            if (key == which)
+            for (int neuron = 0; neuron < neurons.GetLength(1); neuron++)
             {
-                //Debug.Log($"Key: {key}");
-                int maxLayer = 0; 
-                foreach(var item in jsonData[key])
+                if (neurons[layer, neuron] != null)
                 {
-                    int layer = Convert.ToInt32(item["layer"]);
-                    maxLayer = Math.Max(maxLayer, layer);
+                    neurons[layer, neuron].Reset();
                 }
-
-                int[] neuronsPerLayer = new int[maxLayer + 1];
-                List<List<int>> biases = new List<List<int>>(maxLayer + 1);
-                List<List<List<List<int>>>> dendrites = new List<List<List<List<int>>>>(maxLayer + 1);
-
-                for (int i = 0; i <= maxLayer; i++)
-                {
-                    biases.Add(new List<int>());
-                    dendrites.Add(new List<List<List<int>>>());
-                }
-
-                foreach (var item in jsonData[key])
-                {
-                    int layer = Convert.ToInt32(item["layer"]);
-                    int bias = Convert.ToInt32(item["bias"]);
-                    biases[layer].Add(bias);
-
-                    foreach (var neuronKey in item.Keys)
-                    {
-                        //Debug.Log($"{neuronKey}: {item[neuronKey]}");
-                        if (neuronKey == "dendrites")
-                        {
-                            //Debug.Log("neuronKey == 'dendrites'");
-                            if (item[neuronKey] is JArray dendritesArray)
-                            {
-                                //Debug.Log($"{dendritesArray}");
-                                List<List<int>> layerDendrites = new List<List<int>>();
-
-                                foreach (var dendrite in dendritesArray)
-                                {
-                                    //Debug.Log("Dendrite:");
-                                    if (dendrite is JObject dendriteObject)
-                                    {
-                                        int lookingLayer = Convert.ToInt32(dendriteObject["lookingLayer"]);
-                                        int lookingNeuron = Convert.ToInt32(dendriteObject["lookingNeuron"]);
-                                        int weight = Convert.ToInt32(dendriteObject["weight"]);
-
-                                        layerDendrites.Add(new List<int> { lookingLayer, lookingNeuron, weight });
-                                    }
-                                }
-                                dendrites[layer].Add(layerDendrites);
-                            }
-                            neuronsPerLayer[layer]++;
-                        }
-                    }
-                }
-                Iniciate(neuronsPerLayer, biases, dendrites);
             }
         }
     }
 
-    public void Reset()
+    public void Destroy()
     {
         for(int i = 0; i < 19; i++)
         {
@@ -178,7 +169,7 @@ public class NeuralNetwork : MonoBehaviour
                 if (neurons[layer, neuron] != null)
                 {
                     Debug.Log($"usuwam neurons[{layer}, {neuron}]: {neurons[layer, neuron]}"); 
-                    neurons[layer, neuron].Reset();
+                    neurons[layer, neuron].Destroy();
                     Destroy(neurons[layer, neuron].gameObject);
                     neurons[layer, neuron] = null;
                 }

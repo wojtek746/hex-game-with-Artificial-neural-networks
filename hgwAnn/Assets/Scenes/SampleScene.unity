@@ -637,6 +637,8 @@ GameObject:
   m_Component:
   - component: {fileID: 686080731}
   - component: {fileID: 686080732}
+  - component: {fileID: 686080734}
+  - component: {fileID: 686080733}
   m_Layer: 0
   m_Name: neuralNetwork
   m_TagString: Untagged
@@ -672,6 +674,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  load: {fileID: 0}
+  save: {fileID: 0}
+--- !u!114 &686080733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686080729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8beed471fa5b964c956ae66086b84fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siec: {fileID: 0}
+--- !u!114 &686080734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686080729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d346489be14667489342fbe71178151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siec: {fileID: 0}
 --- !u!1 &688999105
 GameObject:
   m_ObjectHideFlags: 0

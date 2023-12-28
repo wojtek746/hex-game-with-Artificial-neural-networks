@@ -1815,7 +1815,7 @@
       ]
     }
   ],
-  "medyk": [
+  "biegacz": [
     {
       "layer": 10,
       "bias": 2,
@@ -3631,7 +3631,7 @@
       ]
     }
   ],
-  "mutek": [
+  "boss": [
     {
       "layer": 10,
       "bias": 2,
@@ -5447,7 +5447,5455 @@
       ]
     }
   ],
-  "nozownik": [
+  "bydlak": [
+    {
+      "layer": 10,
+      "bias": 2,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 0,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 1,
+          "weight": -1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 0,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "ganger": [
+    {
+      "layer": 10,
+      "bias": 2,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 0,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 1,
+          "weight": -1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 0,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "gladiator": [
+    {
+      "layer": 10,
+      "bias": 2,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 0,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 1,
+          "weight": -1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 0,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "kwatermistrz": [
     {
       "layer": 10,
       "bias": 2,
@@ -9079,6 +14527,1822 @@
       ]
     }
   ],
+  "oficer2": [
+    {
+      "layer": 10,
+      "bias": 2,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 0,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 1,
+          "weight": -1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 0,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "bias": 1,
+      "dendrites": [
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 2,
+          "weight": 1
+        },
+        {
+          "lookingLayer": 0,
+          "lookingNeuron": 5,
+          "weight": 2
+        }
+      ]
+    }
+  ],
   "sieciarz": [
     {
       "layer": 10,
@@ -10895,7 +18159,7 @@
       ]
     }
   ],
-  "silacz": [
+  "straznik": [
     {
       "layer": 10,
       "bias": 2,
@@ -12711,7 +19975,7 @@
       ]
     }
   ],
-  "supermutant": [
+  "supersieciarz": [
     {
       "layer": 10,
       "bias": 2,
@@ -14527,7 +21791,7 @@
       ]
     }
   ],
-  "superoficer": [
+  "transport": [
     {
       "layer": 10,
       "bias": 2,
@@ -16343,7 +23607,7 @@
       ]
     }
   ],
-  "zabojca": [
+  "uniwersalnyzolnierz": [
     {
       "layer": 10,
       "bias": 2,

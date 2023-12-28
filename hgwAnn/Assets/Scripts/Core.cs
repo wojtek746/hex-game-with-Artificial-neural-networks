@@ -91,7 +91,8 @@ public class Core : MonoBehaviour
 
                 if (currentProperty != null)
                 {
-                    currentProperty.GetInputs("borgo"); 
+                    currentProperty.GetInputs("borgo");
+                    Debug.Log(currentProperty.GetNeuron(10, 100));
                 }
             }
         }
