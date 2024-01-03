@@ -68,7 +68,7 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for (int turn = 0; turn < 1; turn++)
+        for (int turn = 0; turn < 10; turn++)
         {
             borgo.turn();
             hegemonia.turn();
@@ -79,7 +79,7 @@ public class Core : MonoBehaviour
             }
         }
 
-        GameObject currenthex = GameObject.Find("neuralNetwork");
+        /*GameObject currenthex = GameObject.Find("neuralNetwork");
 
         if (currenthex != null)
         {
@@ -95,7 +95,7 @@ public class Core : MonoBehaviour
                     Debug.Log(currentProperty.GetNeuron(10, 100));
                 }
             }
-        }
+        }*/
     }
 
     public int isMedic(int whereIs)
@@ -222,7 +222,7 @@ public class Core : MonoBehaviour
     public bool isHQLife()
     {
         int ileZyje = 0; 
-        for (int i = 1; i <= 1; i++)
+        for (int i = 1; i <= 19; i++)
         {
             GameObject currenthex = GameObject.Find("hex " + i);
 

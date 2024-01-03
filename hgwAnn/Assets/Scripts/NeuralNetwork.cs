@@ -50,13 +50,16 @@ public class NeuralNetwork : MonoBehaviour
         {
             return inputs[neuron]; 
         }
-        if(neurons[layer, neuron] != null)
+        if (layer >= 0 && layer < neurons.GetLength(0) && neuron >= 0 && neuron < neurons.GetLength(1))
         {
-            if(neurons[layer, neuron].isCalculated)
+            if (neurons[layer, neuron] != null)
             {
-                return neurons[layer, neuron].value; 
+                if (neurons[layer, neuron].isCalculated)
+                {
+                    return neurons[layer, neuron].value;
+                }
+                return neurons[layer, neuron].Calculate();
             }
-            return neurons[layer, neuron].Calculate(); 
         }
         Debug.LogError($"nie znaleziono neuronu o współżędnych {layer}, {neuron}"); 
         return 0; 
@@ -97,7 +100,7 @@ public class NeuralNetwork : MonoBehaviour
             neurons[10, i] = new GameObject($"Neuron_10_{i}").AddComponent<Neuron>();
             neurons[10, i].Iniciate(10, i, neurons[10, 1].bias, new List<List<int>> { new List<int> { 0, 2, 1 }, new List<int> { 0, 5, 2 } });
         }*/
-        Save("hegemonia", "borgo", "HQ");
+        /*Save("hegemonia", "borgo", "HQ");
         Save("hegemonia", "borgo", "biegacz");
         Save("hegemonia", "borgo", "boss");
         Save("hegemonia", "borgo", "bydlak");
@@ -114,7 +117,7 @@ public class NeuralNetwork : MonoBehaviour
         Save("hegemonia", "borgo", "zwiadowca");
         Save("hegemonia", "borgo", "Move");
         Save("hegemonia", "borgo", "Push");
-        for (int i = 19; i < 114; i++)
+        for (int i = 19; i < 119; i++)
         {
             neurons[10, i].Destroy();
             neurons[10, i] = null;
@@ -125,7 +128,7 @@ public class NeuralNetwork : MonoBehaviour
             neurons[10, i].Destroy();
             neurons[10, i] = null;
         }
-        Save("hegemonia", "borgo", "Battle");
+        Save("hegemonia", "borgo", "Battle");*/
 
         /*Save("borgo", "hegemonia", "HQ");
         Save("borgo", "hegemonia", "medyk");
@@ -139,7 +142,7 @@ public class NeuralNetwork : MonoBehaviour
         Save("borgo", "hegemonia", "zabojca");
         Save("borgo", "hegemonia", "zwiadowca");
         Save("borgo", "hegemonia", "Move");
-        for (int i = 19; i < 114; i++)
+        for (int i = 19; i < 119; i++)
         {
             neurons[10, i].Destroy();
             neurons[10, i] = null;
@@ -195,7 +198,7 @@ public class NeuralNetwork : MonoBehaviour
             {
                 if (neurons[layer, neuron] != null)
                 {
-                    Debug.Log($"usuwam neurons[{layer}, {neuron}]: {neurons[layer, neuron]}"); 
+                    //Debug.Log($"usuwam neurons[{layer}, {neuron}]: {neurons[layer, neuron]}"); 
                     neurons[layer, neuron].Destroy();
                     Destroy(neurons[layer, neuron].gameObject);
                     neurons[layer, neuron] = null;

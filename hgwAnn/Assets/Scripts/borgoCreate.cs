@@ -25,10 +25,10 @@ public class borgoCreate : MonoBehaviour
         a = FindObjectsOfType<around>()[0];
     }
 
-    public IEnumerator Create(string name, int idHex, int rotation)
+    public IEnumerator CreateCorousine(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
-        //UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}"); 
+        UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}"); 
         if (idHex > 0 && idHex <= 19)
         {
             GameObject gameObject;
@@ -103,6 +103,7 @@ public class borgoCreate : MonoBehaviour
                 newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
                 newObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation * 60));
                 newObject.transform.name = "hex";
+
                 Property currentProperty = newObject.GetComponent<Property>();
                 if (currentProperty != null)
                 {
@@ -110,6 +111,9 @@ public class borgoCreate : MonoBehaviour
                     currentProperty.whereIs = idHex;
                     currentProperty.StartGame();
                 }
+
+                FadeOut fadeOut = newObject.AddComponent<FadeOut>();
+                fadeOut.StartFadeOut();
             }
 
             if (name == "HQ")
@@ -301,5 +305,13 @@ public class borgoCreate : MonoBehaviour
 
         StopCoroutine("Create");
         yield return null;
+    }
+
+    public IEnumerator Create(string name, int idHex, int rotation)
+    {
+        float startTime = Time.time;
+        float delay = 1f;
+        StartCoroutine(CreateCorousine(name, idHex, rotation));
+        yield return new WaitUntil(() => Time.time >= startTime + delay);
     }
 }
