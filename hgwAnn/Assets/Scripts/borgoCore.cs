@@ -84,8 +84,10 @@ public class borgoCore : MonoBehaviour
                     result = j;
                 }
             }
-            
-            StartCoroutine(create.Create("HQ", Mathf.FloorToInt(result / 6), result % 6));
+            if(result > 0)
+            {
+                StartCoroutine(create.Create("HQ", Mathf.FloorToInt(result / 6), result % 6));
+            }
         }
         emptyHexs = new List<int>();
     }
@@ -97,7 +99,7 @@ public class borgoCore : MonoBehaviour
             shop[i] = Random.Range(1, objects.Length);
             StartCoroutine(create.Create(objects[shop[i]], (i * -1) - 1, 0));
         }
-        Debug.Log(shop[0] + " " + shop[1] + " " + shop[2]); 
+        //Debug.Log(shop[0] + " " + shop[1] + " " + shop[2]); 
         for (int i = 0; i < 3; i++)
         {
             if (objects[shop[i]] != "Battle" && objects[shop[i]] != "Move" && objects[shop[i]] != "Grenade")
@@ -151,7 +153,12 @@ public class borgoCore : MonoBehaviour
                         result = j;
                     }
                 }
-                StartCoroutine(create.Create(objects[shop[i]], Mathf.FloorToInt(result / 6), result % 6));
+
+                if (result > 0)
+                {
+                    StartCoroutine(create.Create(objects[shop[i]], Mathf.FloorToInt(result / 6), result % 6));
+                }
+
                 emptyHexs = new List<int>();
 
                 GameObject borgoShop = GameObject.Find("borgo " + (i + 1));
@@ -276,19 +283,23 @@ public class borgoCore : MonoBehaviour
                     }
 
                     emptyHexs = new List<int>();
-                    
-                    GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
-                    GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
 
-                    UnityEngine.Debug.Log($"move: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
-
-                    if (hex1 != null && hex2 != null)
+                    if (result > 0)
                     {
-                        Transform hex = hex1.transform.Find("hex");
-                        if (hex != null)
+
+                        GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
+                        GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
+
+                        UnityEngine.Debug.Log($"borgo move: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
+
+                        if (hex1 != null && hex2 != null)
                         {
-                            hex.SetParent(hex2.transform);
-                            hex.localPosition = new Vector3(0, 0, -1);
+                            Transform hex = hex1.transform.Find("hex");
+                            if (hex != null)
+                            {
+                                hex.SetParent(hex2.transform);
+                                hex.localPosition = new Vector3(0, 0, -1);
+                            }
                         }
                     }
 
@@ -358,13 +369,17 @@ public class borgoCore : MonoBehaviour
                             }
                         }
 
-                        GameObject currenthex = GameObject.Find("hex " + result);
-                        if (currenthex != null)
+                        if (result > 0)
                         {
-                            Transform currentHex = currenthex.transform.Find("hex");
-                            if (currentHex != null)
+                            GameObject currenthex = GameObject.Find("hex " + result);
+                            if (currenthex != null)
                             {
-                                Destroy(currentHex.gameObject);
+                                Transform currentHex = currenthex.transform.Find("hex");
+                                if (currentHex != null)
+                                {
+                                    Debug.Log($"borgo granat na {result}"); 
+                                    Destroy(currentHex.gameObject);
+                                }
                             }
                         }
                     }

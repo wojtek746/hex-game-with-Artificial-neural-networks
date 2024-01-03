@@ -33,9 +33,9 @@ public class hegemoniaCreate : MonoBehaviour
     public IEnumerator Create(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
-        UnityEngine.Debug.Log($"hegemonia create: {name} on {idHex} with rotation {rotation}");
         if (idHex > 0 && idHex <= 19)
         {
+            Debug.Log($"hegemonia create: {name} on {idHex} with rotation {rotation}");
             GameObject gameObject;
 
             switch (name)

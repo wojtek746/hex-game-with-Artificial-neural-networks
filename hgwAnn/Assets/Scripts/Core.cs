@@ -68,7 +68,7 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for (int turn = 0; turn < 10; turn++)
+        for (int turn = 0; turn < 100; turn++)
         {
             borgo.turn();
             hegemonia.turn();
@@ -136,7 +136,7 @@ public class Core : MonoBehaviour
                                             {
                                                 if (lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6] > 0)
                                                 {
-                                                    UnityEngine.Debug.Log($"sprawdzamy mekyka {whereLook} {itsDirection}");
+                                                    UnityEngine.Debug.Log($"sprawdzamy medyka {whereLook} {itsDirection}");
                                                     sumMedic += lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6];
                                                     Destroy(lookingHex.gameObject);
                                                     UnityEngine.Debug.Log("Usunięto mekyka"); 

@@ -28,9 +28,9 @@ public class borgoCreate : MonoBehaviour
     public IEnumerator CreateCorousine(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
-        UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}"); 
         if (idHex > 0 && idHex <= 19)
         {
+            UnityEngine.Debug.Log($"borgo create: {name} on {idHex} with rotation {rotation}");
             GameObject gameObject;
 
             switch (name)
@@ -309,9 +309,8 @@ public class borgoCreate : MonoBehaviour
 
     public IEnumerator Create(string name, int idHex, int rotation)
     {
-        float startTime = Time.time;
-        float delay = 1f;
         StartCoroutine(CreateCorousine(name, idHex, rotation));
-        yield return new WaitUntil(() => Time.time >= startTime + delay);
+        //yield return new WaitForSecondsRealtime(1f);
+        yield return null; 
     }
 }
