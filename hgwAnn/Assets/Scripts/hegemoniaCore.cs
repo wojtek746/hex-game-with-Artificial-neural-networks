@@ -9,6 +9,7 @@ public class hegemoniaCore : MonoBehaviour
     around a;
     Core core;
 
+    //                                        0       1        2        3        4           5              6            7           8           9            10        11           12              13              14        15       16      17      18
     public string[] objects = new string[] { "HQ", "Runner", "Boss", "Brute", "Ganger", "Gladiator", "Quartermaster", "Officer", "Officer2", "NetFlighter", "Guard", "SuperNet", "Transport", "UniversalSolidier", "Scout", "Battle", "Move", "Push", "Sniper" };
     public int[] shop = new int[3];
     public List<int> emptyHexs = new List<int>();
@@ -52,6 +53,7 @@ public class hegemoniaCore : MonoBehaviour
             shop[i] = Random.Range(1, objects.Length);
             StartCoroutine(create.Create(objects[shop[i]], (i * -1) - 1, 0));
         }
+        Debug.Log("hegemonia shop: " + shop[0] + " " + shop[1] + " " + shop[2]);
         for (int i = 0; i < 3; i++)
         {
             if (objects[shop[i]] != "Battle" && objects[shop[i]] != "Move" && objects[shop[i]] != "Push" && objects[shop[i]] != "Sniper")
@@ -86,7 +88,7 @@ public class hegemoniaCore : MonoBehaviour
                     Transform hex = hegemoniaShop.transform.Find("hex");
                     if (hex != null)
                     {
-                        Destroy(hex.gameObject);
+                        DestroyImmediate(hex.gameObject);
                     }
                 }
             }
@@ -109,7 +111,7 @@ public class hegemoniaCore : MonoBehaviour
                         Transform hex = hegemoniaShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
@@ -186,7 +188,7 @@ public class hegemoniaCore : MonoBehaviour
                         Transform hex = hegemoniaShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
@@ -263,7 +265,7 @@ public class hegemoniaCore : MonoBehaviour
                         Transform hex = hegemoniaShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
@@ -302,7 +304,8 @@ public class hegemoniaCore : MonoBehaviour
                             Transform currentHex = currenthex.transform.Find("hex");
                             if (currentHex != null)
                             {
-                                Destroy(currentHex.gameObject);
+                                Debug.Log($"hegemonia snajper na {random}");
+                                DestroyImmediate(currentHex.gameObject);
                             }
                         }
                     }
@@ -313,7 +316,7 @@ public class hegemoniaCore : MonoBehaviour
                         Transform hex = hegemoniaShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }

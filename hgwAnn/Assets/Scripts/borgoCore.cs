@@ -9,6 +9,8 @@ public class borgoCore : MonoBehaviour
     around a;
     Core core;
     private NeuralNetwork siec;
+
+    //                                        0       1          2        3           4             5             6             7           8            9            10       11       12       13
     public string[] objects = new string[] { "HQ", "Brawler", "Medic", "Mutant", "Super_Mutant", "Officer", "Super_Officer", "Butcher", "Assassin", "NetFlighter", "Scout", "Battle", "Move", "Grenade" };
     public string[] objects_neural = new string[] { "HQ", "nozownik", "medyk", "mutek", "supermutant", "oficer", "superoficer", "silacz", "zabojca", "sieciarz", "zwiadowca", "Battle", "Move", "Grenade" };
     public int[] shop = new int[3];
@@ -99,7 +101,7 @@ public class borgoCore : MonoBehaviour
             shop[i] = Random.Range(1, objects.Length);
             StartCoroutine(create.Create(objects[shop[i]], (i * -1) - 1, 0));
         }
-        //Debug.Log(shop[0] + " " + shop[1] + " " + shop[2]); 
+        Debug.Log("borgo shop: " + shop[0] + " " + shop[1] + " " + shop[2]); 
         for (int i = 0; i < 3; i++)
         {
             if (objects[shop[i]] != "Battle" && objects[shop[i]] != "Move" && objects[shop[i]] != "Grenade")
@@ -167,7 +169,7 @@ public class borgoCore : MonoBehaviour
                     Transform hex = borgoShop.transform.Find("hex");
                     if (hex != null)
                     {
-                        Destroy(hex.gameObject);
+                        DestroyImmediate(hex.gameObject);
                     }
                 }
             }
@@ -213,7 +215,7 @@ public class borgoCore : MonoBehaviour
                         Transform hex = borgoShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
@@ -284,7 +286,7 @@ public class borgoCore : MonoBehaviour
 
                     emptyHexs = new List<int>();
 
-                    if (result > 0)
+                    if (result > 5)
                     {
 
                         GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
@@ -309,7 +311,7 @@ public class borgoCore : MonoBehaviour
                         Transform hex = borgoShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
@@ -344,17 +346,14 @@ public class borgoCore : MonoBehaviour
                             outputs[j] = -1000;
                         }
 
-                        if (emptyHexs.Count > 0)
-                        {
-                            siec.Destroy();
-                            siec.Generate("borgo", "hegemonia", "Grenade");
-                            siec.GetInputs("borgo");
+                        siec.Destroy();
+                        siec.Generate("borgo", "hegemonia", "Grenade");
+                        siec.GetInputs("borgo");
 
-                            for (int j = 0; j < emptyHexs.Count; j++)
-                            {
-                                int index = emptyHexs[j];
-                                outputs[index] = siec.GetNeuron(10, index);
-                            }
+                        for (int j = 0; j < emptyHexs.Count; j++)
+                        {
+                            int index = emptyHexs[j];
+                            outputs[index] = siec.GetNeuron(10, index);
                         }
 
                         int max_result = -999;
@@ -377,8 +376,8 @@ public class borgoCore : MonoBehaviour
                                 Transform currentHex = currenthex.transform.Find("hex");
                                 if (currentHex != null)
                                 {
-                                    Debug.Log($"borgo granat na {result}"); 
-                                    Destroy(currentHex.gameObject);
+                                    Debug.Log($"borgo granat na {result}");
+                                    DestroyImmediate(currentHex.gameObject);
                                 }
                             }
                         }
@@ -391,7 +390,7 @@ public class borgoCore : MonoBehaviour
                         Transform hex = borgoShop.transform.Find("hex");
                         if (hex != null)
                         {
-                            Destroy(hex.gameObject);
+                            DestroyImmediate(hex.gameObject);
                         }
                     }
                 }
