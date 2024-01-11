@@ -6,7 +6,8 @@ public class NeuralNetwork : MonoBehaviour
     public Neuron[,] neurons = new Neuron[0, 0];
     public int[] inputs;
     public LoadJson load;
-    public SaveJson save; 
+    public SaveJson save;
+    private string test; 
 
     public void Iniciate(int[] neuronsPerLayer, List<List<int>> biases, List<List<List<List<int>>>> dendrites)
     {
@@ -38,6 +39,8 @@ public class NeuralNetwork : MonoBehaviour
                 else
                 {
                     neurons[layer, neuron] = new GameObject("Neuron_" + layer + "_" + neuron).AddComponent<Neuron>();
+                    GameObject I = GameObject.Find("neuralNetwork");
+                    neurons[layer, neuron].transform.parent = I.transform;
                     neurons[layer, neuron].Iniciate(layer, neuron, biases[layer][neuron], dendrites[layer][neuron]);
                 }
             }
@@ -61,7 +64,7 @@ public class NeuralNetwork : MonoBehaviour
                 return neurons[layer, neuron].Calculate();
             }
         }
-        Debug.LogError($"nie znaleziono neuronu o współżędnych {layer}, {neuron}"); 
+        Debug.LogError($"nie znaleziono neuronu o współżędnych {layer}, {neuron}{test}"); 
         return 0; 
     }
 
@@ -160,7 +163,8 @@ public class NeuralNetwork : MonoBehaviour
 
     public void Generate(string my, string versus, string which)
     {
-        load.Generate(my, versus, which); 
+        load.Generate(my, versus, which);
+        test = $". Generatw with my: {my}, versus: {versus}, which: {which}"; 
     }
 
     public void Save(string my, string versus, string which)
@@ -200,7 +204,7 @@ public class NeuralNetwork : MonoBehaviour
                 {
                     //Debug.Log($"usuwam neurons[{layer}, {neuron}]: {neurons[layer, neuron]}"); 
                     neurons[layer, neuron].Destroy();
-                    Destroy(neurons[layer, neuron].gameObject);
+                    DestroyImmediate(neurons[layer, neuron].gameObject);
                     neurons[layer, neuron] = null;
                 }
             }

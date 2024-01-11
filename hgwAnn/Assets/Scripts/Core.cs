@@ -68,13 +68,13 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for (int turn = 0; turn < 100; turn++)
+        for (int turn = 0; turn < 1000; turn++)
         {
             borgo.turn();
             hegemonia.turn();
             if (!isHQLife())
             {
-                UnityEngine.Debug.Log("ktoś wygrał :)");
+                UnityEngine.Debug.Log("ktoś wygrał :) w turze: " + turn);
                 break;
             }
         }
@@ -138,7 +138,7 @@ public class Core : MonoBehaviour
                                                 {
                                                     UnityEngine.Debug.Log($"sprawdzamy medyka {whereLook} {itsDirection}");
                                                     sumMedic += lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6];
-                                                    Destroy(lookingHex.gameObject);
+                                                    DestroyImmediate(lookingHex.gameObject);
                                                     UnityEngine.Debug.Log("Usunięto mekyka"); 
                                                     break; 
                                                 }

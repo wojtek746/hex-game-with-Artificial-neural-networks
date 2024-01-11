@@ -33,6 +33,8 @@ public class Neuron : MonoBehaviour
                 return;
             }
             this.dendrites[i] = new GameObject("Dendrite_" + layer + "_" + neuron + "_" + i).AddComponent<Dendrite>();
+            GameObject I = GameObject.Find("Neuron_" + layer + "_" + neuron);
+            this.dendrites[i].transform.parent = I.transform; 
             this.dendrites[i].Iniciate(dendrites[i][0], dendrites[i][1], dendrites[i][2]);
         }
     }
@@ -53,7 +55,7 @@ public class Neuron : MonoBehaviour
     {
         for (int dendrite = 0; dendrite < dendrites.GetLength(0); dendrite++)
         {
-            Destroy(dendrites[dendrite].gameObject);
+            DestroyImmediate(dendrites[dendrite].gameObject);
         }
     }
 

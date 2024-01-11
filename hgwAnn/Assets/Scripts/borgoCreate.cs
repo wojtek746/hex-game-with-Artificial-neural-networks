@@ -25,7 +25,7 @@ public class borgoCreate : MonoBehaviour
         a = FindObjectsOfType<around>()[0];
     }
 
-    public IEnumerator CreateCorousine(string name, int idHex, int rotation)
+    public IEnumerator Create(string name, int idHex, int rotation)
     {
         //jeżeli na scenie
         if (idHex > 0 && idHex <= 19)
@@ -305,12 +305,5 @@ public class borgoCreate : MonoBehaviour
 
         StopCoroutine("Create");
         yield return null;
-    }
-
-    public IEnumerator Create(string name, int idHex, int rotation)
-    {
-        StartCoroutine(CreateCorousine(name, idHex, rotation));
-        //yield return new WaitForSecondsRealtime(1f);
-        yield return null; 
     }
 }

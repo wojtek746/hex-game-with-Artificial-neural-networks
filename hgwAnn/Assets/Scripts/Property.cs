@@ -62,7 +62,7 @@ public class Property : MonoBehaviour
         previousHealth = health;
         if(health <= 0)
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
         }
     }
 
