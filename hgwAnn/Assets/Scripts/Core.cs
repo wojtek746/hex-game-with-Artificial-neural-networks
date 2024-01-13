@@ -68,7 +68,7 @@ public class Core : MonoBehaviour
                 }
             }
         }*/
-        for (int turn = 0; turn < 1000; turn++)
+        for (int turn = 0; turn < 10; turn++)
         {
             borgo.turn();
             hegemonia.turn();
@@ -134,13 +134,16 @@ public class Core : MonoBehaviour
                                         {
                                             if (a.a(lookingProperty.whereIs, itsDirection, 0) == whereIs)
                                             {
-                                                if (lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6] > 0)
+                                                if ((itsDirection + lookingProperty.whereLook - 1) % 6 >= 0)
                                                 {
-                                                    UnityEngine.Debug.Log($"sprawdzamy medyka {whereLook} {itsDirection}");
-                                                    sumMedic += lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6];
-                                                    DestroyImmediate(lookingHex.gameObject);
-                                                    UnityEngine.Debug.Log("Usunięto mekyka"); 
-                                                    break; 
+                                                    if (lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6] > 0)
+                                                    {
+                                                        UnityEngine.Debug.Log($"sprawdzamy medyka {whereLook} {itsDirection}");
+                                                        sumMedic += lookingProperty.functions[(itsDirection + lookingProperty.whereLook - 1) % 6];
+                                                        DestroyImmediate(lookingHex.gameObject);
+                                                        UnityEngine.Debug.Log("Usunięto mekyka");
+                                                        break;
+                                                    }
                                                 }
                                             }
                                         }

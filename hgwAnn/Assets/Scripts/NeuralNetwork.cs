@@ -7,6 +7,7 @@ public class NeuralNetwork : MonoBehaviour
     public int[] inputs;
     public LoadJson load;
     public SaveJson save;
+    public Learn learn; 
     private string test; 
 
     public void Iniciate(int[] neuronsPerLayer, List<List<int>> biases, List<List<List<List<int>>>> dendrites)
@@ -68,6 +69,14 @@ public class NeuralNetwork : MonoBehaviour
         return 0; 
     }
 
+    public void testuj()
+    {
+        learn.AddRandomNeuron();
+        learn.AddRandomNeuron();
+        learn.AddRandomNeuron();
+        learn.RemoveRandomNeuron();
+    }
+
     void Start()
     {
         GameObject currenthex = GameObject.Find("neuralNetwork");
@@ -91,6 +100,14 @@ public class NeuralNetwork : MonoBehaviour
                 {
                     save = currentProperty2;
                     save.StartGame();
+                }
+
+                Learn currentProperty3 = hex.GetComponent<Learn>();
+
+                if (currentProperty3 != null)
+                {
+                    learn = currentProperty3;
+                    learn.StartGame();
                 }
             }
         }

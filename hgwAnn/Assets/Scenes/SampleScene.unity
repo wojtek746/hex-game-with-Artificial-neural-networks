@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 686080732}
   - component: {fileID: 686080734}
   - component: {fileID: 686080733}
+  - component: {fileID: 686080735}
   m_Layer: 0
   m_Name: neuralNetwork
   m_TagString: Untagged
@@ -676,6 +677,7 @@ MonoBehaviour:
   inputs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   load: {fileID: 0}
   save: {fileID: 0}
+  learn: {fileID: 0}
 --- !u!114 &686080733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +701,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d346489be14667489342fbe71178151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siec: {fileID: 0}
+--- !u!114 &686080735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686080729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d453509611bf824f91073b66835f142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   siec: {fileID: 0}
@@ -2099,6 +2114,21 @@ MonoBehaviour:
   - Battle
   - Move
   - Grenade
+  objects_neural:
+  - HQ
+  - nozownik
+  - medyk
+  - mutek
+  - supermutant
+  - oficer
+  - superoficer
+  - silacz
+  - zabojca
+  - sieciarz
+  - zwiadowca
+  - Battle
+  - Move
+  - Grenade
   shop: 000000000000000000000000
   emptyHexs: 
 --- !u!1 &1732199726
@@ -2216,6 +2246,26 @@ MonoBehaviour:
   - Transport
   - UniversalSolidier
   - Scout
+  - Battle
+  - Move
+  - Push
+  - Sniper
+  objects_neural:
+  - HQ
+  - biegacz
+  - boss
+  - bydlak
+  - ganger
+  - gladiator
+  - kwatermistrz
+  - oficer
+  - oficer2
+  - sieciarz
+  - straznik
+  - supersieciarz
+  - transport
+  - uniwersalnyzolnierz
+  - zwiadowca
   - Battle
   - Move
   - Push

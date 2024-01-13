@@ -7,7 +7,7 @@ public class Learn : MonoBehaviour
 {
     public NeuralNetwork siec;
 
-    void Start()
+    public void StartGame()
     {
         GameObject currenthex = GameObject.Find("neuralNetwork");
         if (currenthex != null)
@@ -52,32 +52,40 @@ public class Learn : MonoBehaviour
         int lookingLayer = UnityEngine.Random.Range(0, layer);
         while (true)
         {
-            if(lookingLayer == 0)
+            if (lookingLayer == 0)
             {
                 break; 
             }
             if(siec.neurons[lookingLayer, 0] != null)
             {
-                break; 
-            }
-        }
-        int maxNeuron = -1; 
-        for(int i = 0; i < siec.neurons.GetLength(1); i++)
-        {
-            if (siec.neurons[layer, i] == null)
-            {
-                maxNeuron = i;
                 break;
             }
+            lookingLayer = UnityEngine.Random.Range(0, layer);
         }
-        if(maxNeuron == -1)
+        int maxNeuron = -1;
+        if (lookingLayer > 0)
         {
-            maxNeuron = siec.neurons.GetLength(1);
+            for (int i = 0; i < siec.neurons.GetLength(1); i++)
+            {
+                if (siec.neurons[layer, i] == null)
+                {
+                    maxNeuron = i;
+                    break;
+                }
+            }
+            if (maxNeuron == -1)
+            {
+                maxNeuron = siec.neurons.GetLength(1);
+            }
+            if (maxNeuron < 1)
+            {
+                Debug.LogError($"AddRandomNeuron ma błąd, bo wylosował layer: {layer}, neuron: {neuron}, biases: {biases}, lookingLayer: {lookingLayer}, maxNeuron: {maxNeuron}");
+                return;
+            }
         }
-        if(maxNeuron < 1)
+        else
         {
-            Debug.LogError($"AddRandomNeuron ma błąd, bo wylosował layer: {layer}, neuron: {neuron}, biases: {biases}, lookingLayer: {lookingLayer}, maxNeuron: {maxNeuron}"); 
-            return; 
+            maxNeuron = siec.inputs.Length; 
         }
         int lookingNeuron = UnityEngine.Random.Range(0, maxNeuron);
         int weight = UnityEngine.Random.Range(-10, 10);

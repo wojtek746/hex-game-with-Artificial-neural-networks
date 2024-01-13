@@ -396,6 +396,7 @@ public class borgoCore : MonoBehaviour
                 }
             }
         }
+        siec.testuj(); 
     }
 
     public void InitiativeBattle(int initiative)

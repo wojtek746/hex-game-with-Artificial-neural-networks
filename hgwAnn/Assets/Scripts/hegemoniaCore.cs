@@ -494,6 +494,7 @@ public class hegemoniaCore : MonoBehaviour
                 }
             }
         }
+        siec.testuj();
     }
 
     public void InitiativeBattle(int initiative)
