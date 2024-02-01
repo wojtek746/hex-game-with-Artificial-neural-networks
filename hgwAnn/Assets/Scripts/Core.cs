@@ -9,6 +9,11 @@ public class Core : MonoBehaviour
     public hegemoniaCore hegemonia;
     public string first;
     public string second;
+    public int maxTurn;
+    public int coIle; 
+    private int i; 
+    private int turn; 
+    private bool isGame; 
 
     public List<int> getId(int which)
     {
@@ -41,61 +46,28 @@ public class Core : MonoBehaviour
         a = FindObjectsOfType<around>()[0];
         hegemonia = FindObjectsOfType<hegemoniaCore>()[0];
 
+        isGame = true;
+        i = 0; 
+
         borgo.StartGame();
         hegemonia.StartGame();
+    }
 
-        //StartCoroutine(borgo.Create("Butcher", 3, 4));
-
-        //borgoBattle battle = FindObjectsOfType<borgoBattle>()[0];
-        //battle.StartGame();
-        //battle.InitiativeBattle(3);
-
-        //StartCoroutine(borgo.Create("Medic", 1, 4));
-
-        //GameObject currenthex = GameObject.Find("hex " + 3);
-
-        /*if (currenthex != null)
-        {
-            Transform currentHex = currenthex.transform.Find("hex");
-
-            if (currentHex != null)
-            {
-                Property currentProperty = currentHex.GetComponent<Property>();
-
-                if (currentProperty != null)
-                {
-                    currentProperty.health = 0; 
-                }
-            }
-        }*/
-        for (int turn = 0; turn < 10; turn++)
+    public void Update()
+    {
+        if (isGame && i % coIle == 0)
         {
             borgo.turn();
             hegemonia.turn();
-            if (!isHQLife())
+            turn++; 
+            if (!isHQLife() || turn >= maxTurn)
             {
                 UnityEngine.Debug.Log("ktoś wygrał :) w turze: " + turn);
-                break;
+                isGame = false; 
             }
         }
-
-        /*GameObject currenthex = GameObject.Find("neuralNetwork");
-
-        if (currenthex != null)
-        {
-            Transform currentHex = currenthex.transform;
-
-            if (currentHex != null)
-            {
-                NeuralNetwork currentProperty = currentHex.GetComponent<NeuralNetwork>();
-
-                if (currentProperty != null)
-                {
-                    currentProperty.GetInputs("borgo");
-                    Debug.Log(currentProperty.GetNeuron(10, 100));
-                }
-            }
-        }*/
+        i++;
+        i %= coIle; 
     }
 
     public int isMedic(int whereIs)

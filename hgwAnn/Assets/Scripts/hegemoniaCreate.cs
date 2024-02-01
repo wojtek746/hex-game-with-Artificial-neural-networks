@@ -120,6 +120,7 @@ public class hegemoniaCreate : MonoBehaviour
                 newObject.transform.position = new Vector3(hex.transform.position.x, hex.transform.position.y, -1);
                 newObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation * 60));
                 newObject.transform.name = "hex";
+
                 Property currentProperty = newObject.GetComponent<Property>();
                 if (currentProperty != null)
                 {
@@ -127,6 +128,9 @@ public class hegemoniaCreate : MonoBehaviour
                     currentProperty.whereIs = idHex;
                     currentProperty.StartGame();
                 }
+
+                FadeOut fadeOut = newObject.AddComponent<FadeOut>();
+                fadeOut.StartFadeOut();
             }
 
             if (name == "HQ")

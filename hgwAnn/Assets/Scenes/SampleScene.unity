@@ -1103,6 +1103,8 @@ MonoBehaviour:
   hegemonia: {fileID: 0}
   first: borgo
   second: hegemonia
+  maxTurn: 1000
+  coIle: 200
 --- !u!114 &1118328471
 MonoBehaviour:
   m_ObjectHideFlags: 0
