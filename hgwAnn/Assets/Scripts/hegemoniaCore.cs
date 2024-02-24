@@ -16,6 +16,10 @@ public class hegemoniaCore : MonoBehaviour
     public int[] shop = new int[3];
     public List<int> emptyHexs = new List<int>();
 
+    private int shopId;
+    private bool isTurn;
+    private float time;
+
     public void StartGame()
     {
         battle = FindObjectsOfType<hegemoniaBattle>()[0];
@@ -92,152 +96,31 @@ public class hegemoniaCore : MonoBehaviour
             }
         }
         emptyHexs = new List<int>();
+
+        shopId = 0;
+        isTurn = false;
+        time = 0;
     }
 
-    public void turn()
+    private void Update()
     {
-        for (int i = 0; i < 3; i++)
+        if (isTurn)
         {
-            shop[i] = Random.Range(1, objects.Length);
-            StartCoroutine(create.Create(objects[shop[i]], (i * -1) - 1, 0));
-        }
-        Debug.Log("hegemonia shop: " + shop[0] + " " + shop[1] + " " + shop[2]);
-        for (int i = 0; i < 3; i++)
-        {
-            if (objects[shop[i]] != "Battle" && objects[shop[i]] != "Move" && objects[shop[i]] != "Push" && objects[shop[i]] != "Sniper")
+            if (time >= 1)
             {
-                emptyHexs = new List<int>();
-
-                for (int j = 1; j <= 19; j++)
+                if (objects[shop[shopId]] != "Battle" && objects[shop[shopId]] != "Move" && objects[shop[shopId]] != "Push" && objects[shop[shopId]] != "Sniper")
                 {
-                    GameObject currenthex = GameObject.Find("hex " + j);
-                    if (currenthex != null)
-                    {
-                        Transform currentHex = currenthex.transform.Find("hex");
-                        if (currentHex == null)
-                        {
-                            emptyHexs.Add(j);
-                        }
-                    }
-                }
-
-                int[] outputs = new int[120];
-                for (int j = 0; j < outputs.Length; j++)
-                {
-                    outputs[j] = -1000;
-                }
-
-                if (emptyHexs.Count > 0)
-                {
-                    siec.Destroy();
-                    siec.Generate("hegemonia", "borgo", objects_neural[shop[i]]);
-                    siec.GetInputs("hegemonia");
-
-                    for (int j = 0; j < emptyHexs.Count; j++)
-                    {
-                        for (int k = 0; k < 6; k++)
-                        {
-                            int index = emptyHexs[j] * 6 + k;
-                            outputs[index] = siec.GetNeuron(10, index);
-                        }
-                    }
-                }
-
-                int max_result = -999;
-                int result = 0;
-
-                for (int j = 0; j < outputs.Length; j++)
-                {
-                    if (outputs[j] > max_result)
-                    {
-                        max_result = outputs[j];
-                        result = j;
-                    }
-                }
-
-                if (result > 0)
-                {
-                    StartCoroutine(create.Create(objects[shop[i]], Mathf.FloorToInt(result / 6), result % 6));
-                }
-
-                emptyHexs = new List<int>();
-
-                GameObject hegemoniaShop = GameObject.Find("hegemonia " + (i + 1));
-                if (hegemoniaShop != null)
-                {
-                    Transform hex = hegemoniaShop.transform.Find("hex");
-                    if (hex != null)
-                    {
-                        DestroyImmediate(hex.gameObject);
-                    }
-                }
-            }
-            else
-            {
-                if (objects[shop[i]] == "Battle")
-                {
-                    int[] outputs = new int[2];
-                    for (int j = 0; j < outputs.Length; j++)
-                    {
-                        outputs[j] = -1000;
-                    }
-
-                    siec.Destroy();
-                    siec.Generate("hegemonia", "borgo", "Battle");
-                    siec.GetInputs("hegemonia");
-
-                    for (int j = 0; j < 2; j++)
-                    {
-                        outputs[j] = siec.GetNeuron(10, j);
-                    }
-
-                    int max_result = -999;
-                    int result = 0;
-
-                    for (int j = 0; j < outputs.Length; j++)
-                    {
-                        if (outputs[j] > max_result)
-                        {
-                            max_result = outputs[j];
-                            result = j;
-                        }
-                    }
-
-                    if (result == 0)
-                    {
-                        core.battle();
-                    }
-
-                    GameObject hegemoniaShop = GameObject.Find("hegemonia " + (i + 1));
-                    if (hegemoniaShop != null)
-                    {
-                        Transform hex = hegemoniaShop.transform.Find("hex");
-                        if (hex != null)
-                        {
-                            DestroyImmediate(hex.gameObject);
-                        }
-                    }
-                }
-                else if (objects[shop[i]] == "Move")
-                {
-                    //zamiast neural network
                     emptyHexs = new List<int>();
+
                     for (int j = 1; j <= 19; j++)
                     {
                         GameObject currenthex = GameObject.Find("hex " + j);
                         if (currenthex != null)
                         {
                             Transform currentHex = currenthex.transform.Find("hex");
-                            if (currentHex != null)
+                            if (currentHex == null)
                             {
-                                Property currentProperty = currentHex.GetComponent<Property>();
-                                if (currentProperty != null)
-                                {
-                                    if (currentProperty.nameSztab == "hegemonia")
-                                    {
-                                        emptyHexs.Add(j);
-                                    }
-                                }
+                                emptyHexs.Add(j);
                             }
                         }
                     }
@@ -251,7 +134,7 @@ public class hegemoniaCore : MonoBehaviour
                     if (emptyHexs.Count > 0)
                     {
                         siec.Destroy();
-                        siec.Generate("hegemonia", "borgo", "Move");
+                        siec.Generate("hegemonia", "borgo", objects_neural[shop[shopId]]);
                         siec.GetInputs("hegemonia");
 
                         for (int j = 0; j < emptyHexs.Count; j++)
@@ -259,15 +142,7 @@ public class hegemoniaCore : MonoBehaviour
                             for (int k = 0; k < 6; k++)
                             {
                                 int index = emptyHexs[j] * 6 + k;
-                                GameObject currenthex = GameObject.Find("hex " + (a.a(emptyHexs[j], k, 0)));
-                                if (currenthex != null)
-                                {
-                                    Transform currentHex = currenthex.transform.Find("hex");
-                                    if (currentHex == null)
-                                    {
-                                        outputs[index] = siec.GetNeuron(10, index);
-                                    }
-                                }
+                                outputs[index] = siec.GetNeuron(10, index);
                             }
                         }
                     }
@@ -284,28 +159,14 @@ public class hegemoniaCore : MonoBehaviour
                         }
                     }
 
-                    emptyHexs = new List<int>();
-
-                    if (result > 5)
+                    if (result > 0)
                     {
-
-                        GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
-                        GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
-
-                        UnityEngine.Debug.Log($"hegemonia move: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
-
-                        if (hex1 != null && hex2 != null)
-                        {
-                            Transform hex = hex1.transform.Find("hex");
-                            if (hex != null)
-                            {
-                                hex.SetParent(hex2.transform);
-                                hex.localPosition = new Vector3(0, 0, -1);
-                            }
-                        }
+                        StartCoroutine(create.Create(objects[shop[shopId]], Mathf.FloorToInt(result / 6), result % 6));
                     }
 
-                    GameObject hegemoniaShop = GameObject.Find("hegemonia " + (i + 1));
+                    emptyHexs = new List<int>();
+
+                    GameObject hegemoniaShop = GameObject.Find("hegemonia " + (shopId + 1));
                     if (hegemoniaShop != null)
                     {
                         Transform hex = hegemoniaShop.transform.Find("hex");
@@ -315,143 +176,23 @@ public class hegemoniaCore : MonoBehaviour
                         }
                     }
                 }
-                else if (objects[shop[i]] == "Push")
+                else
                 {
-                    //zamiast neural network
-                    emptyHexs = new List<int>();
-                    for (int j = 1; j <= 19; j++)
+                    if (objects[shop[shopId]] == "Battle")
                     {
-                        GameObject currenthex = GameObject.Find("hex " + j);
-                        if (currenthex != null)
-                        {
-                            Transform currentHex = currenthex.transform.Find("hex");
-                            if (currentHex != null)
-                            {
-                                Property currentProperty = currentHex.GetComponent<Property>();
-                                if (currentProperty != null)
-                                {
-                                    if (currentProperty.nameSztab != "hegemonia")
-                                    {
-                                        emptyHexs.Add(j);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    int[] outputs = new int[120];
-                    for (int j = 0; j < outputs.Length; j++)
-                    {
-                        outputs[j] = -1000;
-                    }
-
-                    if (emptyHexs.Count > 0)
-                    {
-                        siec.Destroy();
-                        siec.Generate("hegemonia", "borgo", "Push");
-                        siec.GetInputs("hegemonia");
-
-                        for (int j = 0; j < emptyHexs.Count; j++)
-                        {
-                            for (int k = 0; k < 6; k++)
-                            {
-                                int index = emptyHexs[j] * 6 + k;
-                                GameObject currenthex = GameObject.Find("hex " + (a.a(emptyHexs[j], k, 0)));
-                                if (currenthex != null)
-                                {
-                                    Transform currentHex = currenthex.transform.Find("hex");
-                                    if (currentHex == null)
-                                    {
-                                        outputs[index] = siec.GetNeuron(10, index);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    int max_result = -999;
-                    int result = 0;
-
-                    for (int j = 0; j < outputs.Length; j++)
-                    {
-                        if (outputs[j] > max_result)
-                        {
-                            max_result = outputs[j];
-                            result = j;
-                        }
-                    }
-
-                    emptyHexs = new List<int>();
-
-                    if (result > 5)
-                    {
-
-                        GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
-                        GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
-
-                        UnityEngine.Debug.Log($"hegemonia push: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
-
-                        if (hex1 != null && hex2 != null)
-                        {
-                            Transform hex = hex1.transform.Find("hex");
-                            if (hex != null)
-                            {
-                                hex.SetParent(hex2.transform);
-                                hex.localPosition = new Vector3(0, 0, -1);
-                            }
-                        }
-                    }
-
-                    GameObject hegemoniaShop = GameObject.Find("hegemonia " + (i + 1));
-                    if (hegemoniaShop != null)
-                    {
-                        Transform hex = hegemoniaShop.transform.Find("hex");
-                        if (hex != null)
-                        {
-                            DestroyImmediate(hex.gameObject);
-                        }
-                    }
-                }
-                else if (objects[shop[i]] == "Sniper")
-                {
-                    //zamiast neural network
-                    emptyHexs = new List<int>();
-                    for (int j = 1; j <= 19; j++)
-                    {
-                        GameObject currenthex = GameObject.Find("hex " + j);
-                        if (currenthex != null)
-                        {
-                            Transform currentHex = currenthex.transform.Find("hex");
-                            if (currentHex != null)
-                            {
-                                Property currentProperty = currentHex.GetComponent<Property>();
-                                if (currentProperty != null)
-                                {
-                                    if (currentProperty.nameSztab != "hegemonia" && currentProperty.name != "sztab")
-                                    {
-                                        emptyHexs.Add(j);
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    if (emptyHexs.Count > 0)
-                    {
-                        int[] outputs = new int[20];
+                        int[] outputs = new int[2];
                         for (int j = 0; j < outputs.Length; j++)
                         {
                             outputs[j] = -1000;
                         }
 
                         siec.Destroy();
-                        siec.Generate("hegemonia", "borgo", "Sniper");
+                        siec.Generate("hegemonia", "borgo", "Battle");
                         siec.GetInputs("hegemonia");
 
-                        for (int j = 0; j < emptyHexs.Count; j++)
+                        for (int j = 0; j < 2; j++)
                         {
-                            int index = emptyHexs[j];
-                            outputs[index] = siec.GetNeuron(10, index);
+                            outputs[j] = siec.GetNeuron(10, j);
                         }
 
                         int max_result = -999;
@@ -466,35 +207,323 @@ public class hegemoniaCore : MonoBehaviour
                             }
                         }
 
-                        if (result > 0)
+                        if (result == 0)
                         {
-                            GameObject currenthex = GameObject.Find("hex " + result);
+                            core.battle();
+                        }
+
+                        GameObject hegemoniaShop = GameObject.Find("hegemonia " + (shopId + 1));
+                        if (hegemoniaShop != null)
+                        {
+                            Transform hex = hegemoniaShop.transform.Find("hex");
+                            if (hex != null)
+                            {
+                                DestroyImmediate(hex.gameObject);
+                            }
+                        }
+                    }
+                    else if (objects[shop[shopId]] == "Move")
+                    {
+                        //zamiast neural network
+                        emptyHexs = new List<int>();
+                        for (int j = 1; j <= 19; j++)
+                        {
+                            GameObject currenthex = GameObject.Find("hex " + j);
                             if (currenthex != null)
                             {
                                 Transform currentHex = currenthex.transform.Find("hex");
                                 if (currentHex != null)
                                 {
-                                    Debug.Log($"hegemonia sniper na {result}");
-                                    DestroyImmediate(currentHex.gameObject);
+                                    Property currentProperty = currentHex.GetComponent<Property>();
+                                    if (currentProperty != null)
+                                    {
+                                        if (currentProperty.nameSztab == "hegemonia")
+                                        {
+                                            emptyHexs.Add(j);
+                                        }
+                                    }
                                 }
                             }
                         }
-                    }
-                    emptyHexs = new List<int>();
 
-                    GameObject hegemoniaShop = GameObject.Find("hegemonia " + (i + 1));
-                    if (hegemoniaShop != null)
-                    {
-                        Transform hex = hegemoniaShop.transform.Find("hex");
-                        if (hex != null)
+                        int[] outputs = new int[120];
+                        for (int j = 0; j < outputs.Length; j++)
                         {
-                            DestroyImmediate(hex.gameObject);
+                            outputs[j] = -1000;
+                        }
+
+                        if (emptyHexs.Count > 0)
+                        {
+                            siec.Destroy();
+                            siec.Generate("hegemonia", "borgo", "Move");
+                            siec.GetInputs("hegemonia");
+
+                            for (int j = 0; j < emptyHexs.Count; j++)
+                            {
+                                for (int k = 0; k < 6; k++)
+                                {
+                                    int index = emptyHexs[j] * 6 + k;
+                                    GameObject currenthex = GameObject.Find("hex " + (a.a(emptyHexs[j], k, 0)));
+                                    if (currenthex != null)
+                                    {
+                                        Transform currentHex = currenthex.transform.Find("hex");
+                                        if (currentHex == null)
+                                        {
+                                            outputs[index] = siec.GetNeuron(10, index);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        int max_result = -999;
+                        int result = 0;
+
+                        for (int j = 0; j < outputs.Length; j++)
+                        {
+                            if (outputs[j] > max_result)
+                            {
+                                max_result = outputs[j];
+                                result = j;
+                            }
+                        }
+
+                        emptyHexs = new List<int>();
+
+                        if (result > 5)
+                        {
+
+                            GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
+                            GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
+
+                            UnityEngine.Debug.Log($"hegemonia move: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
+
+                            if (hex1 != null && hex2 != null)
+                            {
+                                Transform hex = hex1.transform.Find("hex");
+                                if (hex != null)
+                                {
+                                    hex.SetParent(hex2.transform);
+                                    hex.localPosition = new Vector3(0, 0, -1);
+                                }
+                            }
+                        }
+
+                        GameObject hegemoniaShop = GameObject.Find("hegemonia " + (shopId + 1));
+                        if (hegemoniaShop != null)
+                        {
+                            Transform hex = hegemoniaShop.transform.Find("hex");
+                            if (hex != null)
+                            {
+                                DestroyImmediate(hex.gameObject);
+                            }
+                        }
+                    }
+                    else if (objects[shop[shopId]] == "Push")
+                    {
+                        //zamiast neural network
+                        emptyHexs = new List<int>();
+                        for (int j = 1; j <= 19; j++)
+                        {
+                            GameObject currenthex = GameObject.Find("hex " + j);
+                            if (currenthex != null)
+                            {
+                                Transform currentHex = currenthex.transform.Find("hex");
+                                if (currentHex != null)
+                                {
+                                    Property currentProperty = currentHex.GetComponent<Property>();
+                                    if (currentProperty != null)
+                                    {
+                                        if (currentProperty.nameSztab != "hegemonia")
+                                        {
+                                            emptyHexs.Add(j);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        int[] outputs = new int[120];
+                        for (int j = 0; j < outputs.Length; j++)
+                        {
+                            outputs[j] = -1000;
+                        }
+
+                        if (emptyHexs.Count > 0)
+                        {
+                            siec.Destroy();
+                            siec.Generate("hegemonia", "borgo", "Push");
+                            siec.GetInputs("hegemonia");
+
+                            for (int j = 0; j < emptyHexs.Count; j++)
+                            {
+                                for (int k = 0; k < 6; k++)
+                                {
+                                    int index = emptyHexs[j] * 6 + k;
+                                    GameObject currenthex = GameObject.Find("hex " + (a.a(emptyHexs[j], k, 0)));
+                                    if (currenthex != null)
+                                    {
+                                        Transform currentHex = currenthex.transform.Find("hex");
+                                        if (currentHex == null)
+                                        {
+                                            outputs[index] = siec.GetNeuron(10, index);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        int max_result = -999;
+                        int result = 0;
+
+                        for (int j = 0; j < outputs.Length; j++)
+                        {
+                            if (outputs[j] > max_result)
+                            {
+                                max_result = outputs[j];
+                                result = j;
+                            }
+                        }
+
+                        emptyHexs = new List<int>();
+
+                        if (result > 5)
+                        {
+
+                            GameObject hex1 = GameObject.Find("hex " + Mathf.FloorToInt(result / 6));
+                            GameObject hex2 = GameObject.Find("hex " + a.a(Mathf.FloorToInt(result / 6), result % 6, 0));
+
+                            UnityEngine.Debug.Log($"hegemonia push: z {Mathf.FloorToInt(result / 6)} do {a.a(Mathf.FloorToInt(result / 6), result % 6, 0)}");
+
+                            if (hex1 != null && hex2 != null)
+                            {
+                                Transform hex = hex1.transform.Find("hex");
+                                if (hex != null)
+                                {
+                                    hex.SetParent(hex2.transform);
+                                    hex.localPosition = new Vector3(0, 0, -1);
+                                }
+                            }
+                        }
+
+                        GameObject hegemoniaShop = GameObject.Find("hegemonia " + (shopId + 1));
+                        if (hegemoniaShop != null)
+                        {
+                            Transform hex = hegemoniaShop.transform.Find("hex");
+                            if (hex != null)
+                            {
+                                DestroyImmediate(hex.gameObject);
+                            }
+                        }
+                    }
+                    else if (objects[shop[shopId]] == "Sniper")
+                    {
+                        //zamiast neural network
+                        emptyHexs = new List<int>();
+                        for (int j = 1; j <= 19; j++)
+                        {
+                            GameObject currenthex = GameObject.Find("hex " + j);
+                            if (currenthex != null)
+                            {
+                                Transform currentHex = currenthex.transform.Find("hex");
+                                if (currentHex != null)
+                                {
+                                    Property currentProperty = currentHex.GetComponent<Property>();
+                                    if (currentProperty != null)
+                                    {
+                                        if (currentProperty.nameSztab != "hegemonia" && currentProperty.name != "sztab")
+                                        {
+                                            emptyHexs.Add(j);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        if (emptyHexs.Count > 0)
+                        {
+                            int[] outputs = new int[20];
+                            for (int j = 0; j < outputs.Length; j++)
+                            {
+                                outputs[j] = -1000;
+                            }
+
+                            siec.Destroy();
+                            siec.Generate("hegemonia", "borgo", "Sniper");
+                            siec.GetInputs("hegemonia");
+
+                            for (int j = 0; j < emptyHexs.Count; j++)
+                            {
+                                int index = emptyHexs[j];
+                                outputs[index] = siec.GetNeuron(10, index);
+                            }
+
+                            int max_result = -999;
+                            int result = 0;
+
+                            for (int j = 0; j < outputs.Length; j++)
+                            {
+                                if (outputs[j] > max_result)
+                                {
+                                    max_result = outputs[j];
+                                    result = j;
+                                }
+                            }
+
+                            if (result > 0)
+                            {
+                                GameObject currenthex = GameObject.Find("hex " + result);
+                                if (currenthex != null)
+                                {
+                                    Transform currentHex = currenthex.transform.Find("hex");
+                                    if (currentHex != null)
+                                    {
+                                        Debug.Log($"hegemonia sniper na {result}");
+                                        DestroyImmediate(currentHex.gameObject);
+                                    }
+                                }
+                            }
+                        }
+                        emptyHexs = new List<int>();
+
+                        GameObject hegemoniaShop = GameObject.Find("hegemonia " + (shopId + 1));
+                        if (hegemoniaShop != null)
+                        {
+                            Transform hex = hegemoniaShop.transform.Find("hex");
+                            if (hex != null)
+                            {
+                                DestroyImmediate(hex.gameObject);
+                            }
                         }
                     }
                 }
+                shopId++;
+                if (shopId >= 3)
+                {
+                    isTurn = false;
+                    core.endTurn = true;
+                }
+                time = 0;
+            }
+            else
+            {
+                time += Time.deltaTime;
             }
         }
-        siec.testuj();
+    }
+
+    public void turn()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            shop[i] = Random.Range(1, objects.Length);
+            StartCoroutine(create.Create(objects[shop[i]], (i * -1) - 1, 0));
+        }
+        Debug.Log("hegemonia shop: " + shop[0] + " " + shop[1] + " " + shop[2]);
+        shopId = 0;
+        time = 0;
+        isTurn = true;
+        //siec.testuj();
     }
 
     public void InitiativeBattle(int initiative)

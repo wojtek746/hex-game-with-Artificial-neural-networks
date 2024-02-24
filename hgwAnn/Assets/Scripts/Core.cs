@@ -13,7 +13,9 @@ public class Core : MonoBehaviour
     public int coIle; 
     private int i; 
     private int turn; 
-    private bool isGame; 
+    private bool isGame;
+    private int which;
+    public bool endTurn; 
 
     public List<int> getId(int which)
     {
@@ -47,7 +49,10 @@ public class Core : MonoBehaviour
         hegemonia = FindObjectsOfType<hegemoniaCore>()[0];
 
         isGame = true;
-        i = 0; 
+        endTurn = true; 
+        i = 0;
+        turn = 1; 
+        which = 1; 
 
         borgo.StartGame();
         hegemonia.StartGame();
@@ -55,19 +60,32 @@ public class Core : MonoBehaviour
 
     public void Update()
     {
-        if (isGame && i % coIle == 0)
+        if (isGame)
         {
-            borgo.turn();
-            hegemonia.turn();
-            turn++; 
+            if (i % coIle == 0 && endTurn)
+            {
+                if (which == 1)
+                {
+                    borgo.turn();
+                    which = 2;
+                    endTurn = false;
+                }
+                else
+                {
+                    hegemonia.turn();
+                    which = 1;
+                    endTurn = false;
+                    turn++;
+                }
+            }
             if (!isHQLife() || turn >= maxTurn)
             {
                 UnityEngine.Debug.Log("ktoś wygrał :) w turze: " + turn);
-                isGame = false; 
+                isGame = false;
             }
         }
         i++;
-        i %= coIle; 
+        i %= coIle;
     }
 
     public int isMedic(int whereIs)
